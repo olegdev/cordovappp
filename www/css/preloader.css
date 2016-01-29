@@ -1,0 +1,21 @@
+#loader_animation {
+	width: 94px;
+	height: 94px;
+	margin-top: -50px;
+	margin-left: -46px;
+	position: absolute;
+	top: -10000px;
+	left: 50%;
+	background: url(../img/preloader.png) no-repeat -10px -10px;
+}
+
+#loader_blik {
+	width: 94px;
+	height: 94px;
+	margin-top: -50px;
+	margin-left: -46px;
+	position: absolute;
+	top: -10000px;
+	left: 50%;
+	background: url(../img/pre_blik.png) no-repeat center center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Time to be hero</title>
+		
+		<meta charset="utf-8" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		
+		<link rel="stylesheet" type="text/css" media="all" href="css/preloader.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ext-theme-classic-all-4_2_1.css"/>		
+		<link rel="stylesheet" type="text/css" media="all" href="css/exgods2-all.css"/>
+
+		<script src="js/config.js"></script>
+		<script src="js/preload_img.js"></script>
+		<script src="js/preloader.js"></script>
+
+	</head>
+	<body>
+
+		<script>
+			var exGodsLoader = new PreloaderClass({
+				preloadImages: {
+					images: preload_images,
+					onLoad: function() {}
+				}
+			});	
+		</script>
+
+		<div id="viewport-wrapper"></div>
+		
+		<script>
+			document.writeln('<script src="'+ HOST_URL +'main.pl?cmd=config&r='+Math.random()+'"></'+'script>');
+		</script>
+
+		<script src="js/libs/html2canvas/html2canvas.js"></script>
+		<script src="js/libs/html2canvas/html2canvas.svg.js"></script>
+
+		<script src="js/libs/extjs/extjs-4.2.1/ext-all.js"></script>
+		<script src="js/libs/svg/svg.min.js"></script>
+		<script src="js/exgods2-all.js"></script>
+
+	</body>
+</html>
