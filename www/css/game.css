@@ -1,0 +1,13 @@
+#reload-mobile {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background-color: #fff;
+    padding: 7px 20px;
+    z-index: 999999999999999;
+   cursor: pointer;
+}
+
+.loading  #reload-mobile {
+   display: none;
+}
