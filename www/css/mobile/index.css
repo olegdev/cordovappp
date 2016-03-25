@@ -1,0 +1,14 @@
+.container {
+	width: 400px;
+	margin: 150px auto;
+	text-align: center;
+}
+#accounts li {
+	display: block;
+}
+#new-account-btn, #add-account-btn {
+	width: 250px;
+	height: 40px;
+	cursor: pointer;
+	margin: 10px auto;
+}
