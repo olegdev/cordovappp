@@ -324,7 +324,7 @@ textarea.x-form-field {
 
 .x-form-invalid-field,
 textarea.x-form-invalid-field {
-	background-image: url(../img/extjs/default/grid/invalid_line.gif);
+	background-image: url(http://s20.timetobehero.ru/extjs/default/grid/invalid_line.gif);
 }
 
 .x-form-invalid .x-form-checkboxgroup-body { /* убираю рамку и подчеркивание */
@@ -336,7 +336,7 @@ textarea.x-form-invalid-field {
  * Комбобокс
  */
 .x-form-trigger{
-	background-image: url(../img/combobox_btn.png);
+	background-image: url(http://s20.timetobehero.ru/combobox_btn.png);
 	background-position: 0 0;
 	width: 18px;
 	height: 18px;
@@ -386,18 +386,18 @@ textarea.x-form-invalid-field {
 }
 
 .x-field-exgods .x-form-radio + .x-form-cb-label-after {
-	background: url(../img/input-radio.png) no-repeat 0 50%;
+	background: url(http://s20.timetobehero.ru/input-radio.png) no-repeat 0 50%;
 	cursor: pointer;
 	margin-left: 0;
 	padding: 4px 0 4px 25px;
 }
 
 .x-form-cb-checked.x-field-exgods .x-form-radio + .x-form-cb-label-after {
-	background-image: url(../img/input-radio-checked.png);
+	background-image: url(http://s20.timetobehero.ru/input-radio-checked.png);
 }
 
 .x-field-exgods .x-form-checkbox + .x-form-cb-label-after {
-	background: url(../img/checkbox.png) no-repeat 4px 50%;
+	background: url(http://s20.timetobehero.ru/checkbox.png) no-repeat 4px 50%;
 	cursor: pointer;
 	margin-left: 0;
 	margin-top: 0;
@@ -405,7 +405,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-form-cb-checked.x-field-exgods .x-form-checkbox + .x-form-cb-label-after {
-	background-image: url(../img/checkbox-checked.png);
+	background-image: url(http://s20.timetobehero.ru/checkbox-checked.png);
 }
 
 
@@ -418,14 +418,14 @@ textarea.x-form-invalid-field {
 }
 
 .x-field-large .x-form-checkbox + .x-form-cb-label-after {
-	background: url(../img/checkbox-big.png) no-repeat 4px 50%;
+	background: url(http://s20.timetobehero.ru/checkbox-big.png) no-repeat 4px 50%;
 	cursor: pointer;
 	margin-left: 0;
 	padding: 8px 0 8px 35px;
 }
 
 .x-form-cb-checked.x-field-large .x-form-checkbox + .x-form-cb-label-after {
-	background-image: url(../img/checkbox-big-checked.png);
+	background-image: url(http://s20.timetobehero.ru/checkbox-big-checked.png);
 }
 
 /**
@@ -433,7 +433,7 @@ textarea.x-form-invalid-field {
  */
 .x-tip-exgods,
 .x-form-invalid-tip-exgods {
-	background: url(../img/parchment-bg.jpg);
+	background: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 	border: 0;
 	border-radius: 0;
 	box-shadow: none;
@@ -465,25 +465,25 @@ textarea.x-form-invalid-field {
  * Пергамент красивый (extra)
  */
 .x-window-extraparchment, .x-panel-extraparchment {
-	background: url(../img/shop/detail_bottom.png) no-repeat 0 100%,
-	url(../img/shop/detail_top.png) no-repeat 100% 0;
+	background: url(http://s20.timetobehero.ru/shop/detail_bottom.png) no-repeat 0 100%,
+	url(http://s20.timetobehero.ru/shop/detail_top.png) no-repeat 100% 0;
 
 }
 
 .x-window-body-extraparchment, .x-panel-body-extraparchment {
 	height: 93% !important;
 	top: 8px !important;
-	background: url(../img/shop/detail_middle.png) repeat-y 0 0;
+	background: url(http://s20.timetobehero.ru/shop/detail_middle.png) repeat-y 0 0;
 }
 
 .x-window-extraparchment .parchment-content{
 	border: none !important;
 	padding: 4px 15px 10px 12px !important;
-	background: url(../img/shop/detail_separator.png) no-repeat 7px 100%;
+	background: url(http://s20.timetobehero.ru/shop/detail_separator.png) no-repeat 7px 100%;
 }
 
 .x-panel-extraparchment .parchment-separator {
-	background: url(../img/shop/detail_separator.png) no-repeat 7px 100%;
+	background: url(http://s20.timetobehero.ru/shop/detail_separator.png) no-repeat 7px 100%;
 	margin: 0;
 	height: 6px;
 }
@@ -506,7 +506,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-tl {
-	background-image: url(../img/deco/hint/hint_t_corn_l.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_t_corn_l.png);
 	height: 41px;
 	left: 0;
 	top: 0;
@@ -514,7 +514,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-tr {
-	background-image: url(../img/deco/hint/hint_t_corn_r.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_t_corn_r.png);
 	height: 41px;
 	right: 0;
 	top: 0;
@@ -522,7 +522,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-bl {
-	background-image: url(../img/deco/hint/hint_btm_corn_l.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_btm_corn_l.png);
 	height: 59px;
 	left: 0;
 	bottom: 0;
@@ -530,7 +530,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-br {
-	background-image: url(../img/deco/hint/hint_btm_corn_r.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_btm_corn_r.png);
 	height: 59px;
 	right: 0;
 	bottom: 0;
@@ -538,7 +538,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-tm {
-	background-image: url(../img/deco/hint/hint_t_bg.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_t_bg.png);
 	background-repeat: repeat-x;
 	height: 41px;
 	left: 50px;
@@ -547,7 +547,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-bm {
-	background-image: url(../img/deco/hint/hint_btm_bg.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_btm_bg.png);
 	background-repeat: repeat-x;
 	bottom: 0;
 	height: 59px;
@@ -556,7 +556,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-ml {
-	background-image: url(../img/deco/hint/hint_l.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_l.png);
 	background-repeat: repeat-y;
 	bottom: 59px;
 	left: 0;
@@ -565,7 +565,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-mr {
-	background-image: url(../img/deco/hint/hint_r.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_r.png);
 	background-repeat: repeat-y;
 	bottom: 59px;
 	right: 0;
@@ -574,7 +574,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-bg {
-	background-image: url(../img/deco/hint/hint_center.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_center.png);
 	background-repeat: repeat;
 	bottom: 59px;
 	left: 50px;
@@ -583,7 +583,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-tm2 {
-	background-image: url(../img/deco/hint/hint_t_c.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_t_c.png);
 	background-position: 50% 0;
 	height: 41px;
 	left: 0;
@@ -592,7 +592,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-window-hint .hint-bm2 {
-	background-image: url(../img/deco/hint/hint_btm_c.png);
+	background-image: url(http://s20.timetobehero.ru/deco/hint/hint_btm_c.png);
 	background-position: 50% 0;
 	bottom: 0;
 	height: 59px;
@@ -602,7 +602,7 @@ textarea.x-form-invalid-field {
  * Обрамление слотов на коже
  */
 .inventorty-frame-tl {
-	background: url(../img/inventory/frm_top_left.jpg) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/frm_top_left.jpg) top left no-repeat;
 	top: 0px;
 	left: 0px;
 	width: 10px;
@@ -610,7 +610,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-tm  {
-	background: url(../img/inventory/frm_top_center.jpg) top left repeat-x;
+	background: url(http://s20.timetobehero.ru/inventory/frm_top_center.jpg) top left repeat-x;
 	top: 0px;
 	left: 0px;
 	width: 100%;
@@ -618,7 +618,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-tr {
-	background: url(../img/inventory/frm_top_right.jpg) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/frm_top_right.jpg) top left no-repeat;
 	top: 0px;
 	right: 0px;
 	width: 10px;
@@ -626,7 +626,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-mr {
-	background: url(../img/inventory/frm_right.jpg) top left repeat-y;
+	background: url(http://s20.timetobehero.ru/inventory/frm_right.jpg) top left repeat-y;
 	top: 0px;
 	right: 0px;
 	width: 10px;
@@ -634,7 +634,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-br {
-	background: url(../img/inventory/frm_bottom_right.jpg) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/frm_bottom_right.jpg) top left no-repeat;
 	bottom: 0px;
 	right: 0px;
 	width: 10px;
@@ -642,7 +642,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-bm {
-	background: url(../img/inventory/frm_bottom_center.jpg) top left repeat-x;
+	background: url(http://s20.timetobehero.ru/inventory/frm_bottom_center.jpg) top left repeat-x;
 	bottom: 0px;
 	right: 0px;
 	width: 100%;
@@ -650,7 +650,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-bl {
-	background: url(../img/inventory/frm_bottom_left.jpg) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/frm_bottom_left.jpg) top left no-repeat;
 	bottom: 0px;
 	left: 0px;
 	width: 10px;
@@ -658,7 +658,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-ml {
-	background: url(../img/inventory/frm_left.jpg) top left repeat-y;
+	background: url(http://s20.timetobehero.ru/inventory/frm_left.jpg) top left repeat-y;
 	top: 0px;
 	left: 0px;
 	width: 10px;
@@ -666,7 +666,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .inventorty-frame-top {
-	background: url(../img/inventory/frm_top.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/frm_top.png) top center no-repeat;
 	top: -28px;
 	left: 0px;
 	width: 100%;
@@ -695,7 +695,7 @@ textarea.x-form-invalid-field {
  */
 .iron-deco-tl {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_tl.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_tl.png);
 	height: 5px;
 	left: 0;
 	top: 0;
@@ -704,7 +704,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-tm {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_tm.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_tm.png);
 	height: 5px;
 	left: 5px;
 	right: 5px;
@@ -713,7 +713,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-tr {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_tr.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_tr.png);
 	height: 5px;
 	right: 0;
 	top: 0;
@@ -722,7 +722,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-mr {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_mr.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_mr.png);
 	bottom: 5px;
 	right: 0;
 	top: 5px;
@@ -731,7 +731,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-br {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_br.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_br.png);
 	bottom: 0;
 	height: 5px;
 	right: 0;
@@ -740,7 +740,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-bm {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_bm.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_bm.png);
 	height: 5px;
 	left: 5px;
 	right: 5px;
@@ -749,7 +749,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-bl {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_bl.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_bl.png);
 	height: 5px;
 	left: 0;
 	bottom: 0;
@@ -758,7 +758,7 @@ textarea.x-form-invalid-field {
 
 .iron-deco-ml {
 	position: absolute;
-	background-image: url(../img/deco/iron/iron_deco_ml.png);
+	background-image: url(http://s20.timetobehero.ru/deco/iron/iron_deco_ml.png);
 	bottom: 5px;
 	left: 0;
 	top: 5px;
@@ -771,7 +771,7 @@ textarea.x-form-invalid-field {
 	position: absolute;
 }
 .lace-paper-tl {
-	background-image: url(../img/deco/lacepaper/scroll2_top_l.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_top_l.jpg);
 	height: 30px;
 	left: 0;
 	top: 0;
@@ -779,7 +779,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-tm {
-	background-image: url(../img/deco/lacepaper/scroll2_top_m.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_top_m.jpg);
 	height: 30px;
 	left: 66px;
 	right: 62px;
@@ -787,7 +787,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-tr {
-	background-image: url(../img/deco/lacepaper/scroll2_top_r.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_top_r.jpg);
 	height: 30px;
 	right: 0;
 	top: 0;
@@ -795,7 +795,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-mr {
-	background-image: url(../img/deco/lacepaper/scroll2_center_r.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_center_r.jpg);
 	bottom: 37px;
 	right: 0;
 	top: 30px;
@@ -803,7 +803,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-bl {
-	background-image: url(../img/deco/lacepaper/scroll2_bottom_l.png);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_bottom_l.png);
 	bottom: 0;
 	height: 37px;
 	left: 0;
@@ -811,7 +811,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-bm {
-	background-image: url(../img/deco/lacepaper/scroll2_bottom_m.png);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_bottom_m.png);
 	height: 37px;
 	left: 66px;
 	right: 194px;
@@ -819,7 +819,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-br {
-	background-image: url(../img/deco/lacepaper/scroll2_bottom_r.png);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_bottom_r.png);
 	height: 37px;
 	right: 0;
 	bottom: 0;
@@ -827,7 +827,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-ml {
-	background-image: url(../img/deco/lacepaper/scroll2_center_l.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_center_l.jpg);
 	bottom: 37px;
 	left: 0;
 	top: 30px;
@@ -835,7 +835,7 @@ textarea.x-form-invalid-field {
 }
 
 .lace-paper-bg {
-	background: url(../img/deco/lacepaper/scroll2_center_m.jpg);
+	background: url(http://s20.timetobehero.ru/deco/lacepaper/scroll2_center_m.jpg);
 	bottom: 37px;
 	left: 30px;
 	right: 30px;
@@ -846,9 +846,9 @@ textarea.x-form-invalid-field {
 	height: 28px;
 	border-bottom: 1px solid #CDA959;
 	padding: 5px;
-	background: url(../img/deco/lacepaper/bg_table_title_l.jpg) no-repeat 0 0,
-				url(../img/deco/lacepaper/bg_table_title_r.jpg) no-repeat 100% 0,
-				url(../img/deco/lacepaper/bg_table_title_m.jpg) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/lacepaper/bg_table_title_l.jpg) no-repeat 0 0,
+				url(http://s20.timetobehero.ru/deco/lacepaper/bg_table_title_r.jpg) no-repeat 100% 0,
+				url(http://s20.timetobehero.ru/deco/lacepaper/bg_table_title_m.jpg) repeat-x 16px 0;
 }/**
  * Бумага
  */
@@ -857,7 +857,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-tl {
-	background-image: url(../img/deco/paper/paper_top_left.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_top_left.png);
 	height: 28px;
 	left: 0;
 	top: 0;
@@ -865,7 +865,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-tm {
-	background-image: url(../img/deco/paper/paper_top_middle.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_top_middle.png);
 	height: 28px;
 	left: 32px;
 	right: 32px;
@@ -873,7 +873,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-tr {
-	background-image: url(../img/deco/paper/paper_top_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_top_right.png);
 	height: 28px;
 	right: 0;
 	top: 0;
@@ -881,7 +881,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-mr {
-	background-image: url(../img/deco/paper/paper_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_right.png);
 	bottom: 34px;
 	right: 0;
 	top: 28px;
@@ -889,7 +889,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-br {
-	background-image: url(../img/deco/paper/paper_bottom_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_right.png);
 	bottom: 0;
 	height: 34px;
 	right: 0;
@@ -897,7 +897,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-bm {
-	background-image: url(../img/deco/paper/paper_bottom_middle.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_middle.png);
 	height: 34px;
 	left: 124px;
 	right: 32px;
@@ -905,7 +905,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-bl {
-	background-image: url(../img/deco/paper/paper_bottom_left.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_left.png);
 	height: 34px;
 	left: 0;
 	bottom: 0;
@@ -913,7 +913,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-ml {
-	background-image: url(../img/deco/paper/paper_left.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_left.png);
 	bottom: 34px;
 	left: 0;
 	top: 28px;
@@ -921,7 +921,7 @@ textarea.x-form-invalid-field {
 }
 
 .paper-bg {
-	background: url(../img/deco/paper/paper_center_tile.png);
+	background: url(http://s20.timetobehero.ru/deco/paper/paper_center_tile.png);
 	bottom: 34px;
 	left: 32px;
 	right: 32px;
@@ -949,7 +949,7 @@ textarea.x-form-invalid-field {
 	width: 32px !important;
 }
 .x-paper .x-tool-close {
-	background: url(../img/btn_close.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/btn_close.png) no-repeat 0 0;
 	height: 31px;
 	width: 32px;
 }
@@ -959,23 +959,23 @@ textarea.x-form-invalid-field {
 }
 
 .x-paper .close-btn {
-	background-image: url(../img/close.png);
+	background-image: url(http://s20.timetobehero.ru/close.png);
 }
 
 .x-paper .v-separator, .x-panel .v-separator{
 	width:6px;
 	height:100%;
 	margin:6px 0 12px 0;
-	background: url(../img/deco/paper/paper_separator_top.png) no-repeat 0 0,
-		url(../img/deco/paper/paper_separator_vertical.png) repeat-y 0 16px;
+	background: url(http://s20.timetobehero.ru/deco/paper/paper_separator_top.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/deco/paper/paper_separator_vertical.png) repeat-y 0 16px;
 }
 
 .x-paper .separator,
 .paper-separator {
 	height:6px;
-	background: url(../img/deco/paper/paper_separator_left.png) no-repeat 0 0,
-	url(../img/deco/paper/paper_separator_right.png) no-repeat 100% 0,
-	url(../img/deco/paper/paper_separator_horisontal.png) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/paper/paper_separator_left.png) no-repeat 0 0,
+	url(http://s20.timetobehero.ru/deco/paper/paper_separator_right.png) no-repeat 100% 0,
+	url(http://s20.timetobehero.ru/deco/paper/paper_separator_horisontal.png) repeat-x 16px 0;
 }
 .x-paper .separator{
 	margin:0 6px;
@@ -992,9 +992,9 @@ textarea.x-form-invalid-field {
 	position:relative;
 	border-bottom:1px solid #7e6135;
 	text-align: center;
-	background: url(../img/deco/paper/header_left.jpg) no-repeat 0 0,
-				url(../img/deco/paper/header_right.jpg) no-repeat 100% 0,
-				url(../img/deco/paper/header_middle.jpg) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/paper/header_left.jpg) no-repeat 0 0,
+				url(http://s20.timetobehero.ru/deco/paper/header_right.jpg) no-repeat 100% 0,
+				url(http://s20.timetobehero.ru/deco/paper/header_middle.jpg) repeat-x 16px 0;
 	height:24px;
 	padding:3px;
 	margin:7px 11px;
@@ -1027,7 +1027,7 @@ textarea.x-form-invalid-field {
 	text-align: center;
 }/* старый дизайн пергамента */
 .parchment-deco {
-	background: url(../img/parchment-bg.jpg);
+	background: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 	padding: 3px;
 }
 
@@ -1037,13 +1037,13 @@ textarea.x-form-invalid-field {
 }
 
 .parchment-deco .x-tool-close {
-	background: url(../img/close.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/close.png) no-repeat 0 0;
 	height: 31px;
 	width: 32px;
 }
 
 .parchment-deco .close-btn {
-	background-image: url(../img/close.png);
+	background-image: url(http://s20.timetobehero.ru/close.png);
 }
 
 .parchment-deco .x-panel-header-horizontal {
@@ -1064,7 +1064,7 @@ textarea.x-form-invalid-field {
 	padding: 0;
 }
 .parchment-separator {
-	background-image: url(../img/separator-horizontal.jpg);
+	background-image: url(http://s20.timetobehero.ru/separator-horizontal.jpg);
 	clear: both;
 	height: 2px;
 	margin: 5px 10px;
@@ -1072,7 +1072,7 @@ textarea.x-form-invalid-field {
  * Пергамент
  */
 .x-parchment {
-	background-image: url(../img/parchment-bg.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 }
 
 .x-parchment .x-window-header .x-box-inner,
@@ -1091,11 +1091,11 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment .x-tool img.x-tool-close {
-	background: url(../img/close.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/close.png) no-repeat 0 0;
 }
 
 .x-parchment .close-btn {
-	background-image: url(../img/close.png);
+	background-image: url(http://s20.timetobehero.ru/close.png);
 }
 
 .x-parchment .parchment-border {
@@ -1115,13 +1115,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment > .parchment-tl {
-	background-image: url(../img/parchment-tl.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tl.jpg);
 	left: 0;
 	top: 0;
 }
 
 .x-parchment > .parchment-tm {
-	background-image: url(../img/parchment-tm.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tm.jpg);
 	left: 4px;
 	right: 4px;
 	top: 0;
@@ -1129,13 +1129,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment > .parchment-tr {
-	background-image: url(../img/parchment-tr.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tr.jpg);
 	right: 0;
 	top: 0;
 }
 
 .x-parchment > .parchment-mr {
-	background-image: url(../img/parchment-mr.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-mr.jpg);
 	bottom: 4px;
 	height: auto;
 	right: 0;
@@ -1143,13 +1143,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment > .parchment-br {
-	background-image: url(../img/parchment-br.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-br.jpg);
 	bottom: 0;
 	right: 0;
 }
 
 .x-parchment > .parchment-bm {
-	background-image: url(../img/parchment-bm.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bm.jpg);
 	bottom: 0;
 	left: 4px;
 	right: 4px;
@@ -1157,13 +1157,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment > .parchment-bl {
-	background-image: url(../img/parchment-bl.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bl.jpg);
 	bottom: 0;
 	left: 0;
 }
 
 .x-parchment > .parchment-ml {
-	background-image: url(../img/parchment-ml.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-ml.jpg);
 	bottom: 4px;
 	height: auto;
 	left: 0;
@@ -1171,7 +1171,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment > .parchment-bg {
-	background: url(../img/parchment-bg.jpg);
+	background: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 	bottom: 4px;
 	height: auto;
 	left: 4px;
@@ -1185,7 +1185,7 @@ textarea.x-form-invalid-field {
 .x-parchment > .x-panel-body,
 .x-parchment > .x-window-body,
 .x-parchment > .parchment-inner{
-	background-image: url(../img/parchment-bg.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 }
 
 .x-parchment .x-panel-header {
@@ -1194,7 +1194,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-parchment-separator {
-	background-image: url(../img/separator-horizontal.jpg);
+	background-image: url(http://s20.timetobehero.ru/separator-horizontal.jpg);
 	height: 2px;
 	margin: 4px 30px;
 }/**
@@ -1205,7 +1205,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-tl {
-	background-image: url(../img/skin-tl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tl.png);
 	height: 9px;
 	left: 0;
 	top: 0;
@@ -1213,7 +1213,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-tm {
-	background-image: url(../img/skin-tm.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tm.png);
 	height: 9px;
 	left: 11px;
 	right: 12px;
@@ -1221,7 +1221,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-tr {
-	background-image: url(../img/skin-tr.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tr.png);
 	height: 9px;
 	right: 0;
 	top: 0;
@@ -1229,7 +1229,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-mr {
-	background-image: url(../img/skin-mr.png);
+	background-image: url(http://s20.timetobehero.ru/skin-mr.png);
 	bottom: 13px;
 	right: 0;
 	top: 9px;
@@ -1237,7 +1237,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-br {
-	background-image: url(../img/skin-br.png);
+	background-image: url(http://s20.timetobehero.ru/skin-br.png);
 	bottom: 0;
 	height: 13px;
 	right: 0;
@@ -1245,7 +1245,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-bm {
-	background-image: url(../img/skin-bm.png);
+	background-image: url(http://s20.timetobehero.ru/skin-bm.png);
 	height: 13px;
 	left: 11px;
 	right: 12px;
@@ -1253,7 +1253,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-bl {
-	background-image: url(../img/skin-bl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-bl.png);
 	height: 13px;
 	left: 0;
 	bottom: 0;
@@ -1261,7 +1261,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-ml {
-	background-image: url(../img/skin-ml.png);
+	background-image: url(http://s20.timetobehero.ru/skin-ml.png);
 	bottom: 13px;
 	left: 0;
 	top: 9px;
@@ -1269,7 +1269,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .skin-bg {
-	background: url(../img/skin-bg.png);
+	background: url(http://s20.timetobehero.ru/skin-bg.png);
 	bottom: 13px;
 	left: 11px;
 	right: 12px;
@@ -1301,7 +1301,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin .x-tool-close {
-	background: url(../img/btn_close.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/btn_close.png) no-repeat 0 0;
 	height: 31px;
 	width: 32px;
 }
@@ -1310,14 +1310,14 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin .close-btn {
-	background-image: url(../img/close.png);
+	background-image: url(http://s20.timetobehero.ru/close.png);
 }
 
 /**
  * Кожаное окно
  */
 .x-skin-window > .skin-tl {
-	background-image: url(../img/skin-window-tl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-window-tl.png);
 	height: 9px;
 	left: 0;
 	top: 0;
@@ -1325,7 +1325,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin-window > .skin-tr {
-	background-image: url(../img/skin-window-tr.png);
+	background-image: url(http://s20.timetobehero.ru/skin-window-tr.png);
 	height: 9px;
 	right: 0;
 	top: 0;
@@ -1333,7 +1333,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin-window > .skin-br {
-	background-image: url(../img/skin-window-br.png);
+	background-image: url(http://s20.timetobehero.ru/skin-window-br.png);
 	bottom: 0;
 	height: 13px;
 	right: 0;
@@ -1341,7 +1341,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin-window > .skin-bl {
-	background-image: url(../img/skin-window-bl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-window-bl.png);
 	height: 13px;
 	left: 0;
 	bottom: 0;
@@ -1370,7 +1370,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-tr {
-	background-image: url(../img/deco/paper/paper_top_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_top_right.png);
 	height: 28px;
 	right: 7px;
 	top: 8px;
@@ -1378,7 +1378,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-mr {
-	background-image: url(../img/deco/paper/paper_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_right.png);
 	bottom: 32px;
 	right: 7px;
 	top: 36px;
@@ -1386,7 +1386,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-br {
-	background-image: url(../img/deco/paper/paper_bottom_right.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_right.png);
 	bottom: 6px;
 	height: 34px;
 	right: 7px;
@@ -1394,7 +1394,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-bm {
-	background-image: url(../img/deco/paper/paper_bottom_middle.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_middle.png);
 	height: 34px;
 	left: 124px;
 	right: 39px;
@@ -1402,7 +1402,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-bl {
-	background-image: url(../img/deco/paper/paper_bottom_left.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_bottom_left.png);
 	height: 34px;
 	left: 4px;
 	bottom: 6px;
@@ -1410,7 +1410,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-ml {
-	background-image: url(../img/deco/paper/paper_left.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_left.png);
 	bottom: 32px;
 	left: 4px;
 	top: 36px;
@@ -1418,7 +1418,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-skin > .paper-bg {
-	background: url(../img/deco/paper/paper_center_tile.png);
+	background: url(http://s20.timetobehero.ru/deco/paper/paper_center_tile.png);
 	bottom: 32px;
 	left: 36px;
 	right: 39px;
@@ -1433,7 +1433,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-tl {
-	background-image: url(../img/skin-tl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tl.png);
 	height: 9px;
 	left: 0;
 	top: 0;
@@ -1441,7 +1441,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-tm {
-	background-image: url(../img/skin-tm.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tm.png);
 	height: 9px;
 	left: 11px;
 	right: 12px;
@@ -1449,7 +1449,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-tr {
-	background-image: url(../img/skin-tr.png);
+	background-image: url(http://s20.timetobehero.ru/skin-tr.png);
 	height: 9px;
 	right: 0;
 	top: 0;
@@ -1457,7 +1457,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-mr {
-	background-image: url(../img/skin-mr.png);
+	background-image: url(http://s20.timetobehero.ru/skin-mr.png);
 	bottom: 13px;
 	right: 0;
 	top: 9px;
@@ -1465,7 +1465,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-br {
-	background-image: url(../img/skin-br.png);
+	background-image: url(http://s20.timetobehero.ru/skin-br.png);
 	bottom: 0;
 	height: 13px;
 	right: 0;
@@ -1473,7 +1473,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-bm {
-	background-image: url(../img/skin-bm.png);
+	background-image: url(http://s20.timetobehero.ru/skin-bm.png);
 	height: 13px;
 	left: 11px;
 	right: 12px;
@@ -1481,7 +1481,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-bl {
-	background-image: url(../img/skin-bl.png);
+	background-image: url(http://s20.timetobehero.ru/skin-bl.png);
 	height: 13px;
 	left: 0;
 	bottom: 0;
@@ -1489,7 +1489,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .skin-ml {
-	background-image: url(../img/skin-ml.png);
+	background-image: url(http://s20.timetobehero.ru/skin-ml.png);
 	bottom: 13px;
 	left: 0;
 	top: 9px;
@@ -1505,13 +1505,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .parchment-tl {
-	background-image: url(../img/parchment-tl.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tl.jpg);
 	left: 11px;
 	top: 9px;
 }
 
 .x-panel-skinparchment > .parchment-tm {
-	background-image: url(../img/parchment-tm.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tm.jpg);
 	height: 4px;
 	left: 15px;
 	right: 16px;
@@ -1519,13 +1519,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .parchment-tr {
-	background-image: url(../img/parchment-tr.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-tr.jpg);
 	right: 12px;
 	top: 9px;
 }
 
 .x-panel-skinparchment > .parchment-mr {
-	background-image: url(../img/parchment-mr.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-mr.jpg);
 	bottom: 17px;
 	right: 12px;
 	top: 13px;
@@ -1533,13 +1533,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .parchment-br {
-	background-image: url(../img/parchment-br.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-br.jpg);
 	bottom: 13px;
 	right: 12px;
 }
 
 .x-panel-skinparchment > .parchment-bm {
-	background-image: url(../img/parchment-bm.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bm.jpg);
 	height: 4px;
 	left: 15px;
 	right: 16px;
@@ -1547,13 +1547,13 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .parchment-bl {
-	background-image: url(../img/parchment-bl.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bl.jpg);
 	left: 11px;
 	bottom: 13px;
 }
 
 .x-panel-skinparchment > .parchment-ml {
-	background-image: url(../img/parchment-ml.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-ml.jpg);
 	bottom: 17px;
 	left: 11px;
 	top: 13px;
@@ -1561,7 +1561,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-panel-skinparchment > .parchment-bg {
-	background-image: url(../img/parchment-bg.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bg.jpg);
 	background-repeat: repeat;
 	bottom: 17px;
 	left: 15px;
@@ -1575,7 +1575,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-stone > .stone-bg {
-	background: url(../img/stone/forge_bg_stone.png);
+	background: url(http://s20.timetobehero.ru/stone/forge_bg_stone.png);
 	bottom: 13px;
 	left: 6px;
 	right: 12px;
@@ -1604,7 +1604,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-stone .x-tool-close {
-	background: url(../img/stone/forge_button_x.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/stone/forge_button_x.png) no-repeat 0 0;
 	height: 31px;
 	width: 32px;
 	margin:11px -43px 0;
@@ -1619,7 +1619,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-stone .close-btn {
-	background-image: url(../img/close.png);
+	background-image: url(http://s20.timetobehero.ru/close.png);
 }/**
  * Металлическое оформление понелей и окон
  */
@@ -1633,12 +1633,12 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco .close-btn {
-	background-image: url(../img/battle-window-close.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-close.png);
 	z-index: 2;
 }
 
 .window-deco .x-tool-close {
-	background: url(../img/battle-window-close.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/battle-window-close.png) no-repeat 0 0;
 	height: 29px;
 	width: 25px;
 }
@@ -1648,7 +1648,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-tl {
-	background-image: url(../img/battle-window-tl.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-tl.png);
 	height: 28px;
 	left: 0;
 	top: 0;
@@ -1656,7 +1656,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-tm {
-	background-image: url(../img/battle-window-tm.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-tm.png);
 	height: 28px;
 	left: 18px;
 	right: 17px;
@@ -1672,7 +1672,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-tr {
-	background-image: url(../img/battle-window-tr.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-tr.png);
 	height: 28px;
 	right: 0;
 	top: 0;
@@ -1680,7 +1680,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-mr {
-	background-image: url(../img/battle-window-mr.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-mr.png);
 	bottom: 15px;
 	height: auto;
 	right: 0;
@@ -1689,7 +1689,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-br {
-	background-image: url(../img/battle-window-br.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-br.png);
 	bottom: 0;
 	height: 15px;
 	right: 0;
@@ -1697,7 +1697,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-bm {
-	background-image: url(../img/battle-window-bm.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-bm.png);
 	bottom: 0;
 	height: 15px;
 	left: 17px;
@@ -1706,7 +1706,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-bl {
-	background-image: url(../img/battle-window-bl.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-bl.png);
 	bottom: 0;
 	height: 15px;
 	left: 0;
@@ -1714,7 +1714,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-ml {
-	background-image: url(../img/battle-window-ml.png);
+	background-image: url(http://s20.timetobehero.ru/battle-window-ml.png);
 	bottom: 15px;
 	height: auto;
 	left: 0;
@@ -1723,7 +1723,7 @@ textarea.x-form-invalid-field {
 }
 
 .window-deco > .window-bg {
-	background: url(../img/battle-window-bg.jpg);
+	background: url(http://s20.timetobehero.ru/battle-window-bg.jpg);
 	bottom: 15px;
 	left: 18px;
 	right: 17px;
@@ -1761,13 +1761,13 @@ textarea.x-form-invalid-field {
 	top: 13px;
 }
 .exg-frame-title-5slots {
-	background: url(../img/inventory/frm_top.png) top center no-repeat;	
+	background: url(http://s20.timetobehero.ru/inventory/frm_top.png) top center no-repeat;	
 }
 .exg-frame-title-4slots {
-	background: url(../img/fucina/fucina_frm_top.png) top center no-repeat;	
+	background: url(http://s20.timetobehero.ru/fucina/fucina_frm_top.png) top center no-repeat;	
 }
 .exg-frame-title-0slots {
-	background: url(../img/fucina/fucina_frm_top_small.png) top center no-repeat;	
+	background: url(http://s20.timetobehero.ru/fucina/fucina_frm_top_small.png) top center no-repeat;	
 }/**
  * Highlightable
  */
@@ -1808,11 +1808,11 @@ textarea.x-form-invalid-field {
 	user-select: none;
 }
 .pager-left-arrow{
-	background-image: url(../img/pager/btn_left_bg.png);
+	background-image: url(http://s20.timetobehero.ru/pager/btn_left_bg.png);
 	left:0;
 }
 .pager-right-arrow{
-	background-image: url(../img/pager/btn_right_bg.png);
+	background-image: url(http://s20.timetobehero.ru/pager/btn_right_bg.png);
 	right:0;
 }
 .pager-left-arrow > div,
@@ -1822,10 +1822,10 @@ textarea.x-form-invalid-field {
 	cursor:pointer;
 }
 .pager-left-arrow > div{
-	background-image: url(../img/pager/btn_left.png);
+	background-image: url(http://s20.timetobehero.ru/pager/btn_left.png);
 }
 .pager-right-arrow > div{
-	background-image: url(../img/pager/btn_right.png);
+	background-image: url(http://s20.timetobehero.ru/pager/btn_right.png);
 }
 .pager-left-arrow > div:hover,
 .pager-right-arrow > div:hover{
@@ -1858,7 +1858,7 @@ textarea.x-form-invalid-field {
 .pager-text-center,
 .pager-text-left,
 .pager-text-right{
-	background-image: url(../img/page_num.png);
+	background-image: url(http://s20.timetobehero.ru/page_num.png);
 	padding:1px;
 	height: 20px;
 }
@@ -1889,7 +1889,7 @@ textarea.x-form-invalid-field {
  * Custom scroller
  */
 .x-toolbar-scroller .scroll-top {
-	background: url(../img/scrollbar/arrow_top.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/scrollbar/arrow_top.png) no-repeat 0 0;
 }
 .x-toolbar-scroller .x-over.scroll-top {
 	background-position: 0 -21px;
@@ -1902,7 +1902,7 @@ textarea.x-form-invalid-field {
 }
 
 .x-toolbar-scroller .scroll-bottom {
-	background: url(../img/scrollbar/arrow_bottom.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/scrollbar/arrow_bottom.png) no-repeat 0 0;
 }
 .x-toolbar-scroller .x-over.scroll-bottom {
 	background-position: 0 -20px;
@@ -1922,18 +1922,18 @@ textarea.x-form-invalid-field {
 }
 
 .x-toolbar-scroller .x-slider-vert {
-	background: url(../img/scrollbar/bg_top.png) no-repeat 0 0, url(../img/scrollbar/bg_bottom.png) no-repeat 0 100%;
+	background: url(http://s20.timetobehero.ru/scrollbar/bg_top.png) no-repeat 0 0, url(http://s20.timetobehero.ru/scrollbar/bg_bottom.png) no-repeat 0 100%;
 	padding-top: 6px;
 	padding-bottom: 6px;
 }
 
 .x-toolbar-scroller .x-slider-vert .x-slider-end {
-	background: url(../img/scrollbar/bg_midle.png) repeat-y 0 0;
+	background: url(http://s20.timetobehero.ru/scrollbar/bg_midle.png) repeat-y 0 0;
 	padding-bottom: 17px;
 }
 
 .x-slider-vert .x-slider-thumb {
-	background: url(../img/scrollbar/thumb.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/scrollbar/thumb.png) no-repeat 0 0;
 	cursor: pointer;
 	height: 26px;
 	left: 0;
@@ -1971,13 +1971,13 @@ textarea.x-form-invalid-field {
  * Грид элементов на пергаментной подложке
  */
 .exg-grid-parchment-item-wrap {
-	background-image: url(../img/shop/item_bg2.png);	
+	background-image: url(http://s20.timetobehero.ru/shop/item_bg2.png);	
 	background-repeat: no-repeat;
 	position: relative;
 	height: 100%;
 }
 .exg-grid-parchment-info-icon {
-	background-image: url(../img/shop/item_btn_info.png);
+	background-image: url(http://s20.timetobehero.ru/shop/item_btn_info.png);
     background-position: top left;
     background-repeat: no-repeat;
     height: 19px;
@@ -1995,7 +1995,7 @@ textarea.x-form-invalid-field {
  * Грид с подложкой для предметов
  */
 .exg-grid-slots .exg-grid-inner {
-	background-image: url(../img/slots/slot_regular.jpg);
+	background-image: url(http://s20.timetobehero.ru/slots/slot_regular.jpg);
 }
 .exg-grid-slots .exg-grid-item .item {
 	height: 64px;
@@ -2019,10 +2019,10 @@ textarea.x-form-invalid-field {
 	left: 3px;
 	height: 82px;
 	width: 82px;
-	background: url(../img/locations/monster_frame_neutral.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/monster_frame_neutral.png) top center no-repeat;
 }
 .enabled .exg-grid-skin-frm {
-	background: url(../img/locations/monster_frame_green.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/monster_frame_green.png) top center no-repeat;
 }
 .exg-grid-skin .exg-grid-skin-item:hover .exg-grid-skin-frm {
 	 background-position: center -82px !important;
@@ -2059,7 +2059,7 @@ textarea.x-form-invalid-field {
 	left: 65px;
 }
 .exg-grid-skin li {
-	background: url(../img/mask/panel.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/panel.png) 0 0 no-repeat;
 	height: 93px;
 }
 .exg-grid-skin .exg-grid-item,
@@ -2176,9 +2176,9 @@ textarea.x-form-invalid-field {
 	font-weight: bold;
     border-bottom: 1px solid #7e6135;
     text-align: center;
-    background: url(../img/deco/paper/header_left.jpg) no-repeat 0 0,
-    			url(../img/deco/paper/header_right.jpg) no-repeat 100% 0,
-    			url(../img/deco/paper/header_middle.jpg) repeat-x 16px 0;
+    background: url(http://s20.timetobehero.ru/deco/paper/header_left.jpg) no-repeat 0 0,
+    			url(http://s20.timetobehero.ru/deco/paper/header_right.jpg) no-repeat 100% 0,
+    			url(http://s20.timetobehero.ru/deco/paper/header_middle.jpg) repeat-x 16px 0;
     height: 24px;
     padding: 3px;
     margin: 0 7px;
@@ -2201,7 +2201,7 @@ table.exg-stuff-block-content td {
 	white-space: nowrap;	
 }
 .exg-stuff-block-separator {
-	background: url(../img/shop/detail_separator.png) repeat-x 0 0;
+	background: url(http://s20.timetobehero.ru/shop/detail_separator.png) repeat-x 0 0;
 	margin: 0 6px;
 	height: 6px;
 }
@@ -2214,7 +2214,7 @@ table.exg-stuff-block-content td {
 	margin: 0 0 -2px 0;
 }
 .exg-stuff-collection.exg-stuff-details > li .info-icon {
-	background-image: url(../img/mask/item_btn_info.png);
+	background-image: url(http://s20.timetobehero.ru/mask/item_btn_info.png);
 	background-position: 0 0;
 	background-repeat: no-repeat;
     width: 18px;
@@ -2259,10 +2259,10 @@ table.exg-stuff-block-content td {
     right: 1px;
     width: auto;
     padding: 0 7px;
-    background: url(../img/slots/new/circle.png) no-repeat 0 0, url(../img/slots/new/circle.png) no-repeat 100% 0;
+    background: url(http://s20.timetobehero.ru/slots/new/circle.png) no-repeat 0 0, url(http://s20.timetobehero.ru/slots/new/circle.png) no-repeat 100% 0;
 }
 .exg-stuff-decorator-quantity-counter span {
-	background: url(../img/currency/counter_big_mid.png) repeat-x 0 0;
+	background: url(http://s20.timetobehero.ru/currency/counter_big_mid.png) repeat-x 0 0;
     padding: 1px 0px 3px 0;
     display: block;    
     color: #FFFFFF;
@@ -2283,7 +2283,7 @@ table.exg-stuff-block-content td {
 .exg-stuff-decorator-quantity-counter .skull > div{
 	position: absolute;
 	background-repeat: no-repeat;
-	background-image: url(../img/battle/peril-ico.png);
+	background-image: url(http://s20.timetobehero.ru/battle/peril-ico.png);
 	width: 10px;
 	height: 10px;
 	margin-top: 3px;
@@ -2299,7 +2299,7 @@ table.exg-stuff-block-content td {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../img/mask/star.png) 0 0 repeat-x;
+	background: url(http://s20.timetobehero.ru/mask/star.png) 0 0 repeat-x;
 	margin: 3px;
 }
 
@@ -2355,11 +2355,11 @@ table.exg-stuff-block-content td {
 .exg-stuff-feature-block .info .grade-inner {
 	margin: 0 auto;	
     padding: 2px 0px 4px 0;
-    background: url(../img/mask/star_bg.png) repeat-x 0 2px;
+    background: url(http://s20.timetobehero.ru/mask/star_bg.png) repeat-x 0 2px;
 }
 .exg-stuff-feature-block .info .grade-inner div {
 	height: 14px;
-    background: url(../img/mask/star.png) repeat-x;
+    background: url(http://s20.timetobehero.ru/mask/star.png) repeat-x;
 }
 img.stuff-icon {
 	height: 12px;
@@ -2401,7 +2401,7 @@ img.stuff-icon {
 	color: #572115;
 }
 .arena .trophy-num {
-	background-image: url("../img/icons/ico_trophy.png");
+	background-image: url("http://s20.timetobehero.ru/icons/ico_trophy.png");
     background-position: left center;
     background-repeat: no-repeat;        
     padding-left: 16px;
@@ -2451,7 +2451,7 @@ img.stuff-icon {
 .arena.arenaview .section1 .queue-timer {
 	font-size: 14px;
 	margin: 36px 0 0 3px;
-	background-image: url(../img/arena/timer_bg.png);
+	background-image: url(http://s20.timetobehero.ru/arena/timer_bg.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	position:relative;
@@ -2459,7 +2459,7 @@ img.stuff-icon {
 	height:178px;
 }
 .arena.arenaview .section1 .queue-timer-counter {
-	background: url(../img/arena/preloader.png) -10px -10px;
+	background: url(http://s20.timetobehero.ru/arena/preloader.png) -10px -10px;
 	position:absolute;
 	height:94px;
 	width:94px;
@@ -2467,7 +2467,7 @@ img.stuff-icon {
 	left:50px;
 }
 .arena.arenaview .section1 .queue-timer-value {
-	background: url(../img/preloader.png) -36px -36px;
+	background: url(http://s20.timetobehero.ru/preloader.png) -36px -36px;
 	position:absolute;
 	height:42px;
 	width:42px;
@@ -2475,7 +2475,7 @@ img.stuff-icon {
 	left:76px;
 }
 .arena.arenaview .section1 .queue-separators {
-	background: url(../img/arena/timer_toplayer.png);
+	background: url(http://s20.timetobehero.ru/arena/timer_toplayer.png);
 	position:absolute;
 	z-index:1;
 	height:112px;
@@ -2539,7 +2539,7 @@ img.stuff-icon {
 .arena.arenaview .shop-items-list-item div {
 	width:54px;
 	height:22px;
-	background-image: url(../img/time_panel.png);
+	background-image: url(http://s20.timetobehero.ru/time_panel.png);
 	line-height:21px;
 	color:#fff;
 	text-align:center;
@@ -2772,7 +2772,7 @@ img.stuff-icon {
 .arena .qh-pointer {
 	top: 63px;
 	left: -47px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 .reward_container {
@@ -2815,7 +2815,7 @@ img.stuff-icon {
 	position: absolute;
 	right: 0px;
 	top: 1px;
-	background: url(../img/bank/special_bg.png);
+	background: url(http://s20.timetobehero.ru/bank/special_bg.png);
 	padding-left: 12px;
 	padding-top: 1px;
 }
@@ -2831,7 +2831,7 @@ img.stuff-icon {
 #bank-tabs .titan-button .qh-pointer {
 	top: -5px;
 	left: -50px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 #bank-tabs .titan-button .text-btn-image {
 	background-position: 50% -1px;
@@ -2845,12 +2845,12 @@ img.stuff-icon {
 .bank-table .qh-pointer {
 	top: -10px;
 	left: 300px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .bank-table-footer .qh-pointer {
 	top: -7px;
 	left: -40px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 /**
  * Банк - пополнение 
@@ -2901,15 +2901,15 @@ img.stuff-icon {
 .bank-table-title{
 	text-align: center;
 	font-weight:700;
-	background: url(../img/deco/paper/header_left.jpg) no-repeat 0 0,
-	url(../img/deco/paper/header_right.jpg) no-repeat 100% 0,
-	url(../img/deco/paper/header_middle.jpg) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/paper/header_left.jpg) no-repeat 0 0,
+	url(http://s20.timetobehero.ru/deco/paper/header_right.jpg) no-repeat 100% 0,
+	url(http://s20.timetobehero.ru/deco/paper/header_middle.jpg) repeat-x 16px 0;
 	height:24px;
 	padding:4px;
 }
 .bank-replenishment .table .first, .bank-replenishment .table .second{
 	height:26px;
-	background-image: url(../img/deco/paper/paper_zebra.jpg);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_zebra.jpg);
 	background-repeat: repeat-x;
 	background-position: 0 0;
 	cursor:pointer;
@@ -2932,7 +2932,7 @@ img.stuff-icon {
 .bank-replenishment table tr td:first-child div, .bank-replenishment .radiobutton {
 	width:17px;
 	height:17px;
-	background-image: url(../img/radiobutton.png);
+	background-image: url(http://s20.timetobehero.ru/radiobutton.png);
 	margin:4px;
 	float: left;
 }
@@ -2946,7 +2946,7 @@ img.stuff-icon {
 	background-position: 0 -17px;
 }
 .bank-replenishment .table .bank_line.active .radiobutton{
-	background-image: url(../img/radiobutton_selected.png);
+	background-image: url(http://s20.timetobehero.ru/radiobutton_selected.png);
 }
 .bank-table-gold{
 	font-weight:700;
@@ -3020,7 +3020,7 @@ img.stuff-icon {
 .bank-preset .component .qh-pointer{
 	top:-10px;
 	left:-40px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .bank-preset-content .label {
 	display: table-cell;
@@ -3052,13 +3052,13 @@ img.stuff-icon {
 }
 #battle-header a.btn-group {
 	left: 272px;
-	background-image: url(../img/battle/btn_group.jpg);
+	background-image: url(http://s20.timetobehero.ru/battle/btn_group.jpg);
 }
 #battle-header .timer {
 	position: absolute;
 	top: 24px;
 	left: 134px;
-	background: url(../img/battle/combat_counter.png) no-repeat scroll 50% 0px transparent;
+	background: url(http://s20.timetobehero.ru/battle/combat_counter.png) no-repeat scroll 50% 0px transparent;
 	width: 160px;
 	height: 81px;
 }
@@ -3071,7 +3071,7 @@ img.stuff-icon {
 #battle-header .blocked-timer {
 	width:54px;
 	height:48px;
-	background-image:url(../img/battle/watch_for_compile.png);
+	background-image:url(http://s20.timetobehero.ru/battle/watch_for_compile.png);
 	background-position:0 0;
 }
 #battle-header .timer .util-sign-container > div{
@@ -3083,11 +3083,11 @@ img.stuff-icon {
 	position:relative;
 }
 #battle-header .timer .util-sign{
-	background-image: url(../img/battle/combat_nums.png);
+	background-image: url(http://s20.timetobehero.ru/battle/combat_nums.png);
 }
 #battle-header .timer span {
 	background-repeat: no-repeat;
-	background-image: url(../img/battle/combat_nums.png);
+	background-image: url(http://s20.timetobehero.ru/battle/combat_nums.png);
 	background-position: 0 0;
 	width: 18px;
 	height: 37px;	
@@ -3144,7 +3144,7 @@ img.stuff-icon {
 	white-space: nowrap;
 }
 #battle-prepacts .prep-action .image-frame {
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over.png);
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 100%;
@@ -3158,11 +3158,11 @@ img.stuff-icon {
 	height: 57px;
 }
 #battle-prepacts .prep-action:hover .image-frame {
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over_hover.png);
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over_hover.png);
 }
 #battle-prepacts .prep-action.disabled .image-frame,
 #battle-prepacts .prep-action.disabled:hover .image-frame {
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over.png);
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over.png);
 }
 #battle-prepacts .prep-action .image {
 	position: relative;
@@ -3195,7 +3195,7 @@ img.stuff-icon {
 	margin-top: -3px;
 }
 #battle-prepacts .prep-action .counter {
-	background-image: url("../img/battle/ico_clock.png");
+	background-image: url("http://s20.timetobehero.ru/battle/ico_clock.png");
 	background-position: left 3px;
 	background-repeat: no-repeat;
 	color: #FEE7B4;
@@ -3228,19 +3228,19 @@ img.stuff-icon {
 	background-position: right center;
 }
 #battle-prepacts .left-arrow {
-	background-image: url("../img/battle/left-arrow.png");
+	background-image: url("http://s20.timetobehero.ru/battle/left-arrow.png");
 	float: left;
 }
 #battle-prepacts .left-arrow.disabled {
-	background-image: url("../img/battle/left-arrow-bg.png");
+	background-image: url("http://s20.timetobehero.ru/battle/left-arrow-bg.png");
 	cursor: default;
 }
 #battle-prepacts .right-arrow {
-	background-image: url("../img/battle/right-arrow.png");
+	background-image: url("http://s20.timetobehero.ru/battle/right-arrow.png");
 	float: right;
 }
 #battle-prepacts .right-arrow.disabled {
-	background-image: url("../img/battle/right-arrow-bg.png");
+	background-image: url("http://s20.timetobehero.ru/battle/right-arrow-bg.png");
 	cursor: default;
 }
 .prepact-cd{
@@ -3248,7 +3248,7 @@ img.stuff-icon {
 	top: 15px;
 	left: 0;
 	right: 0;
-	background: url(../img/timeout.png) no-repeat 50% 50%;
+	background: url(http://s20.timetobehero.ru/timeout.png) no-repeat 50% 50%;
 	padding: 9px 10px 10px 11px;
 }
 .prepact-cd .util-sign-container{
@@ -3291,7 +3291,7 @@ img.stuff-icon {
 	width: 100%;
 	padding: 0 0 0 2px;
 	display: none;	
-	background-image: url(../img/battle/roller/reel_decor.png);
+	background-image: url(http://s20.timetobehero.ru/battle/roller/reel_decor.png);
 	background-position: 14px -5px;
 	background-repeat: no-repeat;
 }
@@ -3327,17 +3327,17 @@ img.stuff-icon {
 }
 #battle-roller .turn .hidden-empty-border{
 	position:absolute;
-	background-image:url(../img/battle/frm_empty.png);
+	background-image:url(http://s20.timetobehero.ru/battle/frm_empty.png);
 }
 #battle-roller .turn .upper-empty-border{
 	position:absolute;
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over.png);
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over.png);
 }
 #battle-roller .turn .upper-empty-border:hover {
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over_hover.png);	
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over_hover.png);	
 }
 #battle-roller .turn.disabled .upper-empty-border:hover {
-	background-image: url(../img/battle/frm_over_over.png), url(../img/battle/frm_over.png);	
+	background-image: url(http://s20.timetobehero.ru/battle/frm_over_over.png), url(http://s20.timetobehero.ru/battle/frm_over.png);	
 }
 
 }
@@ -3393,7 +3393,7 @@ img.stuff-icon {
 	width:62px;
 	height:62px;
 	position:absolute;
-	background-image:url(../img/battle/frm_flash.png);
+	background-image:url(http://s20.timetobehero.ru/battle/frm_flash.png);
 	background-position:0 0;
 	top:0;
 	left: 0px;
@@ -3420,7 +3420,7 @@ img.stuff-icon {
 	padding: 8px 8px 0 0;
 }
 #battle-roller .pointer {
-	background: url("../img/battle/roller/cursor.png") no-repeat center center;
+	background: url("http://s20.timetobehero.ru/battle/roller/cursor.png") no-repeat center center;
 	width: 70px;
 	height: 70px;
 	position: relative;
@@ -3499,12 +3499,12 @@ img.stuff-icon {
 }
 
 .info-btn-left-container{
-	background-image: url(../img/battle/info_corner_l.png);
+	background-image: url(http://s20.timetobehero.ru/battle/info_corner_l.png);
 	left:0;
 }
 
 .info-btn-right-container{
-	background-image: url(../img/battle/info_corner_r.png);
+	background-image: url(http://s20.timetobehero.ru/battle/info_corner_r.png);
 	right:0;
 }
 
@@ -3517,7 +3517,7 @@ img.stuff-icon {
 }
 
 .info-btn{
-	background-image: url(../img/battle/btn_info.png);
+	background-image: url(http://s20.timetobehero.ru/battle/btn_info.png);
 	background-position: 0 0;
 	position:relative;
 	width:30px;
@@ -3582,7 +3582,7 @@ img.stuff-icon {
 
 #battle-container .battle-aura-counter{
 	position:absolute;
-	background-image:url(../img/battle/auranumbg.png);
+	background-image:url(http://s20.timetobehero.ru/battle/auranumbg.png);
 	width:15px;
 	height:16px;
 	top:32px;
@@ -3640,7 +3640,7 @@ img.stuff-icon {
 }
 
 #battle-container .battle-avatar-bg{
-	background-image: url(../img/battle/person_bg.jpg);
+	background-image: url(http://s20.timetobehero.ru/battle/person_bg.jpg);
 	width: 216px;
 	height: 430px;
 	position:relative;
@@ -3699,7 +3699,7 @@ img.stuff-icon {
 	height: 96px;
 }
 .battle-rewards-separator{
-	background-image: url(../img/deco/paper/paper_separator_horisontal.png);
+	background-image: url(http://s20.timetobehero.ru/deco/paper/paper_separator_horisontal.png);
 	height:6px;
 }
 .battle-rewards .paper-title{
@@ -3732,7 +3732,7 @@ img.stuff-icon {
 	position: relative;
 }
 .battle-result-frame{
-	background-image: url(../img/battle/result/avatar_frm.png);
+	background-image: url(http://s20.timetobehero.ru/battle/result/avatar_frm.png);
 }
 .battle-result-lose{
 	position:absolute;
@@ -3773,11 +3773,11 @@ ul.battle-table-list li .value.stat_icon {
 }
 
 .battle-group-header.ally{
-	background-image: url(../img/battle/groups/header_ally.png),url(../img/skin-bg.png);
+	background-image: url(http://s20.timetobehero.ru/battle/groups/header_ally.png),url(http://s20.timetobehero.ru/skin-bg.png);
 }
 
 .battle-group-header.enemy{
-	background-image: url(../img/battle/groups/header_opponent.png),url(../img/skin-bg.png);
+	background-image: url(http://s20.timetobehero.ru/battle/groups/header_opponent.png),url(http://s20.timetobehero.ru/skin-bg.png);
 }
 .battle-group-list{
 	top:28px;
@@ -3787,7 +3787,7 @@ ul.battle-table-list li .value.stat_icon {
 
 .battle-group-list > li{
 	color:#fff;
-	background-image: url(../img/battle/groups/bg_pers.jpg);
+	background-image: url(http://s20.timetobehero.ru/battle/groups/bg_pers.jpg);
 }
 .battle-group-dead-mask,
 .battle-group-list > li{
@@ -3796,7 +3796,7 @@ ul.battle-table-list li .value.stat_icon {
 	position:relative;
 }
 .battle-group-dead-mask{
-	background-image: url(../img/battle/groups/bg_death.png);
+	background-image: url(http://s20.timetobehero.ru/battle/groups/bg_death.png);
 	position:absolute;
 	top:0;
 	left:0;
@@ -3813,7 +3813,7 @@ ul.battle-table-list li .value.stat_icon {
 .battle-group-timed > div{
 	height:14px;
 	margin:1px 4px 0 15px;
-	background-image: url(../img/battle/groups/progress.png);
+	background-image: url(http://s20.timetobehero.ru/battle/groups/progress.png);
 	background-repeat: no-repeat;
 }
 .battle-group-timed span{
@@ -3847,7 +3847,7 @@ ul.battle-table-list li .value.stat_icon {
 	width:10px;
 }
 .battle-group-lvl img {
-	background-image: url(../img/numbers/level.png);
+	background-image: url(http://s20.timetobehero.ru/numbers/level.png);
 	background-repeat: no-repeat;
 }
 .battle-group-lvl .number-1 {
@@ -3908,23 +3908,23 @@ ul.battle-table-list li .value.stat_icon {
 	position: absolute;
 }
 
-.battle_numbers.minus.health:before {	background: url(../img/battle/numbers/heart_red.png) top right no-repeat; }
-.battle_numbers.minus.health:after {	background: url(../img/battle/numbers/minus_red.png) top left no-repeat; }
+.battle_numbers.minus.health:before {	background: url(http://s20.timetobehero.ru/battle/numbers/heart_red.png) top right no-repeat; }
+.battle_numbers.minus.health:after {	background: url(http://s20.timetobehero.ru/battle/numbers/minus_red.png) top left no-repeat; }
 
-.battle_numbers.minus.shield:before {	background: url(../img/battle/numbers/shield_red.png) top right no-repeat; }
-.battle_numbers.minus.shield:after {	background: url(../img/battle/numbers/minus_red.png) top left no-repeat; }
+.battle_numbers.minus.shield:before {	background: url(http://s20.timetobehero.ru/battle/numbers/shield_red.png) top right no-repeat; }
+.battle_numbers.minus.shield:after {	background: url(http://s20.timetobehero.ru/battle/numbers/minus_red.png) top left no-repeat; }
 
-.battle_numbers.minus.mana:before { background: url(../img/battle/numbers/mana.png) top right no-repeat; }
-.battle_numbers.minus.mana:after { background: url(../img/battle/numbers/minus_blue.png) top left no-repeat; }
+.battle_numbers.minus.mana:before { background: url(http://s20.timetobehero.ru/battle/numbers/mana.png) top right no-repeat; }
+.battle_numbers.minus.mana:after { background: url(http://s20.timetobehero.ru/battle/numbers/minus_blue.png) top left no-repeat; }
 
-.battle_numbers.plus.health:before { background: url(../img/battle/numbers/heart_green.png) top right no-repeat; }
-.battle_numbers.plus.health:after { background: url(../img/battle/numbers/plus_green.png) top left no-repeat; }
+.battle_numbers.plus.health:before { background: url(http://s20.timetobehero.ru/battle/numbers/heart_green.png) top right no-repeat; }
+.battle_numbers.plus.health:after { background: url(http://s20.timetobehero.ru/battle/numbers/plus_green.png) top left no-repeat; }
 
-.battle_numbers.plus.shield:before { background: url(../img/battle/numbers/shield_green.png) top right no-repeat; }
-.battle_numbers.plus.shield:after { background: url(../img/battle/numbers/plus_green.png) top left no-repeat; }
+.battle_numbers.plus.shield:before { background: url(http://s20.timetobehero.ru/battle/numbers/shield_green.png) top right no-repeat; }
+.battle_numbers.plus.shield:after { background: url(http://s20.timetobehero.ru/battle/numbers/plus_green.png) top left no-repeat; }
 
-.battle_numbers.plus.mana:before { background: url(../img/battle/numbers/mana.png) top right no-repeat; }
-.battle_numbers.plus.mana:after { background: url(../img/battle/numbers/plus_blue.png) top left no-repeat; }
+.battle_numbers.plus.mana:before { background: url(http://s20.timetobehero.ru/battle/numbers/mana.png) top right no-repeat; }
+.battle_numbers.plus.mana:after { background: url(http://s20.timetobehero.ru/battle/numbers/plus_blue.png) top left no-repeat; }
 
 /**
  * Указатель в виде пальца в бою (finger)
@@ -3940,7 +3940,7 @@ ul.battle-table-list li .value.stat_icon {
 	position:absolute;
 }
 .finger-image{
-	background-image: url(../img/battle/halp.png);
+	background-image: url(http://s20.timetobehero.ru/battle/halp.png);
 	width:94px;
 	height:62px;
 	left:38px;
@@ -3948,7 +3948,7 @@ ul.battle-table-list li .value.stat_icon {
 	z-index:11;
 }
 .finger-sprite{
-	background-image: url(../img/battle/circle.png);
+	background-image: url(http://s20.timetobehero.ru/battle/circle.png);
 	/*background-position: 0 62px;*/
 	background-repeat: no-repeat;
 	width:62px;
@@ -3989,7 +3989,7 @@ ul.battle-table-list li .value.stat_icon {
 .chat-contact-list .private-msg-icon{
 	display: none;
 	height: 16px;
-	background-image: url(../img/chat/chat_send_private.png);	
+	background-image: url(http://s20.timetobehero.ru/chat/chat_send_private.png);	
 	margin: 0 2px 0 0px;
 }
 .chat-contact-list .private-msg-icon:hover{
@@ -3997,11 +3997,11 @@ ul.battle-table-list li .value.stat_icon {
 }
 .chat-contact-list .user-info-icon{
 	display: none;
-	background-image: url(../img/interface/icon_male.png);
+	background-image: url(http://s20.timetobehero.ru/interface/icon_male.png);
 	margin: 0 2px 0 0px;
 }
 .chat-contact-list .userlist-item.gender-2 .user-info-icon{
-	background-image: url(../img/interface/icon_female.png);
+	background-image: url(http://s20.timetobehero.ru/interface/icon_female.png);
 }
 .chat-contact-list .userlist-item:hover .action-icon {
 	display: inline-block;
@@ -4026,29 +4026,29 @@ ul.battle-table-list li .value.stat_icon {
 }
 
 #chat-container {
-	/* background: url(../img/chat-borders.png) repeat-y 0 0; */
+	/* background: url(http://s20.timetobehero.ru/chat-borders.png) repeat-y 0 0; */
 	overflow: visible;
 }
 
 html.compact #chat-container {
-	/* background-image: url(../img/chat-borders-social.png); */
+	/* background-image: url(http://s20.timetobehero.ru/chat-borders-social.png); */
 }
 
 #chat-container-body {
-	background: url(../img/chat/chat_frm_top_left.png) no-repeat 0 0px,
-		url(../img/chat/chat_frm_top_right.png) no-repeat 100% 0px;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_top_left.png) no-repeat 0 0px,
+		url(http://s20.timetobehero.ru/chat/chat_frm_top_right.png) no-repeat 100% 0px;
 	overflow: visible;
 }
 
 #chat-off-panel {
-	background: url(../img/chat/chat_frm_top_left.png) no-repeat 0 0px,
-		url(../img/chat/chat_frm_top_right.png) no-repeat 100% 0px,
-		url(../img/chat/chat_frm_bottom_left.png) no-repeat 0 100%,
-		url(../img/chat/chat_frm_bottom_right.png) no-repeat 100% 100%;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_top_left.png) no-repeat 0 0px,
+		url(http://s20.timetobehero.ru/chat/chat_frm_top_right.png) no-repeat 100% 0px,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bottom_left.png) no-repeat 0 100%,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bottom_right.png) no-repeat 100% 100%;
 }
 #chat-off-panel-body {
-	background: url(../img/chat/chat_frm_top_center.png) repeat-x 0 0px,
-		url(../img/chat/chat_frm_bottom_center.png) repeat-x 0 100%;		
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_top_center.png) repeat-x 0 0px,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bottom_center.png) repeat-x 0 100%;		
 }
 #chat-off-panel .text-btn-image > div {
 	margin-left: 112px;
@@ -4069,15 +4069,15 @@ html.compact #chat-container {
 #chat-container .x-tab-bar-body {
 	margin-left: 3px;
 	padding-left: 7px;
-	background:	url(../img/chat/chat_tab_separator.png) no-repeat 0 0;
+	background:	url(http://s20.timetobehero.ru/chat/chat_tab_separator.png) no-repeat 0 0;
 }
 #chat-container .x-tab {
-	background: url(../img/chat/chat_tab_separator.png) no-repeat 100% 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_tab_separator.png) no-repeat 100% 0;
 	padding: 0 5px 0 0 !important;
 }
 
 #chat-container .x-tab-active .x-tab-wrap {
-	background: url(../img/chat/chat_tab_active.png) repeat-x;
+	background: url(http://s20.timetobehero.ru/chat/chat_tab_active.png) repeat-x;
 }
 
 #chat-container .x-tab .x-tab-button {
@@ -4090,7 +4090,7 @@ html.compact #chat-container {
 
 #chat-container .x-tab-new-private .x-tab-button,
 #chat-container .x-tab-new-room .x-tab-button {
-	background: url(../img/icons/new.png) no-repeat 6px 50%;
+	background: url(http://s20.timetobehero.ru/icons/new.png) no-repeat 6px 50%;
 }
 
 #chat-container .x-tab {
@@ -4121,7 +4121,7 @@ html.compact #chat-container {
 	width: 10px;
 	height: 10px;
 	left: 0px;
-	background-image: url(../img/chat/chat_post_menu.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_post_menu.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
@@ -4193,7 +4193,7 @@ html.compact #chat-container {
 
 #chat-top-deco,
 #chat-bottom-deco {
-	background: url(../img/chat/chat_frm_top_center.png) repeat-x 0px 0px;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_top_center.png) repeat-x 0px 0px;
 	height: 26px;
 	width: 800px;
 	top: 0;
@@ -4202,31 +4202,31 @@ html.compact #chat-container {
 	position: absolute;
 }
 #chat-bottom-deco {	
-	background: url(../img/chat/chat_frm_bottom_center.png) repeat-x 0px 0px;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_bottom_center.png) repeat-x 0px 0px;
 	height: 30px;
 	z-index: -1;
 }
 #chat-separator-left {
-	background: url(../img/chat/chat_frm_left_top.png) no-repeat 0 0,
-		url(../img/chat/chat_frm_left_bottom.png) no-repeat 0 100%,
-		url(../img/chat/chat_frm_left_center.png) repeat-y 0 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_left_top.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_frm_left_bottom.png) no-repeat 0 100%,
+		url(http://s20.timetobehero.ru/chat/chat_frm_left_center.png) repeat-y 0 0;
 }
 #chat-separator-right {
-	background: url(../img/chat/chat_frm_right_top.png) no-repeat 0 0,
-		url(../img/chat/chat_frm_right_bottom.png) no-repeat 0 100%,
-		url(../img/chat/chat_frm_right_center.png) repeat-y 0 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_right_top.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_frm_right_bottom.png) no-repeat 0 100%,
+		url(http://s20.timetobehero.ru/chat/chat_frm_right_center.png) repeat-y 0 0;
 }
 #chat-separator-center {
-	background: url(../img/chat/chat_frm_separator_top.png) no-repeat 0 0,
-		url(../img/chat/chat_frm_separator_bottom.png) no-repeat 0 100%,
-		url(../img/chat/chat_frm_separator_center.png) repeat-y 0 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_separator_top.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_frm_separator_bottom.png) no-repeat 0 100%,
+		url(http://s20.timetobehero.ru/chat/chat_frm_separator_center.png) repeat-y 0 0;
 }
 
 #chat-tab-panel-body,
 #contact-tab-panel-body {
-	background: url(../img/chat/chat_frm_bg_top.png) repeat-x 0 0,
-		url(../img/chat/chat_frm_bg_bottom.png) repeat-x 0 100%,
-		url(../img/chat/chat_frm_bg_center.png) repeat 0 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_bg_top.png) repeat-x 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bg_bottom.png) repeat-x 0 100%,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bg_center.png) repeat 0 0;
 }
 
 #contact-tab-panel .x-tab-bar {
@@ -4238,12 +4238,12 @@ html.compact #chat-container {
  * Панель управления чата
  */
 #chat-toolbar {
-	background: url(../img/chat/chat_frm_bottom_left.png) no-repeat 0 0,
-		url(../img/chat/chat_frm_bottom_right.png) no-repeat 100% 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_frm_bottom_left.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_frm_bottom_right.png) no-repeat 100% 0;
 }
 
 #chat-toolbar .x-field .x-form-text {
-	background: url(../img/chat/chat_input_center.png) repeat-x;
+	background: url(http://s20.timetobehero.ru/chat/chat_input_center.png) repeat-x;
 	border: 0;
 	padding: 0;
 	line-height: 12px;
@@ -4251,7 +4251,7 @@ html.compact #chat-container {
 }
 #chat-text-field .x-field .x-form-item-body,
 #chat-contacts-filter .x-field .x-form-item-body {
-	background: url(../img/chat/chat_input_left.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/chat/chat_input_left.png) no-repeat 0 0;
 	padding: 0 0 0 12px;
 }
 #chat-toolbar .x-field input::-webkit-input-placeholder { color: #867E6B; font-style: italic; }
@@ -4266,14 +4266,14 @@ html.compact #chat-container {
 }
 
 #chat-text-field .nick {
-	background: url(../img/chat/chat_input_to_message_left.png) no-repeat 0 0,
-		url(../img/chat/chat_input_to_message_right.png) no-repeat 100% 0;	
+	background: url(http://s20.timetobehero.ru/chat/chat_input_to_message_left.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_input_to_message_right.png) no-repeat 100% 0;	
 	margin: 2px;
 	padding: 0 2px;
 	display: inline-block;
 }
 #chat-text-field .nick .inner {
-	background: url(../img/chat/chat_input_to_message_center.png) repeat-x 0 0;	
+	background: url(http://s20.timetobehero.ru/chat/chat_input_to_message_center.png) repeat-x 0 0;	
 }
 #chat-text-field .nick .text {
 	font-weight: bold;
@@ -4286,7 +4286,7 @@ html.compact #chat-container {
 #chat-text-field .nick .menu-icon,
 #chat-text-field .nick .close-icon {
 	display: inline-block;
-	background-image: url(../img/chat/chat_person_menu.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_person_menu.png);
 	margin: 0 3px;
 	width: 10px;
 	height: 10px;	
@@ -4297,14 +4297,14 @@ html.compact #chat-container {
 	background-position: 0 -10px;
 }
 #chat-text-field .nick .close-icon {
-	background-image: url(../img/chat/chat_person_post_cancel.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_person_post_cancel.png);
 }
 #chat-text-field .nick.private {
-	background: url(../img/chat/chat_input_private_message_left.png) no-repeat 0 0,
-		url(../img/chat/chat_input_private_message_right.png) no-repeat 100% 0;		
+	background: url(http://s20.timetobehero.ru/chat/chat_input_private_message_left.png) no-repeat 0 0,
+		url(http://s20.timetobehero.ru/chat/chat_input_private_message_right.png) no-repeat 100% 0;		
 }
 #chat-text-field .nick.private .inner {
-	background: url(../img/chat/chat_input_private_message_center.png) repeat-x 0 0;	
+	background: url(http://s20.timetobehero.ru/chat/chat_input_private_message_center.png) repeat-x 0 0;	
 }
 
 #chat-text-field .nick .close {
@@ -4325,16 +4325,16 @@ html.compact #chat-container {
 	background-position: 0 -66px;
 }
 #chat-send-button{	
-	background-image: url(../img/chat/chat_btn_send.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_send.png);
 }
 #chat-clear-button {
-	background-image: url(../img/chat/chat_btn_clean.png);	
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_clean.png);	
 }
 #chat-togglesmiles-button {
-	background-image: url(../img/chat/chat_btn_smiles.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_smiles.png);
 }
 #chat-search-button {
-	background-image: url(../img/chat/chat_btn_search.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_search.png);
 }
 .chat-header-btn {
 	background-repeat: no-repeat;
@@ -4349,16 +4349,16 @@ html.compact #chat-container {
 	background-position: 0 -72px;
 }
 #chat-off-btn {
-	background-image: url(../img/chat/chat_btn_close.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_close.png);
 }
 #chat-expand-btn {
-	background-image: url(../img/chat/chat_btn_high.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_high.png);
 }
 #chat-question-btn {
-	background-image: url(../img/chat/chat_btn_question.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_question.png);
 }
 #chat-question-big-btn {
-	background-image: url(../img/chat/chat_btn_question_big.png);	
+	background-image: url(http://s20.timetobehero.ru/chat/chat_btn_question_big.png);	
 	background-repeat: no-repeat;
 }
 #chat-question-big-btn:hover {
@@ -4432,7 +4432,7 @@ html.compact #chat-container {
 	left: 50%;
 	margin-left: -80px;
 	margin-top: -69px;
-	background-image: url(../img/chests/slot_glow.png);
+	background-image: url(http://s20.timetobehero.ru/chests/slot_glow.png);
 }
 .chest-you-got{
 	margin-top: -56px;
@@ -4460,12 +4460,12 @@ html.compact #chat-container {
 	top: 0;
 	height: 169px;
 	opacity: 0;
-	background-image: url(../img/chests/chest_progress_bar_glow.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_glow.png);
 }
 .chest-progress-line{
 	height: 0;
 	top: 169px;
-	background-image: url(../img/chests/chest_progress_bar_full.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_full.png);
 	background-position: 0 100%;
 }
 .chest-progress{
@@ -4475,7 +4475,7 @@ html.compact #chat-container {
 	margin-top: -90px;
 	z-index: 1;
 	height: 180px;
-	background-image: url(../img/chests/chest_progress_bar_empty.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_empty.png);
 }
 .chest-progress-nums-h,
 .chest-progress-nums{
@@ -4499,7 +4499,7 @@ html.compact #chat-container {
 	position: relative;
 }
 #chests-header-button {
-	background-image: url(../img/chests/chest_index.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_index.png);
 	background-position: -8px -69px;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -4520,7 +4520,7 @@ html.compact #chat-container {
 #chests-header-button .glow-bg {
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/chests/chest_index.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_index.png);
 	background-position: -8px 0;
 	background-repeat: no-repeat;
 }
@@ -4530,7 +4530,7 @@ html.compact #chat-container {
 #chests-header-button .counter {
 	position: absolute;
 	color: #fff;
-	background-image: url(../img/ind.png);
+	background-image: url(http://s20.timetobehero.ru/ind.png);
 	width: 28px;
 	height: 28px;
 	line-height: 24px;
@@ -4540,7 +4540,7 @@ html.compact #chat-container {
 }
 #chests-header-button .timer {
 	position: absolute;
-	background: url(../img/bid/timer.png);
+	background: url(http://s20.timetobehero.ru/bid/timer.png);
 	width: 66px;
 	height: 20px;
 	line-height: 18px;
@@ -4576,19 +4576,19 @@ html.compact #chat-container {
 	left: 0;
 	width: 169px;
 	opacity: 0;
-	background-image: url(../img/chests/chest_progress_bar_glow_h.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_glow_h.png);
 }
 .chest-progress-line-h{
 	width: 0;
 	left: 0;
-	background-image: url(../img/chests/chest_progress_bar_full_h.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_full_h.png);
 }
 .chest-progress-h{
 	top: 26px;
 	left: 50%;
 	margin-left: -90px;
 	width: 180px;
-	background-image: url(../img/chests/chest_progress_bar_empty_h.png);
+	background-image: url(http://s20.timetobehero.ru/chests/chest_progress_bar_empty_h.png);
 }
 .chest-info-text{
 	margin: 0;
@@ -4601,7 +4601,7 @@ html.compact #chat-container {
 	width: 112px;
 }
 .chests-close-btn{
-	background-image: url(../img/mask/close_hi.jpg);
+	background-image: url(http://s20.timetobehero.ru/mask/close_hi.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 -20px;
 	height: 20px;
@@ -4662,7 +4662,7 @@ html.compact #chat-container {
 	width: 164px;
 }
 .bot-dialog .frame {
-	background-image: url(../img/avatar-frame_new.png);
+	background-image: url(http://s20.timetobehero.ru/avatar-frame_new.png);
 }
 .bot-dialog .image{
 	height: 316px;
@@ -4721,7 +4721,7 @@ html.compact #chat-container {
 .dialog_rewards .image-wrap .frame {
 	width: 736px;
 	height: 236px;
-	background: url(../img/frm_img_730_230.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/frm_img_730_230.png) no-repeat 0 0;
 	float: left;
 }
 .dialog_rewards .image-wrap .image {
@@ -4739,7 +4739,7 @@ html.compact #chat-container {
 .dialog_daily_bonus .image-wrap .frame {
 	width: 736px;
 	height: 236px;
-	background: url(../img/frm_img_730_230.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/frm_img_730_230.png) no-repeat 0 0;
 	float: left;
 }
 .dialog_daily_bonus .image-wrap .image {
@@ -4761,7 +4761,7 @@ html.compact #chat-container {
 .dialog_daily_bonus .daily-rewards .exg-stuff-item .label {
 	width: 64px;
 	height: 42px;
-	background-image: url(../img/dialog_daily_bonus/object_header.png);
+	background-image: url(http://s20.timetobehero.ru/dialog_daily_bonus/object_header.png);
 	margin-bottom: -14px;
 	position: relative;
 	z-index: 1;
@@ -4771,7 +4771,7 @@ html.compact #chat-container {
 	padding-top: 3px;
 }
 .dialog_daily_bonus .daily-rewards .selected-frame {
-	background: url(../img/dialog_daily_bonus/pointer.png);
+	background: url(http://s20.timetobehero.ru/dialog_daily_bonus/pointer.png);
 	width: 76px;
 	height: 108px;
 	position: absolute;
@@ -4813,7 +4813,7 @@ html.compact #chat-container {
 }
 .fucinatab .qh-pointer {
 	left: 40px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 /**
@@ -4827,18 +4827,18 @@ html.compact #chat-container {
 	visibility: visible !important;
 	left: -50px;
 	top: 10px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 /**
  * Чекбоксы фильтров кузницы
  */
 .fucinatabs .x-field-exgods .x-form-checkbox + .x-form-cb-label-after {
-	background-image: url(../img/fucina/checkbox_grey.png);
+	background-image: url(http://s20.timetobehero.ru/fucina/checkbox_grey.png);
 	color: rgb(184, 184, 184);
 }
 .fucinatabs .x-form-cb-checked.x-field-exgods .x-form-checkbox + .x-form-cb-label-after {
-	background-image: url(../img/fucina/checkbox_grey_checked.png);
+	background-image: url(http://s20.timetobehero.ru/fucina/checkbox_grey_checked.png);
 }
 
 /**
@@ -4847,10 +4847,10 @@ html.compact #chat-container {
 .fucina-arrow {
     width: 36px;
     height: 36px;
-    background: url(../img/fucina/arrow.png);    
+    background: url(http://s20.timetobehero.ru/fucina/arrow.png);    
 }
 .fucina-arrow-action {
-    background: url(../img/fucina/arrow_up.png);
+    background: url(http://s20.timetobehero.ru/fucina/arrow_up.png);
     margin: 4px auto 5px;
 }
 
@@ -4858,15 +4858,15 @@ html.compact #chat-container {
  * Наковальня
  */
 .fucina-anvil .anvil-title {
-	background: url(../img/fucina/fucina_frm_top_small.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/fucina/fucina_frm_top_small.png) no-repeat 0 0;
 	width: 182px;
 	height: 46px;
 }
 .fucina-anvil-slot {
 	width: 86px;
 	height: 86px;
-	background: url(../img/slots/slot_regular.png) 50% 50% no-repeat,
-				url(../img/fucina/icon_bg_slot.png) 50% 50% no-repeat;
+	background: url(http://s20.timetobehero.ru/slots/slot_regular.png) 50% 50% no-repeat,
+				url(http://s20.timetobehero.ru/fucina/icon_bg_slot.png) 50% 50% no-repeat;
 	display: inline-block;
 	padding: 11px 0 0 0;
 	overflow: hidden;
@@ -4891,7 +4891,7 @@ html.compact #chat-container {
 .fucina-anvil .anvil-btn .x-btn .qh-pointer {
 	top: 5px;
 	left: -42px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .fucina-anvil .resources-list {
 	text-align: center;
@@ -4915,7 +4915,7 @@ html.compact #chat-container {
 	display: none !important;
 }
 .fucina-fragmentation .fucina-arrow-action {
-	background: url(../img/fucina/arrow_down.png);
+	background: url(http://s20.timetobehero.ru/fucina/arrow_down.png);
 }
 
 /**
@@ -5001,7 +5001,7 @@ html.compact #chat-container {
 .fucina-result-finish-btn .qh-pointer {
 	top: -9px;
 	left: -60px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 
@@ -5029,7 +5029,7 @@ html.compact #chat-container {
 #guild_create .x-field-exgods .x-form-radio + .x-form-cb-label-after,
 #guild_group_search .x-field-exgods .x-form-radio + .x-form-cb-label-after,
 #guild_search .x-field-exgods .x-form-radio + .x-form-cb-label-after {
-	background-image: url(../img/radiobutton.png);
+	background-image: url(http://s20.timetobehero.ru/radiobutton.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	padding:1px 0 2px 21px;
@@ -5047,7 +5047,7 @@ html.compact #chat-container {
 #guild_create .x-form-cb-checked.x-field-exgods .x-form-radio + .x-form-cb-label-after,
 #guild_group_search .x-form-cb-checked.x-field-exgods .x-form-radio + .x-form-cb-label-after,
 #guild_search .x-form-cb-checked.x-field-exgods .x-form-radio + .x-form-cb-label-after {
-	background-image: url(../img/radiobutton_selected_blue.png);
+	background-image: url(http://s20.timetobehero.ru/radiobutton_selected_blue.png);
 }
 .x-field-guild input{
 	height:18px;
@@ -5059,7 +5059,7 @@ html.compact #chat-container {
 .closed-guild{
 	width:16px;
 	height:16px;
-	background: url(../img/ico_guild_closed.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/ico_guild_closed.png) no-repeat 0 0;
 	display: block;
 	float: right;
 	margin: -1px 5px;
@@ -5130,10 +5130,10 @@ html.compact #chat-container {
 	margin-top: -6px;
 }
 .guild-item-expand{
-	background-image: url(../img/guild/btn_list_open.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_list_open.png);
 }
 .guild-item-collapse{
-	background-image: url(../img/guild/btn_list_close.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_list_close.png);
 }
 .guild-info-change-description-btn,
 .guild-member-kick-btn,
@@ -5255,13 +5255,13 @@ html.compact #chat-container {
 	height:28px;
 	background-position: 50%;
 	background-repeat: no-repeat;
-	background-image: url(../img/guild/offline.png);
+	background-image: url(http://s20.timetobehero.ru/guild/offline.png);
 }
 .guild-member-online.online{
-	background-image: url(../img/guild/online.png);
+	background-image: url(http://s20.timetobehero.ru/guild/online.png);
 }
 .guild-member-online.bid{
-	background-image: url(../img/guild/request.png);
+	background-image: url(http://s20.timetobehero.ru/guild/request.png);
 }
 .guild-request-title{
 	width: 200px;
@@ -5274,19 +5274,19 @@ html.compact #chat-container {
 }
 .guild-member-kick-btn,
 .guild-group-kick-btn {
-	background-image: url(../img/guild/btn_exclude.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_exclude.png);
 }
 .guild-member-send-social-message-btn {
-	background-image: url(../img/guild/btn_send_msg.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_send_msg.png);
 }
 .guild-member-bid-accept-btn{
-	background-image: url(../img/guild/btn_accept.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_accept.png);
 }
 .guild-member-bid-decline-btn{
-	background-image: url(../img/guild/btn_exclude.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_exclude.png);
 }
 .guild-info-change-description-btn{
-	background-image: url(../img/guild/btn_edit.png);
+	background-image: url(http://s20.timetobehero.ru/guild/btn_edit.png);
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -5412,7 +5412,7 @@ html.compact #chat-container {
 .guild-groups-creator .mask-grade-line{
 	width:75px;
 	height:18px;
-	background-image: url(../img/guild/paper_skull_bg.png)
+	background-image: url(http://s20.timetobehero.ru/guild/paper_skull_bg.png)
 }
 .guild-groups-creator .mask-grade-line div{
 	display:block;
@@ -5509,7 +5509,7 @@ html.compact #chat-container {
 }
 .inventory-slot .item .qh-pointer,
 .active-slot .qh-pointer {
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: 10px;
 	left: -45px;
 }
@@ -5522,7 +5522,7 @@ html.compact #chat-container {
  * Окно Параметры
  */
 .inventory-params {
-	background: url(../img/inventory/btn_axes.png) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/inventory/btn_axes.png) top left no-repeat;
 	color: #dadbb3;
 	font-size: 11px;
 	font-weight: bold;
@@ -5573,7 +5573,7 @@ html.compact #chat-container {
 	position: absolute;
 	top: -2px;
 	right: 0;
-	background-image: url(../img/ind.png);
+	background-image: url(http://s20.timetobehero.ru/ind.png);
 	width: 28px;
 	height: 28px;
 	text-align: center;
@@ -5657,7 +5657,7 @@ html.compact #chat-container {
 .stage-container .multiple .stage-image-3,
 .stage-container .multiple .stage-image-4,
 .stage-container .multiple .stage-image-5{
-	background-image: url(../img/lair/stages.png);
+	background-image: url(http://s20.timetobehero.ru/lair/stages.png);
 	background-repeat: no-repeat;
 	cursor: pointer;
 	height:146px;
@@ -5667,7 +5667,7 @@ html.compact #chat-container {
 }
 .stage-container .high-level .stage-bg-0,
 .stage-container .high-level .stage-bg-1{
-	background-image: url(../img/lair/high_lvl_stages.png);
+	background-image: url(http://s20.timetobehero.ru/lair/high_lvl_stages.png);
 }
 .stage-container .stage-bg-0{
 	background-position: 0 0;
@@ -5794,7 +5794,7 @@ html.compact #chat-container {
 	cursor: default;
 }
 .stage-container .multiple .finished{
-	background-image: url(../img/lair/mask_check.png);
+	background-image: url(http://s20.timetobehero.ru/lair/mask_check.png);
 	height:18px;
 	width:18px;
 	position:absolute;
@@ -5812,7 +5812,7 @@ html.compact #chat-container {
 .stage-container .qh-pointer {
 	top: 50px;
 	left: -40px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	position: absolute;
 	z-index: 11;
 }
@@ -5859,7 +5859,7 @@ html.compact #chat-container {
 	background-repeat: no-repeat;
 }
 .lair-title-bg{
-	background-image: url(../img/lair/titlebg.png);
+	background-image: url(http://s20.timetobehero.ru/lair/titlebg.png);
 	margin: 10px 0 0 10px;
 }
 .lair-modes-text{
@@ -5887,7 +5887,7 @@ html.compact #chat-container {
 }
 
 .lair-mode-icon .qh-pointer {
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	left: -60px;
 }
 .enter-lair-btn-cnt{
@@ -5941,10 +5941,10 @@ html.compact #chat-container {
 	cursor:pointer;
 }
 .lair-enter-btn{
-	background-image: url(../img/lair/btn_start.png);
+	background-image: url(http://s20.timetobehero.ru/lair/btn_start.png);
 }
 .lair-reset-btn{
-	background-image: url(../img/lair/btn_gold.png);
+	background-image: url(http://s20.timetobehero.ru/lair/btn_gold.png);
 }
 .lair-enter-btn:hover,
 .lair-reset-btn:hover{
@@ -6002,7 +6002,7 @@ html.compact #chat-container {
 }
 
 .location-header{
-	background-image:url(../img/locations/header_on_location.png);
+	background-image:url(http://s20.timetobehero.ru/locations/header_on_location.png);
 	background-repeat: no-repeat;
 	width: 80px;
 	height: 40px;
@@ -6026,7 +6026,7 @@ html.compact #chat-container {
 	cursor: pointer;
 }
 .location-object-title {
-	background: url(../img/locations/text_1.png) top left no-repeat, url(../img/locations/text_3.png) top right no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/text_1.png) top left no-repeat, url(http://s20.timetobehero.ru/locations/text_3.png) top right no-repeat;
 	padding: 0px 30px;
 	position: absolute;
 	z-index: 1;	
@@ -6035,20 +6035,20 @@ html.compact #chat-container {
 	font-weight: bold;
 	text-align: center;
 	height: 56px;
-	background: url(../img/locations/text_2.png) top center repeat-x;
+	background: url(http://s20.timetobehero.ru/locations/text_2.png) top center repeat-x;
 	color: #5d300f;
 	display: table-cell;
 	vertical-align: middle;
 	min-width: 105px;
 }
 .location-object:hover .location-object-title {
-	background: url(../img/locations/text_1_hover.png) top left no-repeat, url(../img/locations/text_3_hover.png) top right no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/text_1_hover.png) top left no-repeat, url(http://s20.timetobehero.ru/locations/text_3_hover.png) top right no-repeat;
 }
 .location-object:hover .location-object-title-inner {
-	background: url(../img/locations/text_2_hover.png) top center repeat-x;
+	background: url(http://s20.timetobehero.ru/locations/text_2_hover.png) top center repeat-x;
 }
 .location-object .qh-pointer {
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 .location-object-image .location-object-inner {
@@ -6084,7 +6084,7 @@ html.compact #chat-container {
 }
 .location-close-button:hover .button {
 	display: block;
-	background-image: url(../img/mask/close_hi.jpg);
+	background-image: url(http://s20.timetobehero.ru/mask/close_hi.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -6150,7 +6150,7 @@ html.compact #chat-container {
 }
 
 .location-bot-list .bot-list .bot:hover {
-	/*background: url(../img/parchment-separator-over.png);*/
+	/*background: url(http://s20.timetobehero.ru/parchment-separator-over.png);*/
 	cursor: pointer;
 }
 
@@ -6170,7 +6170,7 @@ html.compact #chat-container {
 }
 
 .location-bot-list .bot-list .separator {
-	background: url(../img/parchment-separator.png) repeat-x;
+	background: url(http://s20.timetobehero.ru/parchment-separator.png) repeat-x;
 	height: 2px;
 	margin: 0 6px;
 }
@@ -6261,11 +6261,11 @@ html.compact #chat-container {
 .location-bot-list .bot .qh-pointer {
 	left: -54px;
 	top: 14px;
-	background-image: url(../img/interface/quest_helper/talk.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/talk.png);
 }
 
 .location-bot-list .bot.bot-hostile .qh-pointer {
-	background-image: url(../img/interface/quest_helper/attack.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/attack.png);
 }/**
  * Loot Manager, распределение лута
  */
@@ -6345,7 +6345,7 @@ html.compact #chat-container {
 	left: 0;
 	height: 282px;
 	width: 258px;
-	background: url(../img/mask/panel.png) top left repeat;
+	background: url(http://s20.timetobehero.ru/mask/panel.png) top left repeat;
 }
 
 .mask-items li {
@@ -6362,11 +6362,11 @@ html.compact #chat-container {
 	left: 3px;
 	height: 82px;
 	width: 82px;
-	background: url(../img/locations/monster_frame_neutral.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/monster_frame_neutral.png) top center no-repeat;
 }
 
 .mask-items .has .mask_frm {
-	background: url(../img/locations/monster_frame_green.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/monster_frame_green.png) top center no-repeat;
 }
 
 .mask-items .image.on {
@@ -6405,7 +6405,7 @@ html.compact #chat-container {
 }
 
 .mask-items .lock {
-	background: url(../img/mask/mask_lock.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/mask_lock.png) 0 0 no-repeat;
 	width: 12px;
 	height: 20px;
 	position: absolute;
@@ -6415,7 +6415,7 @@ html.compact #chat-container {
 }
 
 .mask-items .mask_title {
-	background: url(../img/mask/board_dis.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/board_dis.png) 0 0 no-repeat;
 	width: 98px;
 	height: 46px;
 	margin: 0 auto;
@@ -6424,7 +6424,7 @@ html.compact #chat-container {
 }
 
 .mask-items .mask_title.has {
-	background: url(../img/mask/board.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/board.png) 0 0 no-repeat;
 	color: #ffe2a0;
 }
 
@@ -6449,12 +6449,12 @@ html.compact #chat-container {
 
 .mask-items .mask_check {
 	z-index: 5;
-	background-image: url(../img/mask/mask_uncheck.png);
+	background-image: url(http://s20.timetobehero.ru/mask/mask_uncheck.png);
 	display: none;
 }
 
 .mask-items .mask_uncheck {
-	background-image: url(../img/mask/mask_check.png);
+	background-image: url(http://s20.timetobehero.ru/mask/mask_check.png);
 }
 
 .mask-items .item.mask_on .mask_frm,
@@ -6488,17 +6488,17 @@ html.compact #chat-container {
 	background: none;
 }
 .masks .x-tool-over .x-tool-close {
-	background: url(../img/mask/close_hi.jpg) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/close_hi.jpg) 0 0 no-repeat;
 }
 .mask-items .exg-tape-top {
 	height: 122px;
 	left: 103px;
-	background: url(../img/mask/mask_cover_top.png) 0 -20px repeat-x;
+	background: url(http://s20.timetobehero.ru/mask/mask_cover_top.png) 0 -20px repeat-x;
 }
 .mask-items .exg-tape-bottom {
 	height: 122px;
 	left: 92px;
-	background: url(../img/mask/mask_cover_bottom.png) 0 5px no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/mask_cover_bottom.png) 0 5px no-repeat;
 }
 .mask_selected_frame {
 	position: absolute;
@@ -6507,7 +6507,7 @@ html.compact #chat-container {
 	z-index: 1;
 	height: 90px;
 	width: 90px;
-	background: url(../img/mask/mask_select.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/mask_select.png) 0 0 no-repeat;
 }
 .mask-items {
 	width: 112px;
@@ -6525,16 +6525,16 @@ html.compact #chat-container {
 	margin-top: 26px; 
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-image: url(../img/mask/arrow.png);
+	background-image: url(http://s20.timetobehero.ru/mask/arrow.png);
 	height: 35px;
 	width: 23px;
 }
 .mask-arrow.disabled{
-	background-image: url(../img/mask/arrow_dis.png);
+	background-image: url(http://s20.timetobehero.ru/mask/arrow_dis.png);
 }
 
 .mask_window-header {
-	background: url(../img/mask/header_class.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/header_class.png) 0 0 no-repeat;
 	font-size: 13px;
 	padding: 13px 15px 8px 15px;
 	width: 145px;
@@ -6556,14 +6556,14 @@ html.compact #chat-container {
 }
 
 .mask_window_container li {
-	background: url(../img/mask/panel.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/panel.png) 0 0 no-repeat;
 	margin: -4px 0px 0 0px;
 	height: 93px;
 }
 
 .mask_window_container .empty_mask_image {
-	background: url(../img/locations/monster_absent.jpg),
-	url(../img/locations/monster_frame_neutral.png);
+	background: url(http://s20.timetobehero.ru/locations/monster_absent.jpg),
+	url(http://s20.timetobehero.ru/locations/monster_frame_neutral.png);
 	padding: 3px 0 6px 0;
 	width: 82px;
 	height: 82px;
@@ -6660,7 +6660,7 @@ html.compact #chat-container {
 	margin: 1px 15px;
 }
 #user-mask-stats-stars {
-	background: url(../img/mask/panel_stars.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/panel_stars.png) 0 0 no-repeat;
 }
 #user-mask-stats-stars .background, #user-mask-stats-stars .icon {
 	background: none !important;
@@ -6694,7 +6694,7 @@ html.compact #chat-container {
 .masks .x-btn .qh-pointer {
 	top: -7px;
 	left: -45px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .masks .get_all_masks_btn .qh-pointer {
 	left: 90px;
@@ -6702,7 +6702,7 @@ html.compact #chat-container {
 .mask-items .qh-pointer{
 	top: 20px;
 	left: -45px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .mask-items .qh-pointer.flip-h {
 	left: 50px;
@@ -6713,7 +6713,7 @@ html.compact #chat-container {
 .user-mask-stats .qh-object .qh-pointer {
 	left: 120px;
 	top: -4px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .user-mask-stats-body, .user-mask-stats-innerCt {
 	overflow: visible !important;
@@ -6756,7 +6756,7 @@ html.compact #chat-container {
 	position: absolute;
 	height: 404px;
 	width: 234px;
-	background-image: url(../img/mask/trophy_mask_frm.png)
+	background-image: url(http://s20.timetobehero.ru/mask/trophy_mask_frm.png)
 }
 .upgrade-avatar .avatar{
 	position:absolute;
@@ -6816,10 +6816,10 @@ html.compact #chat-container {
 	left: 71px;
 }
 .upgrade-progress .progress-bg{
-	background-image: url(../img/mask/trophy_improvemask_bg.png);
+	background-image: url(http://s20.timetobehero.ru/mask/trophy_improvemask_bg.png);
 }
 .upgrade-progress .upper-progress-bg{
-	background-image: url(../img/mask/trophy_improvemask_top.png);
+	background-image: url(http://s20.timetobehero.ru/mask/trophy_improvemask_top.png);
 	top:0;
 }
 .upgrade-progress .ingredients{
@@ -6841,13 +6841,13 @@ html.compact #chat-container {
  * Индикатор апгрейда маски 
  */
  .mask-grade-line {
- 	background-image: url(../img/battle/peril-trafaret.png);
+ 	background-image: url(http://s20.timetobehero.ru/battle/peril-trafaret.png);
  	background-repeat: no-repeat;
  	background-position: 1px 0;
  }
  .mask-grade-line div {
  	background-repeat: repeat-x;
- 	background-image: url(../img/battle/peril-ico.png);
+ 	background-image: url(http://s20.timetobehero.ru/battle/peril-ico.png);
  	width: 14px;
  	height: 16px;
  	margin-left: 3px;
@@ -6866,7 +6866,7 @@ html.compact #chat-container {
 	overflow: visible;
 }
 #mainmenu .main-menu-title{
-	/*background-image: url(../img/quick-slots/top.png);*/
+	/*background-image: url(http://s20.timetobehero.ru/quick-slots/top.png);*/
 	height: 38px;
 	padding-top: 24px;
 	background-position: 50% 0;
@@ -6910,12 +6910,12 @@ html.compact #chat-container {
 #mainmenu .qh-pointer {
 	 top: 5px;
 	 left: -75px;
-	 background-image: url(../img/interface/quest_helper/item.png);
+	 background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
  }
 
 #mainmenu .mainmenu-timer {
 	position: absolute;
-	background: url(../img/bid/timer.png);
+	background: url(http://s20.timetobehero.ru/bid/timer.png);
 	width: 66px;
 	height: 20px;
 	line-height: 18px;
@@ -6935,8 +6935,8 @@ html.compact #chat-container {
 }
 
 #tools-menu {
-	/*background: url(../img/top-menu/top_menu_panel_left.png) 0 0 no-repeat,
-				url(../img/top-menu/top_menu_panel_right.png) 100% 0 no-repeat;	*/
+	/*background: url(http://s20.timetobehero.ru/top-menu/top_menu_panel_left.png) 0 0 no-repeat,
+				url(http://s20.timetobehero.ru/top-menu/top_menu_panel_right.png) 100% 0 no-repeat;	*/
 }
 #tools-menu, #tools-menu-innerCt {
 	overflow: visible;
@@ -6945,7 +6945,7 @@ html.compact #chat-container {
 #tools-menu .fullscreen-button .qh-pointer{
 	left:-62px;
 	top:-8px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 /**
@@ -6956,7 +6956,7 @@ html.compact #chat-container {
 	height: 30px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-image: url(../img/top-menu/top_menu_language_btn.png);
+	background-image: url(http://s20.timetobehero.ru/top-menu/top_menu_language_btn.png);
 }
 .tools-menu-lang-select.ru {
 	background-position: 0px 0;
@@ -6983,11 +6983,11 @@ html.compact #chat-container {
 	background-position: -82px -90px;
 }
 .tools-menu-lang-select-dropdown-list {
-	background: url(../img/top-menu/top_menu_language_bg_top.png) 0 0 no-repeat,
-				url(../img/top-menu/top_menu_language_bg_bottom.png) 0 100% no-repeat;
+	background: url(http://s20.timetobehero.ru/top-menu/top_menu_language_bg_top.png) 0 0 no-repeat,
+				url(http://s20.timetobehero.ru/top-menu/top_menu_language_bg_bottom.png) 0 100% no-repeat;
 }
 .tools-menu-lang-select-dropdown-list .x-menu-body {
-	background: url(../img/top-menu/top_menu_language_bg.png) 0 0 repeat-y;
+	background: url(http://s20.timetobehero.ru/top-menu/top_menu_language_bg.png) 0 0 repeat-y;
 }
 .tools-menu-lang-select-dropdown-list .x-menu-item-active {
 	background-color: transparent;
@@ -7002,20 +7002,20 @@ html.compact #chat-container {
 .tools-menu-lang-select-dropdown-list .x-menu-item.ru {
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-image: url(../img/top-menu/top_menu_language_ru.png);
+	background-image: url(http://s20.timetobehero.ru/top-menu/top_menu_language_ru.png);
 }
 .tools-menu-lang-select-dropdown-list .x-menu-item.ru:hover {
-	background: url(../img/top-menu/top_menu_language_ru.png) 0 -16px no-repeat,
-				url(../img/top-menu/top_menu_language_bg_hover.png) -2px 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/top-menu/top_menu_language_ru.png) 0 -16px no-repeat,
+				url(http://s20.timetobehero.ru/top-menu/top_menu_language_bg_hover.png) -2px 0 no-repeat;
 }
 .tools-menu-lang-select-dropdown-list .x-menu-item.en {
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-image: url(../img/top-menu/top_menu_language_en.png);
+	background-image: url(http://s20.timetobehero.ru/top-menu/top_menu_language_en.png);
 }
 .tools-menu-lang-select-dropdown-list .x-menu-item.en:hover {
-		background: url(../img/top-menu/top_menu_language_en.png) 0 -16px no-repeat,
-				url(../img/top-menu/top_menu_language_bg_hover.png) -2px 0 no-repeat;
+		background: url(http://s20.timetobehero.ru/top-menu/top_menu_language_en.png) 0 -16px no-repeat,
+				url(http://s20.timetobehero.ru/top-menu/top_menu_language_bg_hover.png) -2px 0 no-repeat;
 }#notice .ability, #notice .feature {
 	cursor: pointer;
 }
@@ -7042,9 +7042,9 @@ html.compact #chat-container {
 	position:relative;
 	border-bottom:1px solid #7e6135;
 	text-align: center;
-	background: url(../img/deco/paper/header_left.jpg) no-repeat 0 0,
-				url(../img/deco/paper/header_right.jpg) no-repeat 100% 0,
-				url(../img/deco/paper/header_middle.jpg) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/paper/header_left.jpg) no-repeat 0 0,
+				url(http://s20.timetobehero.ru/deco/paper/header_right.jpg) no-repeat 100% 0,
+				url(http://s20.timetobehero.ru/deco/paper/header_middle.jpg) repeat-x 16px 0;
 	height:24px;
 	padding:3px;
 }
@@ -7054,7 +7054,7 @@ html.compact #chat-container {
 }
 
 .notice .delete {
-	background: url(../img/interface/button_no_30.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/interface/button_no_30.png) no-repeat 0 0;
 	float: right;
 	height: 30px;
 	margin: 0 4px 0 0;
@@ -7161,7 +7161,7 @@ html.compact #chat-container {
 	background-position: bottom left;
 }
 .all-pets-header{
-	background: url(../img/mask/header_class.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/header_class.png) 0 0 no-repeat;
 	font-size: 13px;
 	padding: 13px 15px 8px 15px;
 	width: 145px;
@@ -7248,7 +7248,7 @@ html.compact #chat-container {
 	background: none;
 }
 .pets .x-tool-over .x-tool-close {
-	background: url(../img/mask/close_hi.jpg) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/close_hi.jpg) 0 0 no-repeat;
 }
 
 .pet-battle-actions-empty,
@@ -7282,11 +7282,11 @@ html.compact #chat-container {
 .quests .quest .qh-pointer {
 	top: 18px;
 	left: 70px;	
-	background-image: url(../img/interface/quest_helper/hint_quest_new.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/hint_quest_new.png);
 }
 
 .quests .quest.finish .qh-pointer {
-	background-image: url(../img/interface/quest_helper/hint_quest.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/hint_quest.png);
 }
 
 .quests li.disabled .image {
@@ -7311,7 +7311,7 @@ img.aim-status {
 .questnewlist .button-place .qh-pointer {
 	top: -11px;
 	left: 145px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 .quest-giver-border, .quest-giver-image, .quest-giver-sign{
@@ -7320,7 +7320,7 @@ img.aim-status {
 	height: 73px;
 }
 .quest-giver-border{
-	background-image:url(../img/quests/quest_frame.png);
+	background-image:url(http://s20.timetobehero.ru/quests/quest_frame.png);
 }
 ul.quests .quest-giver-border:hover{
 	background-position: 0 -82px;
@@ -7332,14 +7332,14 @@ ul.quests .quest-giver-border:active{
 	background-position:16px 12px;
 }
 .quest-timer{
-	background-image:url(../img/quests/time_bg.png);
+	background-image:url(http://s20.timetobehero.ru/quests/time_bg.png);
 	background-repeat:no-repeat;
 	width:80px;
 	height:30px;
 	margin:0px 5px;
 }
 .quest-timer.complete{
-	background-image:url(../img/quests/time_bg_complete.png);
+	background-image:url(http://s20.timetobehero.ru/quests/time_bg_complete.png);
 }
 .quest-description{
 	clear: both;
@@ -7353,7 +7353,7 @@ ul.quests .quest-giver-border:active{
  */
 .quest-deco-header{
 	margin:-1px;
-	background-image:url(../img/quests/header_2.jpg);
+	background-image:url(http://s20.timetobehero.ru/quests/header_2.jpg);
 	background-repeat:repeat-x;
 	height:28px;
 	width:100%;
@@ -7372,11 +7372,11 @@ ul.quests .quest-giver-border:active{
 	width:4px;
 }
 .quest-deco-header-border-left{
-	background-image:url(../img/quests/header_1.jpg);
+	background-image:url(http://s20.timetobehero.ru/quests/header_1.jpg);
 	float:left;
 }
 .quest-deco-header-border-right{
-	background-image:url(../img/quests/header_3.jpg);
+	background-image:url(http://s20.timetobehero.ru/quests/header_3.jpg);
 	float:right;
 	margin-right: -2px;
 }
@@ -7391,10 +7391,10 @@ ul.quests .quest-giver-border:active{
 	cursor:pointer;
 }
 .view-change-selector.expanded{
-	background-image:url(../img/quests/button_task_close.png);
+	background-image:url(http://s20.timetobehero.ru/quests/button_task_close.png);
 }
 .view-change-selector.collapsed{
-	background-image:url(../img/quests/button_task_open.png);
+	background-image:url(http://s20.timetobehero.ru/quests/button_task_open.png);
 }
 .view-change-selector:hover{
 	background-position:0px -30px;
@@ -7465,7 +7465,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-bg{
 	position:absolute;
-	background-image:url(../img/quests/bg.png);
+	background-image:url(http://s20.timetobehero.ru/quests/bg.png);
 	top:2px;
 	left:4px;
 	bottom:6px;
@@ -7473,7 +7473,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-tl{
 	position:absolute;
-	background-image:url(../img/quests/top_1.png);
+	background-image:url(http://s20.timetobehero.ru/quests/top_1.png);
 	background-repeat:no-repeat;
 	top:0px;
 	left:0px;
@@ -7482,7 +7482,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-t{
 	position:absolute;
-	background-image:url(../img/quests/top_2.png);
+	background-image:url(http://s20.timetobehero.ru/quests/top_2.png);
 	background-repeat:repeat-x;
 	top:0px;
 	left:90px;
@@ -7491,7 +7491,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-tr{
 	position:absolute;
-	background-image:url(../img/quests/top_3.png);
+	background-image:url(http://s20.timetobehero.ru/quests/top_3.png);
 	background-repeat:no-repeat;
 	top:0px;
 	right:0px;
@@ -7500,7 +7500,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-l{
 	position:absolute;
-	background-image:url(../img/quests/side_left.png);
+	background-image:url(http://s20.timetobehero.ru/quests/side_left.png);
 	background-repeat:repeat-y;
 	top:58px;
 	bottom:18px;
@@ -7509,7 +7509,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-r{
 	position:absolute;
-	background-image:url(../img/quests/side_right.png);
+	background-image:url(http://s20.timetobehero.ru/quests/side_right.png);
 	background-repeat:repeat-y;
 	top:58px;
 	bottom:18px;
@@ -7518,7 +7518,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-bl{
 	position:absolute;
-	background-image:url(../img/quests/bottom_1.png);
+	background-image:url(http://s20.timetobehero.ru/quests/bottom_1.png);
 	background-repeat:no-repeat;
 	bottom:0px;
 	left:0px;
@@ -7527,7 +7527,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-b{
 	position:absolute;
-	background-image:url(../img/quests/bottom_2.png);
+	background-image:url(http://s20.timetobehero.ru/quests/bottom_2.png);
 	background-repeat:repeat-x;
 	bottom:0px;
 	left:16px;
@@ -7536,7 +7536,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box-br{
 	position:absolute;
-	background-image:url(../img/quests/bottom_3.png);
+	background-image:url(http://s20.timetobehero.ru/quests/bottom_3.png);
 	background-repeat:no-repeat;
 	bottom:0px;
 	right:0px;
@@ -7560,7 +7560,7 @@ ul.quests .quest-giver-border:active{
 }
 .info-box .info-box-itembox{
 	float:left;
-	background-image:url(../img/quests/item_box.jpg);
+	background-image:url(http://s20.timetobehero.ru/quests/item_box.jpg);
 	background-repeat:no-repeat;
 	margin-top:3px;
 	margin-right:3px;
@@ -7816,7 +7816,7 @@ ul.quests .quest-giver-border:active{
 	overflow: visible;
 }
 #robbery-text-buttons .no_border_double.x-btn-text .qh-pointer{
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: -5px;
 	left: -10px;
 }
@@ -7830,7 +7830,7 @@ ul.quests .quest-giver-border:active{
 .robbery-search .arrow{
 	margin: 19px -3px 0;
 	float: left;
-	background: url(../img/mask/arrow.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/arrow.png) 0 0 no-repeat;
 	height: 35px;
 	width: 23px;
 	position: relative;
@@ -7841,7 +7841,7 @@ ul.quests .quest-giver-border:active{
 	left:0;
 	height: 82px;
 	width: 82px;	
-	background: url(../img/locations/monster_frame_green.png) top center no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/monster_frame_green.png) top center no-repeat;
 }
 .robbery-search .item:hover .mask_frm {
 	background-position: center -82px !important;
@@ -7869,7 +7869,7 @@ ul.quests .quest-giver-border:active{
 	position: relative;
 }
 .robbery-queue{
-	background: url(../img/robbery/robbery_progress_bg.png) 50% 50% no-repeat;
+	background: url(http://s20.timetobehero.ru/robbery/robbery_progress_bg.png) 50% 50% no-repeat;
 	top:29px;
 	left:180px;
 }
@@ -7880,10 +7880,10 @@ ul.quests .quest-giver-border:active{
 	position:relative;
 }
 .robbery-timer{
-	background: url(../img/robbery/robbery_progress.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/robbery/robbery_progress.png) 0 0 no-repeat;
 }
 .robbery.enemy-list .topsto_icon{
-	background: url(../img/robbery/robbery_top100.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/robbery/robbery_top100.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
 	position: absolute;
@@ -7905,7 +7905,7 @@ ul.quests .quest-giver-border:active{
 	font-weight: bold;
 }
 .robbery-next{
-	background-image: url(../img/lair/lair_shield.png);
+	background-image: url(http://s20.timetobehero.ru/lair/lair_shield.png);
 	background-position: 0 0;
 	width: 116px;
 	height: 116px;
@@ -7915,7 +7915,7 @@ ul.quests .quest-giver-border:active{
 	background-position: 0 -116px;
 }
 .robbery-next .info{
-	background-image: url(../img/lair/lair_shield_info.png);
+	background-image: url(http://s20.timetobehero.ru/lair/lair_shield_info.png);
 	background-position: 0 0;
 	width: 18px;
 	height: 18px;
@@ -7934,7 +7934,7 @@ ul.quests .quest-giver-border:active{
 	width: 116px;
 }
 .robbery-next-shine {
-	background-image: url(../img/lair/lair_shield_flash.png);
+	background-image: url(http://s20.timetobehero.ru/lair/lair_shield_flash.png);
 	background-position:0 0;
 	width:116px;
 	height:116px;
@@ -7969,7 +7969,7 @@ ul.quests .quest-giver-border:active{
 	margin:5px auto;
 }
 .robbery-nums {
-	background-image: url(../img/robbery/robbery_time_bg.png);
+	background-image: url(http://s20.timetobehero.ru/robbery/robbery_time_bg.png);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	width: 124px;
@@ -8006,13 +8006,13 @@ ul.quests .quest-giver-border:active{
 	 background-position: bottom left;
 }
 .shop .x-form-cb-wrap label {
-	background: url(../img/checkbox.png) 0 50% no-repeat;
+	background: url(http://s20.timetobehero.ru/checkbox.png) 0 50% no-repeat;
 	cursor: pointer;
 	padding: 1px 0 1px 22px;
 }
 
 .shop .x-form-cb-checked .x-form-cb-wrap label {
-	background-image: url(../img/checkbox-checked.png);
+	background-image: url(http://s20.timetobehero.ru/checkbox-checked.png);
 }
 
 .shop .x-form-cb-wrap .x-form-checkbox {
@@ -8025,7 +8025,7 @@ ul.quests .quest-giver-border:active{
 	width: 190px;
 	height: 139px;
 	position: relative;
-	background: url(../img/shop/item_bg.png);
+	background: url(http://s20.timetobehero.ru/shop/item_bg.png);
 	padding: 9px;
 	text-align: center;
 }
@@ -8045,7 +8045,7 @@ ul.quests .quest-giver-border:active{
 
 .shop-items .image-frame {
 	float: left;
-	background: url(../img/shop/item_frm.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/shop/item_frm.png) no-repeat;
 }
 .shop-items .image {
 	margin: 6px;
@@ -8111,13 +8111,13 @@ ul.quests .quest-giver-border:active{
 .shop-items li.disabled, li.disabled .parchment-deco, .bot-list .bot.disabled {
 	cursor: default;
 	color: #505050;
-	background-image: url(../img/parchment-bg_dis.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bg_dis.jpg);
 }
 
 .shop-items .qh-pointer {
 	top: 90px;
 	left: 15px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 .shop-items  .qh-pointer.flip-h { left: 170px; }/**
  * Скилы
@@ -8168,7 +8168,7 @@ ul.quests .quest-giver-border:active{
 	height: 110px;
 	margin: 0 0px 3px -5px;
 	background-position: 0px -2px;
-	background: url(../img/skills/skill_bg2.png);
+	background: url(http://s20.timetobehero.ru/skills/skill_bg2.png);
 }
 
 .skills .item .x-btn-text {
@@ -8204,7 +8204,7 @@ ul.quests .quest-giver-border:active{
 .skills .full_content .qh-pointer {
 	top: 55px;
 	left: 525px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 .skills .item:hover .item_info {
@@ -8214,7 +8214,7 @@ ul.quests .quest-giver-border:active{
 .skill-items li.disabled .disabled_message {
 	color: #cb0000;
 	padding-left: 16px;
-	background: url(../img/adventures/lock.png) left center no-repeat;
+	background: url(http://s20.timetobehero.ru/adventures/lock.png) left center no-repeat;
 }
 .skill-items .disabled_background {
 	width: 213px;
@@ -8228,12 +8228,12 @@ ul.quests .quest-giver-border:active{
 .skill-items .enabled_message {
 	color: green;
 	padding-left: 20px;
-	background: url(../img/icons/done.png) left center no-repeat;
+	background: url(http://s20.timetobehero.ru/icons/done.png) left center no-repeat;
 }
 .skill-items .qh-pointer {
 	top: 65px;
 	left: 15px;
-	background-image: url(../img/interface/quest_helper/item.png);	
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);	
 }
 .skill-items  .qh-pointer.flip-h {
 	left: 170px;
@@ -8245,7 +8245,7 @@ ul.quests .quest-giver-border:active{
 .skill-items li.disabled {
 	cursor: default;
 	color: #505050;
-	background-image: url(../img/parchment-bg_dis.jpg);
+	background-image: url(http://s20.timetobehero.ru/parchment-bg_dis.jpg);
 }
 .skill-items .item {
 	float: left;
@@ -8253,7 +8253,7 @@ ul.quests .quest-giver-border:active{
 	width: 190px;
 	height: 139px;
 	position: relative;
-	background: url(../img/shop/item_bg2.png);
+	background: url(http://s20.timetobehero.ru/shop/item_bg2.png);
 	padding: 9px;
 	text-align: center;
 }
@@ -8308,7 +8308,7 @@ ul.quests .quest-giver-border:active{
 }
 
 .social-icons a {
-	background-image: url(../img/index/social.png);
+	background-image: url(http://s20.timetobehero.ru/index/social.png);
 	float: left;
 	height: 34px;
 	outline: none;
@@ -8410,7 +8410,7 @@ ul.quests .quest-giver-border:active{
 	width: 190px;
 	height: 117px;
 	position: relative;
-	background: url(../img/skills/skill_bg2.png);
+	background: url(http://s20.timetobehero.ru/skills/skill_bg2.png);
 	padding: 2px;
 	margin-right: -3px;
 	cursor:pointer;
@@ -8430,7 +8430,7 @@ ul.quests .quest-giver-border:active{
 	position: absolute;
 	top: 87px;
 	left: 52px;
-	background-image: url(../img/quests/time_bg.png);
+	background-image: url(http://s20.timetobehero.ru/quests/time_bg.png);
 	background-repeat: no-repeat;
 	width: 80px;
 	height: 30px;
@@ -8443,7 +8443,7 @@ ul.quests .quest-giver-border:active{
 	background-position: 50% 50%;
 }
 .deal-big-image-border{
-	background-image:url(../img/deal/bonus_frm.png);
+	background-image:url(http://s20.timetobehero.ru/deal/bonus_frm.png);
 }
 .deal-big-image{
 	float:left;
@@ -8512,7 +8512,7 @@ ul.quests .quest-giver-border:active{
 }
 
 .teleport-menu .x-menu-item {
-	background: url(../img/parchment-separator-160.png) no-repeat 50% 100%;
+	background: url(http://s20.timetobehero.ru/parchment-separator-160.png) no-repeat 50% 100%;
 	padding-bottom: 2px;
 }
 
@@ -8522,7 +8522,7 @@ ul.quests .quest-giver-border:active{
 }
 
 .teleport-menu .x-menu-item-active .x-menu-item-link {
-	background: url(../img/parchment-separator-over.png);
+	background: url(http://s20.timetobehero.ru/parchment-separator-over.png);
 	border: 0;
 	border-radius: 0;
 	-moz-border-radius: 0;
@@ -8572,7 +8572,7 @@ ul.quests .quest-giver-border:active{
   	cursor: default;
 }
 .teleport-with-timed .teleports-list li .title {
-	background: url(../img/locations/text_1.png) 0 0 no-repeat, url(../img/locations/text_3.png) 100% 0 no-repeat;  
+	background: url(http://s20.timetobehero.ru/locations/text_1.png) 0 0 no-repeat, url(http://s20.timetobehero.ru/locations/text_3.png) 100% 0 no-repeat;  
 	text-align: center;
 	position: absolute;
   	bottom: 0;
@@ -8581,10 +8581,10 @@ ul.quests .quest-giver-border:active{
     transition: bottom 0.2s;
 }
 .teleport-with-timed .teleports-list li.disabled .title {
-	background: url(../img/locations/text_1_dis.png) 0 0 no-repeat, url(../img/locations/text_3_dis.png) 100% 0 no-repeat;  
+	background: url(http://s20.timetobehero.ru/locations/text_1_dis.png) 0 0 no-repeat, url(http://s20.timetobehero.ru/locations/text_3_dis.png) 100% 0 no-repeat;  
 }
 .teleport-with-timed .teleports-list li .title > div {
-	background: url(../img/locations/text_2.png) 0 0 repeat-x;		
+	background: url(http://s20.timetobehero.ru/locations/text_2.png) 0 0 repeat-x;		
 	width: 68px;
 	padding: 20px 0 17px;
 	position: absolute;
@@ -8601,7 +8601,7 @@ ul.quests .quest-giver-border:active{
 	color: #3b3b3b;
 }
 .teleport-with-timed .teleports-list li.disabled .title > div{
-	background: url(../img/locations/text_2_dis.png) 0 0 repeat-x;
+	background: url(http://s20.timetobehero.ru/locations/text_2_dis.png) 0 0 repeat-x;
 }
 .teleport-with-timed .teleports-list li:hover .title,
 .teleport-with-timed .teleports-list li.selected .title {
@@ -8635,7 +8635,7 @@ ul.quests .quest-giver-border:active{
 .x-btn-text .x-btn-button,
 .x-btn-text-toolbar .x-btn-wrap,
 .x-btn-text-toolbar .x-btn-button {
-	background: url(../img/button-text-30.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/button-text-30.png) no-repeat;
 	height:30px;
 }
 
@@ -8644,7 +8644,7 @@ ul.quests .quest-giver-border:active{
 .x-btn-text-red .x-btn-center,
 .x-btn-text-red .x-btn-wrap,
 .x-btn-text-red .x-btn-button{
-	background: url(../img/button-text-30red.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/button-text-30red.png) no-repeat;
 	height:30px;
 }
 
@@ -8653,7 +8653,7 @@ ul.quests .quest-giver-border:active{
 .x-btn-text-green .x-btn-center,
 .x-btn-text-green .x-btn-wrap,
 .x-btn-text-green .x-btn-button{
-	background: url(../img/button-text-30green.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/button-text-30green.png) no-repeat;
 	height:30px;
 }
 
@@ -8779,7 +8779,7 @@ ul.quests .quest-giver-border:active{
 }
 
 .x-btn.double_row_button {
-	background: url(../img/locations/btn_task.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/locations/btn_task.png) no-repeat;
 	padding: 0;
 }
 .x-btn.double_row_button:hover {
@@ -8805,21 +8805,21 @@ ul.quests .quest-giver-border:active{
 .no_border .x-btn-button,
 .no_border.x-btn-toolbar
 {
-	background-image: url(../img/shop/btn_buy.png);
+	background-image: url(http://s20.timetobehero.ru/shop/btn_buy.png);
 }
 
 .x-btn-text-red.no_border.x-btn-text,
 .x-btn-text-red.no_border .x-btn-wrap,
 .x-btn-text-red.no_border .x-btn-button,
 .x-btn-text-red.no_border.x-btn-toolbar{
-	background-image: url(../img/btn_red.png);
+	background-image: url(http://s20.timetobehero.ru/btn_red.png);
 }
 
 .x-btn-text-green.no_border.x-btn-text,
 .x-btn-text-green.no_border .x-btn-wrap,
 .x-btn-text-green.no_border .x-btn-button,
 .x-btn-text-green.no_border.x-btn-toolbar{
-	background-image: url(../img/btn_green.png);
+	background-image: url(http://s20.timetobehero.ru/btn_green.png);
 }
 
 .no_border.x-btn-text,
@@ -8888,21 +8888,21 @@ ul.quests .quest-giver-border:active{
 .double_text_btn .x-btn-button,
 .double_text_btn.x-btn-toolbar
 {
-	background-image: url(../img/btn_wide_standart.png);
+	background-image: url(http://s20.timetobehero.ru/btn_wide_standart.png);
 }
 
 .x-btn-text-red.double_text_btn.x-btn-text,
 .x-btn-text-red.double_text_btn .x-btn-wrap,
 .x-btn-text-red.double_text_btn .x-btn-button,
 .x-btn-text-red.double_text_btn.x-btn-toolbar{
-	background-image: url(../img/btn_wide_red.png);
+	background-image: url(http://s20.timetobehero.ru/btn_wide_red.png);
 }
 
 .x-btn-text-green.double_text_btn.x-btn-text,
 .x-btn-text-green.double_text_btn .x-btn-wrap,
 .x-btn-text-green.double_text_btn .x-btn-button,
 .x-btn-text-green.double_text_btn.x-btn-toolbar{
-	background-image: url(../img/btn_wide_green.png);
+	background-image: url(http://s20.timetobehero.ru/btn_wide_green.png);
 }
 
 .double_text_btn.x-btn-text,
@@ -8991,21 +8991,21 @@ ul.quests .quest-giver-border:active{
 .no_border_double .x-btn-button,
 .no_border_double.x-btn-toolbar
 {
-	background-image: url(../img/btn_standart_high.png);
+	background-image: url(http://s20.timetobehero.ru/btn_standart_high.png);
 }
 
 .x-btn-text-red.no_border_double.x-btn-text,
 .x-btn-text-red.no_border_double .x-btn-wrap,
 .x-btn-text-red.no_border_double .x-btn-button,
 .x-btn-text-red.no_border_double.x-btn-toolbar{
-	background-image: url(../img/btn_red_high.png);
+	background-image: url(http://s20.timetobehero.ru/btn_red_high.png);
 }
 
 .x-btn-text-green.no_border_double.x-btn-text,
 .x-btn-text-green.no_border_double .x-btn-wrap,
 .x-btn-text-green.no_border_double .x-btn-button,
 .x-btn-text-green.no_border_double.x-btn-toolbar{
-	background-image: url(../img/btn_green_high.png);
+	background-image: url(http://s20.timetobehero.ru/btn_green_high.png);
 }
 
 .no_border_double.x-btn-text,
@@ -9081,21 +9081,21 @@ ul.quests .quest-giver-border:active{
 .stone_btn .x-btn-button,
 .stone_btn.x-btn-toolbar
 {
-	background-image: url(../img/btn_stone_standart.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_standart.png);
 }
 
 .x-btn-text-red.stone_btn.x-btn-text,
 .x-btn-text-red.stone_btn .x-btn-wrap,
 .x-btn-text-red.stone_btn .x-btn-button,
 .x-btn-text-red.stone_btn.x-btn-toolbar{
-	background-image: url(../img/btn_stone_red.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_red.png);
 }
 
 .x-btn-text-green.stone_btn.x-btn-text,
 .x-btn-text-green.stone_btn .x-btn-wrap,
 .x-btn-text-green.stone_btn .x-btn-button,
 .x-btn-text-green.stone_btn.x-btn-toolbar{
-	background-image: url(../img/btn_stone_green.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_green.png);
 }
 
 .stone_btn.x-btn-text,
@@ -9183,21 +9183,21 @@ ul.quests .quest-giver-border:active{
 .stone_double_btn .x-btn-button,
 .stone_double_btn.x-btn-toolbar
 {
-	background-image: url(../img/btn_stone_wide_standart.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_wide_standart.png);
 }
 
 .x-btn-text-red.stone_double_btn.x-btn-text,
 .x-btn-text-red.stone_double_btn .x-btn-wrap,
 .x-btn-text-red.stone_double_btn .x-btn-button,
 .x-btn-text-red.stone_double_btn.x-btn-toolbar{
-	background-image: url(../img/btn_stone_wide_red.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_wide_red.png);
 }
 
 .x-btn-text-green.stone_double_btn.x-btn-text,
 .x-btn-text-green.stone_double_btn .x-btn-wrap,
 .x-btn-text-green.stone_double_btn .x-btn-button,
 .x-btn-text-green.stone_double_btn.x-btn-toolbar{
-	background-image: url(../img/btn_stone_wide_green.png);
+	background-image: url(http://s20.timetobehero.ru/btn_stone_wide_green.png);
 }
 
 .stone_double_btn.x-btn-text,
@@ -9305,7 +9305,7 @@ ul.quests .quest-giver-border:active{
 }
 .x-window .x-btn-text .qh-pointer,
 .x-window .x-btn .qh-pointer{
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: -9px;
 }
 .x-window .x-btn .qh-pointer{
@@ -9376,17 +9376,17 @@ body.loaded {
 	overflow: visible; /*показываем скролл после загрузки*/
 }
 body.loaded #viewport-wrapper {
-	background: url(../img/bg.jpg) no-repeat 50% 0;
+	background: url(http://s20.timetobehero.ru/bg.jpg) no-repeat 50% 0;
 }
 
 html.app body.loaded, html.mobile body.loaded {
-	background-image: url(../img/bg.jpg) !important;
+	background-image: url(http://s20.timetobehero.ru/bg.jpg) !important;
 	background-position: center top !important;
 	background-repeat: no-repeat !important;
 }
 
 html.app.compact body.loaded {
-	background-image: url(../img/world-bg-social.jpg) !important;
+	background-image: url(http://s20.timetobehero.ru/world-bg-social.jpg) !important;
 }
 
 body#editor {
@@ -9537,7 +9537,7 @@ img.flip-v {
  * Комбобокс на коже с пергаментной подложкой списка
  */
 .parchment-combo .x-form-trigger {
-	background-image: url(../img/combobox_btn2.png);
+	background-image: url(http://s20.timetobehero.ru/combobox_btn2.png);
 	background-position: 0 0;
 	width: 20px;
 	height: 20px;
@@ -9555,7 +9555,7 @@ img.flip-v {
 .parchment-combo .x-form-trigger-input-cell input {
 	border: 0px;
 	height: 22px;
-	background: url(../img/shop/edit_box.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/shop/edit_box.png) 0 0 no-repeat;
 	margin-top: -2px;
 	text-overflow: ellipsis;
 	-webkit-user-select: none;
@@ -9590,8 +9590,8 @@ img.flip-v {
  */
 .x-mask-msg-reload {
 	background:
-		url(../img/loader-clock.gif) no-repeat 99px 7px,
-		url(../img/loader-reload-top.png) no-repeat 0 0;
+		url(http://s20.timetobehero.ru/loader-clock.gif) no-repeat 99px 7px,
+		url(http://s20.timetobehero.ru/loader-reload-top.png) no-repeat 0 0;
 	padding: 41px 0 29px;
 	text-align: center;
 	width: 222px;
@@ -9601,12 +9601,12 @@ body.loading .x-mask-msg-reload {
 }
 
 .x-mask-msg-reload .x-mask-msg-inner {
-	background: url(../img/loader-reload-bottom.png) no-repeat 0 100%;
+	background: url(http://s20.timetobehero.ru/loader-reload-bottom.png) no-repeat 0 100%;
 	padding-bottom: 29px;
 }
 
 .x-mask-msg-reload .x-mask-msg-text {
-	background: url(../img/loader-reload-bg.png) repeat-y !important;
+	background: url(http://s20.timetobehero.ru/loader-reload-bg.png) repeat-y !important;
 	padding: 10px !important;
 }
 
@@ -9619,7 +9619,7 @@ body.loading .x-mask-msg-reload {
 }
 
 .new-mask-loading{
-	background-image: url(../img/loader_waiting.png);
+	background-image: url(http://s20.timetobehero.ru/loader_waiting.png);
 	background-position: 0 0;
 	width:184px;
 	height:184px;
@@ -9633,11 +9633,11 @@ body.loading .x-mask-msg-reload {
 }
 
 .hourglass {
-	background: url(../img/loader-small.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/loader-small.png) no-repeat;
 }
 
 .hourglass div {
-	background: url(../img/loader-clock.gif) no-repeat 50% 50%;
+	background: url(http://s20.timetobehero.ru/loader-clock.gif) no-repeat 50% 50%;
 }
 
 
@@ -9657,7 +9657,7 @@ body.loading .x-mask-msg-reload {
 }
 
 /*.frame-over-thumb .frame-over-image {
-	background-image: url(../img/locations/icon_frame_monster_green.png);
+	background-image: url(http://s20.timetobehero.ru/locations/icon_frame_monster_green.png);
 }*/
 
 
@@ -9712,7 +9712,7 @@ ul.table-list li .value.stat_icon {
 }
 
 .user_settings .parchment-separator {
-	background: url(../img/shop/detail_separator.png) repeat 0px 100%;
+	background: url(http://s20.timetobehero.ru/shop/detail_separator.png) repeat 0px 100%;
 	margin: 0;
 	height: 6px;
 }
@@ -9734,34 +9734,34 @@ ul.table-list li .value.stat_icon {
 .x-tab-parchment {
 	background:
 		linear-gradient(top, transparent 70%, rgba(0, 0, 0, .2) 100%),
-		url(../img/parchment-inactive.jpg);
+		url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 
 	background:
 		-webkit-linear-gradient(top, transparent 70%, rgba(0, 0, 0, .2) 100%),
-		url(../img/parchment-inactive.jpg);
+		url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 
 	background:
 		-moz-linear-gradient(top, transparent 70%, rgba(0, 0, 0, .2) 100%),
-		url(../img/parchment-inactive.jpg);
+		url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 
 	background:
 		-o-linear-gradient(top, transparent 70%, rgba(0, 0, 0, .2) 100%),
-		url(../img/parchment-inactive.jpg);
+		url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 
 	background:
 		-ms-linear-gradient(top, transparent 70%, rgba(0, 0, 0, .2) 100%),
-		url(../img/parchment-inactive.jpg);
+		url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 
 	padding: 3px 3px 0;
 }
 
 .x-nlg .x-tab-parchment {
-	background: url(../img/parchment-inactive.jpg);
+	background: url(http://s20.timetobehero.ru/parchment-inactive.jpg);
 }
 
 .x-tab-parchment-active,
 .x-nlg .x-tab-parchment-active {
-	background: url(../img/parchment-bg.jpg) repeat-x 0 -75px;
+	background: url(http://s20.timetobehero.ru/parchment-bg.jpg) repeat-x 0 -75px;
 }
 
 .x-tab-parchment button {
@@ -9773,7 +9773,7 @@ ul.table-list li .value.stat_icon {
 }
 
 .x-tab-parchment-active button {
-	background: url(../img/parchment-bg.jpg) -4px 100%;
+	background: url(http://s20.timetobehero.ru/parchment-bg.jpg) -4px 100%;
 	border-color: #907041;
 }
 
@@ -9783,9 +9783,9 @@ ul.table-list li .value.stat_icon {
 
 .x-panel .separator{
 	height:6px;
-	background: url(../img/deco/paper/paper_separator_left.png) no-repeat 0 0,
-	url(../img/deco/paper/paper_separator_right.png) no-repeat 100% 0,
-	url(../img/deco/paper/paper_separator_horisontal.png) repeat-x 16px 0;
+	background: url(http://s20.timetobehero.ru/deco/paper/paper_separator_left.png) no-repeat 0 0,
+	url(http://s20.timetobehero.ru/deco/paper/paper_separator_right.png) no-repeat 100% 0,
+	url(http://s20.timetobehero.ru/deco/paper/paper_separator_horisontal.png) repeat-x 16px 0;
 }
 
 .user-info-stats .separator {
@@ -9798,13 +9798,13 @@ ul.table-list li .value.stat_icon {
 .x-tab-bar-skin-top,
 .x-toolbar-skin-docked-top {
 	background:
-		url(../img/deco/skin-tabs.png) no-repeat 0 -196px,
-		url(../img/deco/skin-tabs.png) no-repeat 100% -245px;
+		url(http://s20.timetobehero.ru/deco/skin-tabs.png) no-repeat 0 -196px,
+		url(http://s20.timetobehero.ru/deco/skin-tabs.png) no-repeat 100% -245px;
 }
 
 .x-tab-bar-body-skin-top,
 .x-toolbar-skin-docked-top .x-box-inner {
-	background: url(../img/deco/skin-tabs.png) repeat-x 0 -147px;
+	background: url(http://s20.timetobehero.ru/deco/skin-tabs.png) repeat-x 0 -147px;
 }
 
 .x-tab-bar-body-skin,
@@ -9822,7 +9822,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-skin .x-tab-button,
 .x-tab-skin-toolbar .x-tab-button {
 	cursor: pointer;
-	background: url(../img/deco/skin-tabs.png) no-repeat -1px 0;
+	background: url(http://s20.timetobehero.ru/deco/skin-tabs.png) no-repeat -1px 0;
 }
 
 .x-tab-skin-over .x-tab-button,
@@ -9861,7 +9861,7 @@ ul.table-list li .value.stat_icon {
 	top: -1px;
 	width: 28px;
 	color: #fff;
-	background-image: url(../img/ind.png);
+	background-image: url(http://s20.timetobehero.ru/ind.png);
 	line-height: 24px;
 	text-align: center;
 }
@@ -9887,7 +9887,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-skintext-toolbar .skin-tab-left-border,
 .x-tab-skintext-toolbar .skin-tab-right-border {
 	cursor: pointer;
-	background-image: url(../img/tab_big_inactive.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_inactive.png);
 	position:absolute;
 }
 
@@ -9924,7 +9924,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-skintext-over .skin-tab-right-border,
 .x-tab-skintext-toolbar-over .skin-tab-left-border,
 .x-tab-skintext-toolbar-over .skin-tab-right-border {
-	background-image: url(../img/tab_big_hover.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_hover.png);
 }
 
 .x-tab-skintext-active .x-tab-button,
@@ -9933,7 +9933,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-skintext-active .skin-tab-right-border,
 .x-tab-skintext-toolbar-pressed .skin-tab-left-border,
 .x-tab-skintext-toolbar-pressed .skin-tab-right-border {
-	background-image: url(../img/tab_big_active.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_active.png);
 }
 
 .x-tab-skintext .x-tab-icon-el,
@@ -9960,7 +9960,7 @@ ul.table-list li .value.stat_icon {
 
 
 .x-grid-view-parchment .x-grid-cell {
-	background: url(../img/parchment-separator.png) repeat-x 0 100%;
+	background: url(http://s20.timetobehero.ru/parchment-separator.png) repeat-x 0 100%;
 }
 
 .x-grid-view-parchment .x-grid-cell-inner {
@@ -9971,7 +9971,7 @@ ul.table-list li .value.stat_icon {
  * Табы на камне
  */
 .x-tab-stone{
-	background-image: url(../img/stone/forge_tab.png);
+	background-image: url(http://s20.timetobehero.ru/stone/forge_tab.png);
 	background-position: 0 0;
 	padding:9px;
 	cursor:pointer;
@@ -10006,7 +10006,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-stonetext-toolbar .stone-tab-left-border,
 .x-tab-stonetext-toolbar .stone-tab-right-border {
 	cursor: pointer;
-	background-image: url(../img/tab_big_inactive.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_inactive.png);
 	position:absolute;
 }
 
@@ -10043,7 +10043,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-stonetext-over .stone-tab-right-border,
 .x-tab-stonetext-toolbar-over .stone-tab-left-border,
 .x-tab-stonetext-toolbar-over .stone-tab-right-border {
-	background-image: url(../img/tab_big_hover.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_hover.png);
 }
 
 .x-tab-stonetext-active .x-tab-button,
@@ -10052,7 +10052,7 @@ ul.table-list li .value.stat_icon {
 .x-tab-stonetext-active .stone-tab-right-border,
 .x-tab-stonetext-toolbar-pressed .stone-tab-left-border,
 .x-tab-stonetext-toolbar-pressed .stone-tab-right-border {
-	background-image: url(../img/tab_big_active.png);
+	background-image: url(http://s20.timetobehero.ru/tab_big_active.png);
 }
 
 .x-tab-stonetext .x-tab-icon-el,
@@ -10079,7 +10079,7 @@ ul.table-list li .value.stat_icon {
 
 
 .x-grid-view-parchment .x-grid-cell {
-	background: url(../img/parchment-separator.png) repeat-x 0 100%;
+	background: url(http://s20.timetobehero.ru/parchment-separator.png) repeat-x 0 100%;
 }
 
 .x-grid-view-parchment .x-grid-cell-inner {
@@ -10202,7 +10202,7 @@ ul.table-list li .value.stat_icon {
 }
 .userinfo .menu-icon {
 	display: inline-block;
-	background-image: url(../img/chat/chat_person_menu.png);
+	background-image: url(http://s20.timetobehero.ru/chat/chat_person_menu.png);
 	margin: 0 0 3px 2px;
 	width: 10px;
 	height: 10px;
@@ -10219,13 +10219,13 @@ ul.table-list li .value.stat_icon {
 }
 
 #header {
-	background: url(../img/location-info.jpg) no-repeat 50% 26px;
+	background: url(http://s20.timetobehero.ru/location-info.jpg) no-repeat 50% 26px;
 	overflow: visible;
 	z-index: 2;
 }
 
 body.body-battle #header {
-	background: url(../img/battle/header-battle-new.png);
+	background: url(http://s20.timetobehero.ru/battle/header-battle-new.png);
 }
 
 /**
@@ -10281,7 +10281,7 @@ body.chat-off #announcments-view {
 }
 #announcments-view a {
 	color: #7f69c4;
-	background: url(../img/index/b_more.png) no-repeat 0 50%;
+	background: url(http://s20.timetobehero.ru/index/b_more.png) no-repeat 0 50%;
 	padding-left: 20px;
 	position: absolute;
 	right: 22px;
@@ -10297,7 +10297,7 @@ body.chat-off #announcments-view {
 	text-align: center;
 }
 .tech-info-container .level .number {
-	background-image: url(../img/numbers/level.png);
+	background-image: url(http://s20.timetobehero.ru/numbers/level.png);
 	background-repeat: no-repeat;
 }
 .tech-info-container .level .number-1 {
@@ -10345,20 +10345,20 @@ body.chat-off #announcments-view {
 }
 
 .health-bar .x-progress-bar {
-	background: url(../img/progress_life.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/progress_life.png) no-repeat 0 0;
 }
 
 .mana-bar .x-progress-bar {
-	background: url(../img/progress_mana.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/progress_mana.png) no-repeat 0 0;
 }
 
 .experience-bar .x-progress-bar {
-	background-image: url(../img/progress_level.png);
+	background-image: url(http://s20.timetobehero.ru/progress_level.png);
 	top: 0;
 }
 
 .experience-bar .x-progress-bar-process {
-	background-image: url(../img/progress.png);
+	background-image: url(http://s20.timetobehero.ru/progress.png);
 	height:14px;
 	position:relative;
 	float:right;
@@ -10379,7 +10379,7 @@ body.chat-off #announcments-view {
 
 .trophy-bar .x-progress-bar,
 .shield-bar .x-progress-bar {
-	background: url(../img/progress_prowess.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/progress_prowess.png) no-repeat 0 0;
 }
 
 .experience-bar,
@@ -10394,7 +10394,7 @@ body.chat-off #announcments-view {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	background: url(../img/user-finance-icon.jpg) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/user-finance-icon.jpg) no-repeat 0 0;
 }
 
 #user-finance-icon {
@@ -10420,7 +10420,7 @@ body.chat-off #announcments-view {
 }
 
 #user-finance input.add-btn {
-	background: url(../img/user-finance-add.jpg) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/user-finance-add.jpg) no-repeat 0 0;
 	border: 0;
 	cursor: pointer;
 	height: 25px;
@@ -10451,18 +10451,18 @@ body.chat-off #announcments-view {
 }
 
 #tech-info-container .tech-info-container{
-	background: url(../img/panel_user.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/panel_user.png) no-repeat;
 }
 
 #tech-info-container .tech-info-container.in-battle{
-	background: url(../img/panel_user_combo.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/panel_user_combo.png) no-repeat;
 }
 .header-right-container.in-battle{
-	background: url(../img/panel_user_combo.png) no-repeat 54px 0;
+	background: url(http://s20.timetobehero.ru/panel_user_combo.png) no-repeat 54px 0;
 }
 
 .header-right-container{
-	background: url(../img/panel_finances.png) no-repeat 54px 0;
+	background: url(http://s20.timetobehero.ru/panel_finances.png) no-repeat 54px 0;
 }
 
 
@@ -10502,19 +10502,19 @@ html.compact #quick-slots {
 }
 
 #quick-slots div.top {
-	/*background-image: url(../img/quick-slots/top.png);*/
+	/*background-image: url(http://s20.timetobehero.ru/quick-slots/top.png);*/
 	height: 38px;
 	padding-top: 20px;
 }
 
 #quick-slots div.middle {
-	background-image: url(../img/quick-slots/middle.png);
+	background-image: url(http://s20.timetobehero.ru/quick-slots/middle.png);
 	height: 65px;
 	padding-top: 46px;
 }
 
 #quick-slots div.bottom {
-	background-image: url(../img/quick-slots/bottom.png);
+	background-image: url(http://s20.timetobehero.ru/quick-slots/bottom.png);
 	height: 24px;
 }
 
@@ -10570,7 +10570,7 @@ html.compact #quick-slots ul {
 }
 
 #quick-slots .dummy {
-	background: url(../img/slot_buy.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/slot_buy.png) no-repeat;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	height: 64px;
@@ -10587,7 +10587,7 @@ html.compact #quick-slots ul {
 }
 
 #quick-slots-toggle {
-	background: url(../img/quick-slots-toggle-bg.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/quick-slots-toggle-bg.png) no-repeat;
 	left: 64px;
 	position: absolute;
 	top: 400px;
@@ -10629,7 +10629,7 @@ html.compact #quick-slots ul {
 }
 .slot-container-sale{
 	cursor:pointer;
-	background-image: url(../img/slots/slot_regular.jpg);
+	background-image: url(http://s20.timetobehero.ru/slots/slot_regular.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -10656,7 +10656,7 @@ html.compact #quick-slots ul {
 	z-index: 2;
 }
 .direction-dialog .pergament.bg{
-	background-image: url(../img/direction/pergament.png);
+	background-image: url(http://s20.timetobehero.ru/direction/pergament.png);
 	background-repeat: no-repeat;
 }
 .direction-dialog .pergament h1 {
@@ -10666,7 +10666,7 @@ html.compact #quick-slots ul {
 	font-weight: bold;
 }
 .direction-dialog .close-btn {
-	background-image: url(../img/btn_close_flag.png);
+	background-image: url(http://s20.timetobehero.ru/btn_close_flag.png);
 	background-repeat: no-repeat;
 	width: 32px;
 	height: 34px;
@@ -10683,7 +10683,7 @@ html.compact #quick-slots ul {
 	position: absolute;
 	top: 5px;
 	color: #fff;
-	background-image:url(../img/ind.png);
+	background-image:url(http://s20.timetobehero.ru/ind.png);
 	width:28px;
 	height:28px;
 	line-height:24px;
@@ -10693,7 +10693,7 @@ html.compact #quick-slots ul {
 
 .qh-pointer {
 	position: absolute;
-	background-image: url(../img/interface/quest_helper/walk.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/walk.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 67px;
@@ -10718,10 +10718,10 @@ html.compact #quick-slots ul {
  */
 .doll {
 	background:
-	url(../img/inventory/frm_avatar_bottom.jpg) repeat-x 0px 10px,
-	url(../img/slot_locked.jpg) no-repeat 10px 266px,
-	url(../img/slot_locked.jpg) no-repeat 284px 266px,
-	url(../img/inventory/frm_avatar_top.jpg) repeat-x 0 97%;
+	url(http://s20.timetobehero.ru/inventory/frm_avatar_bottom.jpg) repeat-x 0px 10px,
+	url(http://s20.timetobehero.ru/slot_locked.jpg) no-repeat 10px 266px,
+	url(http://s20.timetobehero.ru/slot_locked.jpg) no-repeat 284px 266px,
+	url(http://s20.timetobehero.ru/inventory/frm_avatar_top.jpg) repeat-x 0 97%;
 }
 
 .doll,
@@ -10734,7 +10734,7 @@ html.compact #quick-slots ul {
 }
 
 .stack-counter {
-	background: url(../img/slots/new/circle.png) no-repeat 0 0;
+	background: url(http://s20.timetobehero.ru/slots/new/circle.png) no-repeat 0 0;
 	color: #FFFFFF;
 	font-size: 9px;
 	height: 18px;
@@ -10749,12 +10749,12 @@ html.compact #quick-slots ul {
 .stack-counter.big_counter {
 	width: auto;
 	padding: 0 7px;
-	background: url(../img/slots/new/circle.png) no-repeat 0 0,
-				url(../img/slots/new/circle.png) no-repeat 100% 0;
+	background: url(http://s20.timetobehero.ru/slots/new/circle.png) no-repeat 0 0,
+				url(http://s20.timetobehero.ru/slots/new/circle.png) no-repeat 100% 0;
 }
 
 .big_counter .big_counter_mid{
-	background: url(../img/currency/counter_big_mid.png) repeat-x 0 0;
+	background: url(http://s20.timetobehero.ru/currency/counter_big_mid.png) repeat-x 0 0;
 	padding: 3px 0 3px 0;
 }
 
@@ -10765,7 +10765,7 @@ html.compact #quick-slots ul {
 .big_counter_mid .skull > div{
 	position: absolute;
 	background-repeat: no-repeat;
-	background-image: url(../img/battle/peril-ico.png);
+	background-image: url(http://s20.timetobehero.ru/battle/peril-ico.png);
 	width: 10px;
 	height: 10px;
 	margin-top: 3px;
@@ -10811,7 +10811,7 @@ html.compact #quick-slots ul {
 }
 
 .item_info {
-	background-image: url(../img/shop/item_btn_info.png);
+	background-image: url(http://s20.timetobehero.ru/shop/item_btn_info.png);
 	background-position: top left;
 	background-repeat: no-repeat;
 	height: 19px;
@@ -10870,7 +10870,7 @@ html.compact #quick-slots ul {
 
 .report-error .x-form-invalid-field,
 .report-error textarea.x-form-invalid-field {
-	background-image: url(../img/extjs/default/grid/invalid_line.gif);
+	background-image: url(http://s20.timetobehero.ru/extjs/default/grid/invalid_line.gif);
 	background-position: 50% 100%;
 	background-repeat: repeat-x;
 	background-color: #F3DDAB !important;
@@ -10939,7 +10939,7 @@ span.required {
 .exp-bonuses div{
 	width:54px;
 	height:22px;
-	background-image: url(../img/time_panel.png);
+	background-image: url(http://s20.timetobehero.ru/time_panel.png);
 	line-height:21px;
 	color:#fff;
 	text-align:center;
@@ -11136,7 +11136,7 @@ span.required {
 }
 
 .notify_i{
-	background: url(../img/mask/item_btn_info.png) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/item_btn_info.png) top left no-repeat;
 	width: 18px;
 	height: 18px;
 	position: absolute;
@@ -11161,14 +11161,14 @@ span.required {
 }
 
 .stats-list .up, .changes .up {
-	background: url(../img/mask/ar_up.png) 0px 3px no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/ar_up.png) 0px 3px no-repeat;
 	color: #008c00;
 	padding-left: 12px;
 	font-weight:700;
 }
 
 .stats-list .down, .changes .down {
-	background: url(../img/mask/ar_down.png) 0px 4px no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/ar_down.png) 0px 4px no-repeat;
 	color: #c00000;
 	padding-left: 12px;
 	font-weight:700;
@@ -11199,13 +11199,13 @@ span.required {
 	font-weight: bold;
 }
 .user-stats .up {
-	background: url(../img/mask/ar_up.png) 0px 3px no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/ar_up.png) 0px 3px no-repeat;
 	color: #008c00;
 	padding-left: 12px;
 	font-weight: bold;
 }
 .user-stats .down {
-	background: url(../img/mask/ar_down.png) 0px 4px no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/ar_down.png) 0px 4px no-repeat;
 	color: #c00000;
 	padding-left: 12px;
 	font-weight: bold;
@@ -11242,7 +11242,7 @@ span.required {
 }
 
 .text-search-input input {
-	background: url(../img/shop/edit_box.png) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/shop/edit_box.png) top left no-repeat;
 	color: black;
 	border: none;
 	width: 150px;
@@ -11251,7 +11251,7 @@ span.required {
 }
 
 #float-window-skin input {
-	background: url(../img/shop/edit_box.png) top left no-repeat;
+	background: url(http://s20.timetobehero.ru/shop/edit_box.png) top left no-repeat;
 	color: black;
 	border: none;
 	height: 22px;
@@ -11280,7 +11280,7 @@ span.required {
 #message .x-tool img {
 	width: 28px;
 	height: 28px;
-	background: url(../img/message/message_btn_close.png);
+	background: url(http://s20.timetobehero.ru/message/message_btn_close.png);
 }
 
 #message .x-tool-over img {
@@ -11314,10 +11314,10 @@ span.required {
  * иконки валюты для спрайтов
  */
 .crystal-sprite{
-	background: url(../img/kristall.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/kristall.png) no-repeat;
 }
 .gold-sprite{
-	background: url(../img/moneyl.png) no-repeat;
+	background: url(http://s20.timetobehero.ru/moneyl.png) no-repeat;
 }
 .crystal-sprite,
 .gold-sprite{
@@ -11331,7 +11331,7 @@ span.required {
 }
 
 #do-attack-bot .qh-pointer, #do-banish-bot .qh-pointer {
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: -2px;
 	left: -40px;
 }
@@ -11341,12 +11341,12 @@ span.required {
 }
 
 .do-map-action .qh-pointer {
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: -10px;
 }
 
 .world .qh-pointer{
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 	top: 50px;
 }
 
@@ -11426,18 +11426,18 @@ span.required {
 
 .item_star {
 	height: 14px;
-	background: url(../img/mask/star.png);
+	background: url(http://s20.timetobehero.ru/mask/star.png);
 }
 
 .item_star_bg {
-	background: url(../img/mask/star_bg.png);
+	background: url(http://s20.timetobehero.ru/mask/star_bg.png);
 	margin: 0 auto;
 }
 
 #surging_wait {
 	color: #feefa4;
 	text-align: center;
-	background: url('../img/locations/monster_timer.png');
+	background: url('http://s20.timetobehero.ru/locations/monster_timer.png');
 	padding: 7px 0 6px 0;
 	font-size: 11px;
 	line-height: 12px;
@@ -11447,8 +11447,8 @@ span.required {
 }
 
 #surging_image {
-	background: url(../img/locations/monster_absent.jpg),
-	url(../img/locations/monster_frame_green.png);
+	background: url(http://s20.timetobehero.ru/locations/monster_absent.jpg),
+	url(http://s20.timetobehero.ru/locations/monster_frame_green.png);
 	padding: 3px 0 6px 0;
 	width: 82px;
 	height: 82px;
@@ -11473,7 +11473,7 @@ span.required {
 .x-window .qh-pointer {
 	top: -10px;
 	left: -40px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
 .x-window .x-box-layout-ct, .x-window .x-box-inner {
@@ -11488,14 +11488,14 @@ span.required {
 .bignum-delimiter {
 	width: 10px;
 	height: 30px;
-	background-image: url(../img/robbery/num_colon.png);
+	background-image: url(http://s20.timetobehero.ru/robbery/num_colon.png);
 }
 
 .upgrade_star {
 	float: left;
 	width: 14px;
 	height: 14px;
-	background: url(../img/mask/star.png) 0 0 no-repeat;
+	background: url(http://s20.timetobehero.ru/mask/star.png) 0 0 no-repeat;
 	background-size: 100%;
 }
 
@@ -11569,7 +11569,7 @@ span.required {
 .timedtimer .qh-pointer{
 	top: -1px;
 	left:-45px;
-	background-image: url(../img/interface/quest_helper/item.png);
+	background-image: url(http://s20.timetobehero.ru/interface/quest_helper/item.png);
 }
 
  /**
@@ -11683,7 +11683,7 @@ span.required {
 .exg-slider-arrow.left-arrow{
 	width: 20px;
 	background-position: -60px 0;
-	background-image: url(../img/scrollbar/hor_arrow_bottom.png);
+	background-image: url(http://s20.timetobehero.ru/scrollbar/hor_arrow_bottom.png);
 	left: 0;
 }
 .exg-slider-arrow.left-arrow:hover{
@@ -11695,7 +11695,7 @@ span.required {
 .exg-slider-arrow.right-arrow{
 	width: 21px;
 	background-position: -63px 0;
-	background-image: url(../img/scrollbar/hor_arrow_top.png);
+	background-image: url(http://s20.timetobehero.ru/scrollbar/hor_arrow_top.png);
 	right: 0;
 }
 .exg-slider-arrow.right-arrow:hover{
@@ -11717,9 +11717,9 @@ span.required {
 	left: 20px;
 	right: 21px;
 	background: 
-		url(../img/scrollbar/hor_bg_bottom.png) no-repeat 0 0, 
-		url(../img/scrollbar/hor_bg_top.png) no-repeat 100% 0,
-		url(../img/scrollbar/hor_bg_midle.png) repeat-x 0 0;
+		url(http://s20.timetobehero.ru/scrollbar/hor_bg_bottom.png) no-repeat 0 0, 
+		url(http://s20.timetobehero.ru/scrollbar/hor_bg_top.png) no-repeat 100% 0,
+		url(http://s20.timetobehero.ru/scrollbar/hor_bg_midle.png) repeat-x 0 0;
 }
 .x-field-default .x-slider-horz .x-slider-inner,
 .x-field-default .x-slider-horz,
@@ -11734,7 +11734,7 @@ span.required {
 .x-field-default .x-slider-horz .x-slider-thumb{
 	width: 28px;
 	height: 22px;
-	background-image: url(../img/scrollbar/hor_thumb_new.png);
+	background-image: url(http://s20.timetobehero.ru/scrollbar/hor_thumb_new.png);
 	background-position: -56px 0;
 	background-repeat: no-repeat;
 }

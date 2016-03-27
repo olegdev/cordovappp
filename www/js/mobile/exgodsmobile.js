@@ -4,8 +4,8 @@ var ExGodsMobile = {
 	
 	debug: true,
 
-	host_url: 'http://t3-oleg.karnage.ru', // 'http://timetobehero.ru', // 'http://test.exgods.ru', // 'http://t3-oleg.karnage.ru', 
-	image_url: './img/',
+	host_url:  'http://test.exgods.ru', // 'http://timetobehero.ru', // 'http://test.exgods.ru', 
+	image_url: 'http://s20.timetobehero.ru/',  //'./img/',
 
 	request: function(url, params, callback) {
 		callback = callback || Ext.emptyFn;

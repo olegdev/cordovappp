@@ -7,8 +7,8 @@ var onDeviceReady = function() {
 		if (ExGodsMobile.accounts.list.length) {
 			showAccountList();
 		} else {
-			ExGodsMobile.accounts.checkRemote(function() {
-				if (ExGodsMobile.accounts.list.length) {
+			ExGodsMobile.accounts.check('device', ExGodsMobile.accounts.getDeviceAccountCredentials(), function(account) {
+				if (account) {
 					showAccountList();
 				}
 			});

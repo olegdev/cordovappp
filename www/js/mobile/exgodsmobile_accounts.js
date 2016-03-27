@@ -15,14 +15,20 @@ ExGodsMobileAccounts.prototype.getDeviceAccountCredentials = function(type, data
 }
 
 // запрашивает у сервера аккаунт, привязанный к этому устройству
-ExGodsMobileAccounts.prototype.checkRemote = function(callback) {
+ExGodsMobileAccounts.prototype.check = function(type, credentials, callback) {
 	var me = this,
-		deviceCredentials = me.getDeviceAccountCredentials();
-	ExGodsMobile.request('/reg.pl?cmd=mobile_check', deviceCredentials, function(resp) {
+		cmd;
+	if (type == 'device') {
+		cmd = '/reg.pl?cmd=mobile_check';
+	} else if (type == 'email') {
+		cmd = '/reg.pl?cmd=mobile_mail_check';
+	}
+	ExGodsMobile.request(cmd, credentials, function(resp) {
 		if (resp && resp.user) {
-			me.add('device', deviceCredentials, resp.user);
+			callback(me.add(type, credentials, resp.user));
+		} else {
+			callback();
 		}
-		callback();
 	});
 }
 
@@ -84,9 +90,21 @@ ExGodsMobileAccounts.prototype.bind = function(target, bindType, newCredentials,
 ExGodsMobileAccounts.prototype.loginBy = function(account) {
 	var me = this;
 	if (account.type == 'device') {
-		// ExGodsMobile.request('/reg.pl?cmd=mobile_login', account.credentials, function(resp) {
-		// 	alert(resp);
-		// });
+		ExGodsMobile.request('/reg.pl?cmd=mobile_enter', {
+			login: account.credentials.login,
+			pass: account.credentials.pass,
+			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
+		}, function(resp) {
+			location.href = 'game.html';
+		});
+	} else if (account.type == 'email') {
+		ExGodsMobile.request('/reg.pl?cmd=mobile_mail_enter', {
+			login: account.credentials.login,
+			pass: account.credentials.pass,
+			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
+		}, function(resp) {
+			location.href = 'game.html';
+		});
 	}
 }
 

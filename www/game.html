@@ -12,7 +12,12 @@
 		<link rel="stylesheet" type="text/css" media="all" href="css/game.css"/>
 		<link rel="stylesheet" type="text/css" media="all" href="css/exgods2-all.css"/>
 
-		<script src="js/config.js"></script>
+		<script src="js/mobile/exgodsmobile.js"></script>
+		<script type="text/javascript">
+			window.IMAGE_URL = ExGodsMobile.image_url;
+			window.HOST_URL = ExGodsMobile.host_url;
+		</script>
+
 		<script src="js/preload_img.js"></script>
 		<script src="js/preloader.js"></script>
 
@@ -31,7 +36,7 @@
 		<div id="viewport-wrapper"></div>
 		
 		<script>
-			document.writeln('<script src="'+ HOST_URL +'main.pl?cmd=config&r='+Math.random()+'"></'+'script>');
+			document.writeln( '<script src="' + HOST_URL + 'main.pl?cmd=config&r=' + Math.random() + '"></' + 'script>');
 		</script>
 
 		<script src="js/libs/html2canvas/html2canvas.js"></script>
@@ -40,13 +45,6 @@
 		<script src="js/libs/extjs/extjs-4.2.1/ext-all.js"></script>
 		<script src="js/libs/svg/svg.min.js"></script>
 		<script src="js/exgods2-all.js"></script>
-
-		<script type="text/javascript">
-		Ext.getBody().insertHtml('afterBegin', '<div id="reload-mobile">RELOAD</div>');
-		Ext.getBody().on('click', function() {
-			location.reload();
-		}, this, {delegate: '#reload-mobile'})
-		</script>
 
 	</body>
 </html>
