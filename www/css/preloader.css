@@ -6,7 +6,7 @@
 	position: absolute;
 	top: -10000px;
 	left: 50%;
-	background: url(../img/preloader.png) no-repeat -10px -10px;
+	background: url(http://s20.timetobehero.ru/preloader.png) no-repeat -10px -10px;
 }
 
 #loader_blik {
@@ -17,5 +17,5 @@
 	position: absolute;
 	top: -10000px;
 	left: 50%;
-	background: url(../img/pre_blik.png) no-repeat center center;
+	background: url(http://s20.timetobehero.ru/pre_blik.png) no-repeat center center;
 }

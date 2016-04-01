@@ -95,7 +95,11 @@ ExGodsMobileAccounts.prototype.loginBy = function(account) {
 			pass: account.credentials.pass,
 			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
 		}, function(resp) {
-			location.href = 'game.html';
+			if (resp && !resp.error) {
+				location.href = 'game.html';
+			} else {
+				ExGodsMobile.errorHandler("Cannot login by account cause error ", resp.error);
+			}
 		});
 	} else if (account.type == 'email') {
 		ExGodsMobile.request('/reg.pl?cmd=mobile_mail_enter', {
@@ -103,7 +107,11 @@ ExGodsMobileAccounts.prototype.loginBy = function(account) {
 			pass: account.credentials.pass,
 			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
 		}, function(resp) {
-			location.href = 'game.html';
+			if (resp && !resp.error) {
+				location.href = 'game.html';
+			} else {
+				ExGodsMobile.errorHandler("Cannot login by account cause error ", resp.error);
+			}
 		});
 	}
 }

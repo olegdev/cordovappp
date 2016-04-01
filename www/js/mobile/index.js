@@ -57,5 +57,5 @@ var onDeviceReady = function() {
 document.addEventListener('deviceready', onDeviceReady, false);
 
 // debug
-// window.device = {uuid: 12345667, platform: 'android'};
-// onDeviceReady();
+window.device = {uuid: 12345667, platform: 'ios'};
+onDeviceReady();

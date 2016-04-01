@@ -8,6 +8,7 @@ var ExGodsMobile = {
 	image_url: 'http://s20.timetobehero.ru/',  //'./img/',
 
 	request: function(url, params, callback) {
+		var me = this;
 		callback = callback || Ext.emptyFn;
 		params = params || {};
 		$.ajax({
@@ -21,8 +22,12 @@ var ExGodsMobile = {
             success: function(resp) {
                 callback(resp);
             },            
-            error: function() {
-                alert(JSON.stringify(arguments));
+            error: function(resp) {
+            	if (resp.status == 0) {
+            		me.errorHandler("You have no internet connection");	
+            	} else {
+            		me.errorHandler("Connection error", resp);
+            	}
             }
         });
 	},
@@ -44,7 +49,7 @@ var ExGodsMobile = {
 
 	errorHandler: function(msg, data) {
 		if (this.debug) {
-			alert(msg + ' ' + JSON.stringify(data || {}));
+			alert(msg + ' ' + (data ? JSON.stringify(data || {}) : ''));
 		}
 	},
 }
