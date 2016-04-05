@@ -96,7 +96,7 @@ ExGodsMobileAccounts.prototype.loginBy = function(account) {
 			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
 		}, function(resp) {
 			if (resp && !resp.error) {
-				location.href = 'game.html';
+				ExGodsMobile.bootGame();
 			} else {
 				ExGodsMobile.errorHandler("Cannot login by account cause error ", resp.error);
 			}
@@ -108,7 +108,7 @@ ExGodsMobileAccounts.prototype.loginBy = function(account) {
 			payment: ExGodsMobile.getDevice().platform.toLowerCase(),
 		}, function(resp) {
 			if (resp && !resp.error) {
-				location.href = 'game.html';
+				ExGodsMobile.bootGame();;
 			} else {
 				ExGodsMobile.errorHandler("Cannot login by account cause error ", resp.error);
 			}

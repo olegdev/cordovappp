@@ -1,0 +1,34 @@
+html {
+	background-color: #000;
+}
+body.loading {
+	background-color: #000;
+	background-image: url(../../img/pre_bg.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+    height: 100%;
+}
+body.loading .ui-page {
+	display: none;
+}
+#loader_animation {
+	width: 94px;
+	height: 94px;
+	margin-top: -50px;
+	margin-left: -46px;
+	position: absolute;
+	top: -10000px;
+	left: 50%;
+	background: url(../../img/preloader.png) no-repeat -10px -10px;
+}
+#loader_blik {
+	width: 94px;
+	height: 94px;
+	margin-top: -50px;
+	margin-left: -46px;
+	position: absolute;
+	top: -10000px;
+	left: 50%;
+	background: url(../../img/pre_blik.png) no-repeat center center;
+}

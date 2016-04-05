@@ -1,7 +1,7 @@
 /**
 * Начальный загрузчик (фон + циферки)
 *
-* @author Ветлугин Дмитрий
+* @author
 */
 var PreloaderClass = function (config) {
 	var me = this;
@@ -19,38 +19,25 @@ var PreloaderClass = function (config) {
 
 	this.preloadImages = config.preloadImages || {};
 
-	this.imageUrl = IMAGE_URL; // /^https/.test(location.protocol) ? 'https://s20.timetobehero.ru/' : 'http://s20.timetobehero.ru/';
+	me.animEl = document.createElement('div');
+	me.blickEl = document.createElement('div');
+	me.animEl.id = "loader_animation";
+	me.animEl.style.top = '50%';
+	me.blickEl.id = "loader_blik";
+	me.blickEl.style.top = '50%';
+	document.body.appendChild(me.animEl);
+	document.body.appendChild(me.blickEl);
+	document.body.className += " loading";
+	
+	if (config.onReady) {
+		config.onReady();
+	}
 
-	this.loadImages([
-		"pre_bg.jpg",
-		"preloader.png",
-		"pre_blik.png",
-	], function() {
-		me.animEl = document.createElement('div');
-		me.blickEl = document.createElement('div');
-		me.animEl.id = "loader_animation";
-		me.animEl.style.top = '50%';
-		me.blickEl.id = "loader_blik";
-		me.blickEl.style.top = '50%';
-		document.body.style.backgroundImage = 'url('+ me.imageUrl +'pre_bg.jpg)';
-		document.body.style.backgroundPosition = "50% 50%";
-		document.body.style.backgroundRepeat = "no-repeat";
-		document.body.appendChild(me.animEl);
-		document.body.appendChild(me.blickEl);
-		document.body.className += " loading";
-		me.onReady();
-	});
+	this.nextStep();
+
 };
 
 PreloaderClass.prototype = {
-
-	onReady: function() {
-		var me = this;
-		this.nextStep();
-		if (this.preloadImages.images) {
-			this.loadImages(this.preloadImages.images, this.preloadImages.onLoad);
-		}
-	},
 
 	/**
 	 * Автоматически увеличивает загрузчик от текущего значения до максимально установленного
@@ -125,33 +112,6 @@ PreloaderClass.prototype = {
 			document.body.className = document.body.className.replace("loading", "loaded");
 		}
 		this.destroyed = true;
-	},
-
-	// предзагрузка картинок
-	loadImages : function (images, onLoad) {
-		var me = this,
-			backgroundImage = [],
-			countOfLoadedImages = 0,
-			fn = function(){
-				countOfLoadedImages++;
-				if (countOfLoadedImages == images.length-1) {					
-					if (onLoad) {
-						onLoad();
-					}
-				}
-				backgroundImage[i] = null;
-				delete backgroundImage[i];
-			}
-
-		if(!images) return;
-		
-		for (var i = 0; i < images.length; i++){
-			backgroundImage[i] = new Image();
-			backgroundImage[i].onload = fn;
-			backgroundImage[i].onerror = fn;
-			backgroundImage[i].src = me.imageUrl +  images[i];
-		}
-
 	}
 
 }

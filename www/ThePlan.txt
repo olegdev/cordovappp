@@ -1,0 +1,7 @@
+0. Storage for mobile usage
+1. Translates, lang selector
+2. reg.html as common page
+3. Facebook, vk, mm, ok integration
+4. Game scripts - host_url, image_url, menu style
+5. Account manage in game 
+

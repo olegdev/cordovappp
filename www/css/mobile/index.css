@@ -1,6 +1,9 @@
-.container {
-	width: 400px;
-	margin: 150px auto;
+.ui-page {
+	margin: 150px 0;
+	text-align: center;
+}
+#accounts {
+	margin: 0px auto;
 	text-align: center;
 }
 #accounts li {

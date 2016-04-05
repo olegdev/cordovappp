@@ -7,9 +7,8 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/preloader.css"/>
-		<link rel="stylesheet" type="text/css" media="all" href="css/ext-theme-classic-all-4_2_1.css"/>		
-		<link rel="stylesheet" type="text/css" media="all" href="css/game.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="css/mobile/preloader.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ext-theme-classic-all-4_2_1.css"/>	
 		<link rel="stylesheet" type="text/css" media="all" href="css/exgods2-all.css"/>
 
 		<script src="js/mobile/exgodsmobile.js"></script>
@@ -18,23 +17,17 @@
 			window.HOST_URL = ExGodsMobile.host_url;
 		</script>
 
-		<script src="js/preload_img.js"></script>
-		<script src="js/preloader.js"></script>
+		<script src="js/mobile/preloader.js"></script>
 
 	</head>
 	<body>
 
 		<script>
-			var exGodsLoader = new PreloaderClass({
-				preloadImages: {
-					images: preload_images,
-					onLoad: function() {}
-				}
-			});	
+			var exGodsLoader = new PreloaderClass();	
 		</script>
 
 		<div id="viewport-wrapper"></div>
-		
+
 		<script>
 			document.writeln( '<script src="' + HOST_URL + 'main.pl?cmd=config&r=' + Math.random() + '"></' + 'script>');
 		</script>
