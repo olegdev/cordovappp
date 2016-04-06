@@ -22,6 +22,6 @@ require(['config', 'app', 'translates'], function(config, app, translates) {
 	document.addEventListener('deviceready', innerDeviceReady, false);
 
 	// debug
-	// window.device = {uuid: 1, platform: 'ios'};
-	// innerDeviceReady();
+	window.device = {uuid: 1, platform: 'ios'};
+	innerDeviceReady();
 });
