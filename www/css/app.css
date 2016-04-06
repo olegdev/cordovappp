@@ -19,9 +19,13 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	top: 0;
 }
 
+#exgmobile-page {
+    padding: 20px; 
+}
+
 /***** Страница регистрации ****/
 
-#exgmobile-reg-page {    
+#exgmobile-reg {    
     background-position: 50% 0;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -35,7 +39,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     line-height: 16px;
 }
 
-#exgmobile-reg-page h6 {
+#exgmobile-reg h6 {
     font-size: 13px;
     font-weight: bold;
     margin: 0;
@@ -43,30 +47,30 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     text-transform: uppercase;
 }
 
-#exgmobile-reg-page p, #exgmobile-reg-page ul {
+#exgmobile-reg p, #exgmobile-reg ul {
     margin: 10px 0;
 }
 
-#exgmobile-reg-page div.text {
+#exgmobile-reg div.text {
     height: 128px;
 }
 
-#exgmobile-reg-page input::-webkit-input-placeholder {
+#exgmobile-reg input::-webkit-input-placeholder {
 	color: rgba(63, 32, 7, .25);
     font-style: italic;
 }
 
-#exgmobile-reg-page input:-moz-placeholder {
+#exgmobile-reg input:-moz-placeholder {
 	color: rgba(63, 32, 7, .25);
     font-style: italic;
 }
 
-#exgmobile-reg-page input.placeholder {
+#exgmobile-reg input.placeholder {
     color: rgba(63, 32, 7, .25);
     font-style: italic;
 }
 
-#exgmobile-reg-page input.button {
+#exgmobile-reg input.button {
     background-color: transparent;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -78,29 +82,29 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 160px;
 }
 
-#exgmobile-reg-page input.button:hover,
-#exgmobile-reg-page input.button:focus {
+#exgmobile-reg input.button:hover,
+#exgmobile-reg input.button:focus {
     background-position: 0 -39px;
 }
 
-#exgmobile-reg-page input.button:active {
+#exgmobile-reg input.button:active {
     background-position: 0 -78px;
 }
 
-#exgmobile-reg-page input.button[disabled] {
+#exgmobile-reg input.button[disabled] {
     background-position: 0 -117px;
 }
 
-#exgmobile-reg-page div.error-container {
+#exgmobile-reg div.error-container {
     height: 64px;
     margin-top: 10px;
 }
 
-#exgmobile-reg-page div.submit-loading {
+#exgmobile-reg div.submit-loading {
     background: url(../img/reg/loader_small.gif) no-repeat 50% 50%;
 }
 
-#exgmobile-reg-page label.error {
+#exgmobile-reg label.error {
     background-color: #DF9D7B;
     box-shadow: 0 0 6px #000000;
     color: #000000;
@@ -108,11 +112,11 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     padding: 8px;
 }
 
-#exgmobile-reg-page label.valid{
+#exgmobile-reg label.valid{
     display: none !important;
 }
 
-#exgmobile-reg-page label.status {
+#exgmobile-reg label.status {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 24px;
@@ -121,27 +125,27 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 24px;
 }
 
-#exgmobile-reg-page .race-2 label.status {
+#exgmobile-reg .race-2 label.status {
     left: -24px;
 }
 
-#exgmobile-reg-page .race-3 label.status {
+#exgmobile-reg .race-3 label.status {
     right: -24px;
 }
 
-#exgmobile-reg-page label.status-error {
+#exgmobile-reg label.status-error {
     background-image: url(../img/reg/icon_reject.png);
 }
 
-#exgmobile-reg-page label.status-valid {
+#exgmobile-reg label.status-valid {
     background-image: url(../img/reg/icon_accept.png);
 }
 
-#exgmobile-reg-page label.status-pending {
+#exgmobile-reg label.status-pending {
     background-image: url(../img/reg/loader_small.gif);
 }
 
-#exgmobile-reg-page form {
+#exgmobile-reg form {
     background-repeat: no-repeat;
     background-position: 50% 0;
     height: 746px;
@@ -149,11 +153,11 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     position: relative;
     width: 990px;
 }
-#exgmobile-reg-page.as form, #exgmobile-reg-page.van form{
+#exgmobile-reg.as form, #exgmobile-reg.van form{
     background: none;
 }
 
-#exgmobile-reg-page fieldset.reg-step {
+#exgmobile-reg fieldset.reg-step {
     border: 0;
     display: none;
     height: 100%;
@@ -163,7 +167,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 100%;
 }
 
-#exgmobile-reg-page fieldset.race-3 {
+#exgmobile-reg fieldset.race-3 {
     height: 600px;
     left: 242px;
     position: absolute;
@@ -171,7 +175,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 378px;
 }
 
-#exgmobile-reg-page fieldset.race-2 {
+#exgmobile-reg fieldset.race-2 {
     height: 600px;
     left: 377px;
     position: absolute;
@@ -179,32 +183,32 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 378px;
 }
 
-#exgmobile-reg-page fieldset.race-2 div.container {
+#exgmobile-reg fieldset.race-2 div.container {
     padding: 70px 40px 0 100px;
 }
 
-#exgmobile-reg-page fieldset.race-3 div.container {
+#exgmobile-reg fieldset.race-3 div.container {
     padding: 70px 90px 0 50px;
 }
 
-#exgmobile-reg-page input.gender {
+#exgmobile-reg input.gender {
     display: none;
 }
 
-#exgmobile-reg-page-step-gender label {
+#exgmobile-reg-step-gender label {
     cursor: pointer;
     position: absolute;
 }
 
-#exgmobile-reg-page .gender-21,
-#exgmobile-reg-page .gender-22,
-#exgmobile-reg-page .gender-31,
-#exgmobile-reg-page .gender-32{
+#exgmobile-reg .gender-21,
+#exgmobile-reg .gender-22,
+#exgmobile-reg .gender-31,
+#exgmobile-reg .gender-32{
     position:absolute;
     z-index:10;
 }
 
-#exgmobile-reg-page-gender-af-img{
+#exgmobile-reg-gender-af-img{
 	background-image: url(../img/reg/as_woman_hi.png);
     background-repeat: no-repeat;
     background-position: -9999px -9999px;
@@ -212,18 +216,18 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     top: 83px;
 }
 
-#exgmobile-reg-page .gender-22{
+#exgmobile-reg .gender-22{
     background: url(../img/reg/as_woman_flip.png) no-repeat 0 0;
     left: 224px;
     top: 93px;
 }
 
-#exgmobile-reg-page-gender-af-img, #exgmobile-reg-page .gender-22{
+#exgmobile-reg-gender-af-img, #exgmobile-reg .gender-22{
     height: 534px;
     width: 249px;
 }
 
-#exgmobile-reg-page-gender-am-img{
+#exgmobile-reg-gender-am-img{
     background-image: url(../img/reg/as_man_hi.png);
     background-repeat: no-repeat;
     background-position: -9999px -9999px;
@@ -231,18 +235,18 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     top: 72px;
 }
 
-#exgmobile-reg-page .gender-21{
+#exgmobile-reg .gender-21{
     background: url(../img/reg/as_man_flip.png) no-repeat 0 0;
     left: 211px;
     top: 75px;
 }
 
-#exgmobile-reg-page-gender-am-img, #exgmobile-reg-page .gender-21 {
+#exgmobile-reg-gender-am-img, #exgmobile-reg .gender-21 {
     height: 564px;
     width: 276px;
 }
 
-#exgmobile-reg-page-gender-vm-img{
+#exgmobile-reg-gender-vm-img{
     background-image: url(../img/reg/van_man_hi.png);
     background-repeat: no-repeat;
     background-position: -9999px -9999px;    
@@ -250,18 +254,18 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     top: 71px;
 }
 
-#exgmobile-reg-page .gender-31{
+#exgmobile-reg .gender-31{
     background: url(../img/reg/van_man_flip.png) no-repeat 0 0;
     left: 537px;
     top: 70px;
 }
 
-#exgmobile-reg-page-gender-vm-img, #exgmobile-reg-page .gender-31 {
+#exgmobile-reg-gender-vm-img, #exgmobile-reg .gender-31 {
     height: 570px;
     width: 238px;
 }
 
-#exgmobile-reg-page-gender-vf-img{
+#exgmobile-reg-gender-vf-img{
     background-image: url(../img/reg/van_woman_hi.png);
     background-repeat: no-repeat;
     background-position: -9999px -9999px;    
@@ -269,66 +273,66 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     top: 95px;
 }
 
-#exgmobile-reg-page .gender-32{
+#exgmobile-reg .gender-32{
     background: url(../img/reg/van_woman_flip.png) no-repeat 0 0;
     left: 513px;
     top: 101px;
 }
 
-#exgmobile-reg-page-gender-vf-img, #exgmobile-reg-page .gender-32 {
+#exgmobile-reg-gender-vf-img, #exgmobile-reg .gender-32 {
     height: 526px;
     width: 272px;
 }
 
-#exgmobile-reg-page-gender-af-img:hover,
-#exgmobile-reg-page-gender-am-img:hover,
-#exgmobile-reg-page-gender-vm-img:hover, 
-#exgmobile-reg-page-gender-vf-img:hover {
+#exgmobile-reg-gender-af-img:hover,
+#exgmobile-reg-gender-am-img:hover,
+#exgmobile-reg-gender-vm-img:hover, 
+#exgmobile-reg-gender-vf-img:hover {
     background-position: 0 0;
 }
 
-#exgmobile-reg-page label.gender input.button {
+#exgmobile-reg label.gender input.button {
     margin: 0;
     position: absolute;
 }
 
-#exgmobile-reg-page-gender-af-img input.button {
+#exgmobile-reg-gender-af-img input.button {
     left: 29px;
     top: 556px;
 }
 
-#exgmobile-reg-page-gender-am-img input.button {
+#exgmobile-reg-gender-am-img input.button {
     left: 58px;
     top: 567px;
 }
 
-#exgmobile-reg-page-gender-vm-img input.button {
+#exgmobile-reg-gender-vm-img input.button {
     left: 35px;
     top: 568px;
 }
 
-#exgmobile-reg-page-gender-vf-img input.button {
+#exgmobile-reg-gender-vf-img input.button {
     left: 58px;
     top: 544px;
 }
 
-#exgmobile-reg-page-gender-f-img input.button {
+#exgmobile-reg-gender-f-img input.button {
     margin-top: 17px;
 }
 
-#exgmobile-reg-page label.gender:hover input.button {
+#exgmobile-reg label.gender:hover input.button {
     background-position: 0 -39px;
 }
 
-#exgmobile-reg-page label.gender input.button:active {
+#exgmobile-reg label.gender input.button:active {
     background-position: 0 -78px;
 }
 
-#exgmobile-reg-page div.field {
+#exgmobile-reg div.field {
     position: relative;
 }
 
-#exgmobile-reg-page div.input {
+#exgmobile-reg div.input {
     background-color: rgba(0, 0, 0, .45);
     border-radius: 2px;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, .15);
@@ -336,12 +340,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     padding: 2px;
 }
 
-#exgmobile-reg-page div.input-border {
+#exgmobile-reg div.input-border {
     border: 1px solid #E99356;
     padding: 2px;
 }
 
-#exgmobile-reg-page div.input input {
+#exgmobile-reg div.input input {
     background-color: #F0D9A7;
     border: 0;
     border-radius: 0;
@@ -355,12 +359,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     width: 100%;
 }
 
-#exgmobile-reg-page div.input input:hover,
-#exgmobile-reg-page div.input input:focus {
+#exgmobile-reg div.input input:hover,
+#exgmobile-reg div.input input:focus {
     background-color: #FDF0BC;
 }
 
-#exgmobile-reg-page-eula {
+#exgmobile-reg-eula {
     background: url(../img/reg/18_black.png) no-repeat 0 50%;
     bottom: 0;
     color: #806B3D;
@@ -374,6 +378,6 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
     white-space: nowrap;
 }
 
-#exgmobile-reg-page-eula a {
+#exgmobile-reg-eula a {
     color: #15506E;
 }

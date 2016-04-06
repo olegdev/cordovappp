@@ -14,7 +14,7 @@ define(['underscore', 'views/toolbar/toolbar'], function(_, toolbarView){
 						'<div id="exgmobile-page-content"></div>',
 						'<div id="exgmobile-page-bbar"></div>',
 					'</div>',
-				];
+				].join('');
 
 				$(document.body).html(pageTpl);
 

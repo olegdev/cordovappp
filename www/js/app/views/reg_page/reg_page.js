@@ -15,129 +15,44 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 
 	return {
 
+		tbar: {
+			backBtn: true,
+		},
+
+		bbar: {
+			langSelector: true,
+		},
+
 		render: function(renderTo) {
 
 			// define dynamic styles with translatable images
 			var style = document.createElement('style');
 			style.type = 'text/css';
 			style.innerHTML = [
-				'#exgmobile-reg-page, #exgmobile-reg-page form  {',
+				'#exgmobile-reg, #exgmobile-reg form  {',
 	    			'background-image: url( ./img/'+ translates.t('reg/bg_all.jpg') + ');',
 	    		'}',				
-				'#exgmobile-reg-page.as {',
+				'#exgmobile-reg.as {',
 				   ' background-image: url( ./img/'+ translates.t('reg/bg_as.jpg') + ') !important;',
 				'}',
-				'#exgmobile-reg-page.van {',
+				'#exgmobile-reg.van {',
 				    'background-image: url( ./img/'+ translates.t('reg/bg_van.jpg') + ') !important;',
 				'}',
-				'#exgmobile-reg-page label.gender input.button {',
+				'#exgmobile-reg label.gender input.button {',
 				    'background-image: url( ./img/'+ translates.t('reg/button-choose.png') + ');',
 				'}',
-				'#exgmobile-reg-page input.prev {',
+				'#exgmobile-reg input.prev {',
 				   ' background-image: url( ./img/'+ translates.t('reg/button-prev.png') + ');',
 				'}',
-				'#exgmobile-reg-page input.next {',
+				'#exgmobile-reg input.next {',
 				    'background-image: url( ./img/'+ translates.t('reg/button-next.png') + ');',
 				'}',
-				'#exgmobile-reg-page input.submit {',
+				'#exgmobile-reg input.submit {',
 				    'background-image: url( ./img/'+ translates.t('reg/button-submit.png') + ');',
 				   ' width: 190px;',
 				'}'
 			].join('');
 			document.getElementsByTagName('head')[0].appendChild(style);
-
-			/*
-			 * Translated default messages for the jQuery validation plugin.
-			 */
-			jQuery.extend(jQuery.validator.messages, {
-				required: "Это поле необходимо заполнить",
-				regFormValidation: {
-					name: {
-						required: "Имя не задано",
-						minlength: jQuery.validator.format("Минимальная длина имени {0} символа"),
-						maxlength: jQuery.validator.format("Максимальная длина имени {0} символов")
-					},
-
-					email: {
-						email: "Неверный адрес почты"
-					}
-				}
-			});
-
-			/** Overrides remote validation */
-
-			// $.validator.methods.remote = function(value, element, param) {
-			// 	var me = this;
-
-			// 	if ( this.optional(element) ) {
-			// 		return "dependency-mismatch";
-			// 	}
-
-			// 	var previous = this.previousValue(element);
-			// 	if (!this.settings.messages[element.name] ) {
-			// 		this.settings.messages[element.name] = {};
-			// 	}
-			// 	previous.originalMessage = this.settings.messages[element.name].remote;
-			// 	this.settings.messages[element.name].remote = previous.message;
-
-			// 	param = typeof param === "string" && {url:param} || param;
-
-			// 	if ( this.pending[element.name] ) {
-			// 		return "pending";
-			// 	}
-			// 	if ( previous.old === value ) {
-			// 		return previous.valid;
-			// 	}
-				
-			// 	var label = $('label.status[for="' + element.id + '"]'),
-			// 		input = getFieldset(element).find('input.next, input.submit');
-					
-			// 	label.addClass('status-pending');
-			// 	input.prop('disabled', true);
-				
-			// 	clearTimeout(this.requestTimeout);
-				
-			// 	this.requestTimeout = setTimeout(function() {
-			// 		previous.old = value;
-			// 		var validator = me;
-			// 		me.startRequest(element);
-			// 		var data = {};
-			// 		data[element.name] = value;
-				
-			// 		$.ajax($.extend(true, {
-			// 			url: param,
-			// 			mode: "abort",
-			// 			port: "validate" + element.name,
-			// 			dataType: "json",
-			// 			data: data,
-			// 			success: function(response) {
-			// 				validator.settings.messages[element.name].remote = previous.originalMessage;
-			// 				var valid = response === true || response === "true";
-			// 				if ( valid ) {
-			// 					var submitted = validator.formSubmitted;
-			// 					validator.prepareElement(element);
-			// 					validator.formSubmitted = submitted;
-			// 					validator.successList.push(element);
-			// 					delete validator.invalid[element.name];
-			// 					validator.showErrors();
-			// 				} else {
-			// 					var errors = {};
-			// 					var message = response || validator.defaultMessage( element, "remote" );
-			// 					errors[element.name] = previous.message = $.isFunction(message) ? message(value) : message;
-			// 					validator.invalid[element.name] = true;
-			// 					validator.showErrors(errors);
-			// 				}
-			// 				previous.valid = valid;
-			// 				validator.stopRequest(element, valid);
-							
-			// 				label.removeClass('status-pending');
-			// 				input.prop('disabled', false);
-			// 			}
-			// 		}, param));
-			// 	}, 500);
-				
-			// 	return "pending";
-			// };
 
 			$.validator.methods.remote = function( value, element, param, method ) {
 				if ( this.optional( element ) ) {
@@ -195,7 +110,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 								validator.showErrors();
 							} else {
 								errors = {};
-								message = response || validator.defaultMessage( element, { method: method, parameters: value } );
+								message = translates.t(response) || validator.defaultMessage( element, { method: method, parameters: value } );
 								errors[ element.name ] = previous.message = message;
 								validator.invalid[ element.name ] = true;
 								validator.showErrors( errors );
@@ -217,9 +132,14 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 
 			/*** Dom listeners **/
 
-			$('#exgmobile-reg-page input[placeholder]').placeholder();
-			
-			var regForm = $('#exgmobile-reg-page form'),
+			$('#exgmobile-reg input[placeholder]').placeholder();
+			$('#exgmobile-reg .eula-link').click(function(e) {
+				e.preventDefault();
+				pages.openPage('eula_page');
+			});
+
+
+			var regForm = $('#exgmobile-reg form'),
 				gender,
 				race,
 				flip = undefined;
@@ -227,9 +147,9 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			regForm[0].reset();
 			
 			function setGenderClass() {
-				$('fieldset:not(#exgmobile-reg-page-step-gender)').removeClass('race-2 race-3').addClass('race-' + race);
-				$('#exgmobile-reg-page').addClass((race == 2) ? 'as' : 'van');
-				flip = $('#exgmobile-reg-page form').append('<div id="exgmobile-reg-page-flip-img" class="gender-' + race + gender + '"></div>');
+				$('fieldset:not(#exgmobile-reg-step-gender)').removeClass('race-2 race-3').addClass('race-' + race);
+				$('#exgmobile-reg').addClass((race == 2) ? 'as' : 'van');
+				flip = $('#exgmobile-reg form').append('<div id="exgmobile-reg-flip-img" class="gender-' + race + gender + '"></div>');
 			}
 			
 			function next(fieldset) {
@@ -246,10 +166,10 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				
 				fieldset.hide();
 				
-				if(prev[0].id == 'exgmobile-reg-page-step-gender') {
+				if(prev[0].id == 'exgmobile-reg-step-gender') {
 					setTimeout(function() {
-						$('#exgmobile-reg-page').removeClass();
-						$('#exgmobile-reg-page-flip-img').remove();
+						$('#exgmobile-reg').removeClass();
+						$('#exgmobile-reg-flip-img').remove();
 						prev.show();
 					}, 10);
 				} else {
@@ -272,7 +192,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				next(fieldset);
 			});
 			
-			$('#exgmobile-reg-page input.next').on('click', function() {
+			$('#exgmobile-reg input.next').on('click', function() {
 				var fieldset = $(this).closest('fieldset');
 					id = fieldset.find('input[type="text"], input[type="password"], input[type="email"]')[0].id;
 				
@@ -289,16 +209,16 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				}
 			});
 			
-			$('#exgmobile-reg-page input.prev').on('click', function() {
+			$('#exgmobile-reg input.prev').on('click', function() {
 				var fieldset = $(this).closest('fieldset');
 				prev(fieldset);
 			});
 			
-			$('#exgmobile-reg-page input[type="text"], input[type="email"]').on('input', function() {
+			$('#exgmobile-reg input[type="text"], input[type="email"]').on('input', function() {
 				regForm.validate().element('#' + this.id);
 			});
 			
-			$('#exgmobile-reg-page input.submit').on('click', function() {
+			$('#exgmobile-reg input.submit').on('click', function() {
 
 				var fieldset = $(this).closest('fieldset');
 					id = fieldset.find('input[type="text"], input[type="email"]')[0].id;
@@ -335,11 +255,11 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 					});
 					
 					if (errors.social) {
-						$('#exgmobile-reg-page label.error[for="email"]').html(errors.social).css('display', 'block');
+						$('#exgmobile-reg label.error[for="email"]').html(errors.social).css('display', 'block');
 						
 						if (first) {
-							$('#exgmobile-reg-page fieldset').hide();
-							$('#exgmobile-reg-page-step-email').show();
+							$('#exgmobile-reg fieldset').hide();
+							$('#exgmobile-reg-step-email').show();
 						}
 					}
 				}
@@ -374,7 +294,11 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 					$('input.submit:visible').prop('disabled', false);
 
 					if (!json.error) {
-					   accounts.loginBy(accounts.add("device", deviceCredentials, userData));
+					   accounts.loginBy(accounts.add("device", deviceCredentials, userData), function(account) {
+					   		if (account) {
+					   			pages.openPage('game_page');
+					   		}
+					   });
 					} else {
 						showCustomErrors(json.error);
 					}
@@ -401,14 +325,20 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 							type: 'post',
 							data: {
 								name: function() {
-									return $("#exgmobile-reg-page-name").val();
+									return $("#exgmobile-reg-name").val();
 								}
 							}
 						}
 					},
 				},
 				
-				messages: jQuery.validator.messages.regFormValidation,
+				messages: {
+					title: {
+						required: translates.t("Имя не задано"),
+						minlength: jQuery.validator.format(translates.t("Минимальная длина имени {0} символа")),
+						maxlength: jQuery.validator.format(translates.t("Максимальная длина имени {0} символов"))
+					}
+				},
 				
 				submitHandler: function(form) {
 					$('input[name="gender"]').val(gender);
@@ -440,7 +370,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			if (name) {
 				$('#name').val(name);
 				
-				regForm.validate().element('#exgmobile-reg-page-name');
+				regForm.validate().element('#exgmobile-reg-name');
 			}
 			
 			/**

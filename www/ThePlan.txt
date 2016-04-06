@@ -4,5 +4,3 @@ x 1. Translates, lang selector
 3. Show bind acc
 4. Show game page
 5. Social integration
-
-COMMIT plz

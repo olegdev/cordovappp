@@ -1,7 +1,7 @@
 define(['underscore', 'translates'], function(_, translates) {
 	var tpl = _.template([
 
-		'GAME',
+		'<%= translates.t("EULA: текст") %>'
 
 	].join(''));
 

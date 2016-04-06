@@ -1,7 +1,7 @@
 define(['underscore', 'translates'], function(_, translates) {
 	var tpl = _.template([
 
-		'GAME',
+		'<button data-action="add-email"><%= translates.t("Email") %></button>',
 
 	].join(''));
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="js/libs/jqmobile/css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile/index.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile/preloader.css">
+		<title>Time to be hero</title>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/libs/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery/jquery.md5.js"></script>
+
+		<script type="text/javascript">
+			$(document).bind('mobileinit',function(){
+		        $.mobile.changePage.defaults.changeHash = false;
+		        $.mobile.hashListeningEnabled = false;
+		        $.mobile.pushStateEnabled = false;
+		    });
+		</script>
+
+		<script type="text/javascript" src="js/libs/jqmobile/js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/mobile/preloader.js"></script>
+		<script type="text/javascript" src="js/mobile/exgodsmobile.js"></script>
+		<script type="text/javascript" src="js/mobile/exgodsmobile_storage.js"></script>
+		<script type="text/javascript" src="js/mobile/exgodsmobile_accounts.js"></script>
+		<script type="text/javascript" src="js/mobile/exgodsmobile_translates.js"></script>
+		<script type="text/javascript" src="js/mobile/index.js"></script>
+
+		<!-- translates -->
+		<script type="text/javascript" src="js/mobile/translates/ru.js"></script>
+		<script type="text/javascript" src="js/mobile/translates/en.js"></script>
+
+	</head>
+	<body>
+
+		<div data-role="page" id="index-page">
+			<ul id="accounts"></ul>
+			<button id="new-account-btn">Новый</button>
+			<button id="add-account-btn">Добавить</button>
+
+			<div data-role="popup" id="bind-account-popup">
+				<p>Необходимо привязать аккаунт, прежде чем создать новый</p>
+				<button class="ok-popup-btn">Привязать</button><button class="close-popup-btn">Отмена</button>
+			</div>
+		</div>
+
+		<div data-role="page" id="bind-account-page">
+			<div data-role="header" data-add-back-btn="true">
+			  <h1>Bind device account</h1>
+			</div>
+			<button data-type="email">Email</button>
+
+			<div data-role="popup" id="email-bind-popup">
+				<p>Привязать к email</p>
+				<form>
+					<div class="ui-field-contain">
+						<label for="emailInput">Email:</label>
+						<input type="text" name="email" id="emailInput" value="" placeholder="Email" />
+						<label for="passInput">Password:</label>
+						<input type="password" name="epass" value="" id="passInput" placeholder="Password" />
+					</div>
+				</form>
+				<button class="ok-popup-btn">Привязать</button><button class="close-popup-btn">Отмена</button>
+			</div>
+		</div>
+
+		<div data-role="page" id="add-account-page">
+			<div data-role="header" data-add-back-btn="true">
+				<h1>Add account</h1>
+			</div>
+			<button data-type="email">Email</button>
+
+			<div data-role="popup" id="email-add-popup">
+				<p>Добавить email account</p>
+				<form>
+					<div class="ui-field-contain">
+						<label for="emailInput2">Email:</label>
+						<input type="text" name="email" id="emailInput2" value="" placeholder="Email" />
+						<label for="passInput2">Password:</label>
+						<input type="password" name="epass" value="" id="passInput2" placeholder="Password" />
+					</div>
+				</form>
+				<button class="ok-popup-btn">Добавить</button><button class="close-popup-btn">Отмена</button>
+			</div>
+		</div>
+
+		<div data-role="page" id="reg-page">
+			
+		</div>
+
+	</body>
+</html>
