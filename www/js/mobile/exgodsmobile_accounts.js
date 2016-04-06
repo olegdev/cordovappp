@@ -118,17 +118,12 @@ ExGodsMobileAccounts.prototype.loginBy = function(account) {
 
 // сохраняет список в localStorage
 ExGodsMobileAccounts.prototype.saveInStorage = function() {
-	localStorage.setItem('accounts', JSON.stringify(this.list));
+	ExGodsMobile.storage.setItem('accounts', this.list);
 }
 
 // достает список из localStorage
 ExGodsMobileAccounts.prototype.getFromStorage = function() {
-	var list = localStorage.getItem('accounts');
-	if (list) {
-		return JSON.parse(list);
-	} else {
-		return [];
-	}
+	return ExGodsMobile.storage.getItem('accounts', []);
 }
 
 ExGodsMobile.accounts = new ExGodsMobileAccounts();

@@ -40,3 +40,4 @@ hooks/*
 platforms/*
 plugins/*
 www/img/*
+www/js/vendor/*

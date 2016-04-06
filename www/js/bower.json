@@ -1,0 +1,31 @@
+{
+  "name": "Time to be hero mobile",
+  "version": "0.0.1",
+  "authors": [
+    "olegdev <s2ferr@gmail.com>"
+  ],
+  "description": "Time to be hero mobile",
+  "main": "main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [],
+  "homepage": "timetobehero.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "underscore": "^1.8.3",
+    "text": "^2.0.14",
+    "jquery-md5": "*",
+    "requirejs-plugins": "^1.0.3",
+    "jquery-placeholder": "^2.3.1",
+    "jquery-validation": "^1.15.0",
+    "jquery-form": "^3.46.0"
+  }
+}

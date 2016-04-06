@@ -1,0 +1,379 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+
+/**** Окно ****/
+
+.exgmobile-window {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	padding: 10px;
+	top: 0;
+}
+
+/***** Страница регистрации ****/
+
+#exgmobile-reg-page {    
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 990px;
+    position: relative;
+    left: 0px;
+    background-color: #000000;
+    color: #3f2007;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#exgmobile-reg-page h6 {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#exgmobile-reg-page p, #exgmobile-reg-page ul {
+    margin: 10px 0;
+}
+
+#exgmobile-reg-page div.text {
+    height: 128px;
+}
+
+#exgmobile-reg-page input::-webkit-input-placeholder {
+	color: rgba(63, 32, 7, .25);
+    font-style: italic;
+}
+
+#exgmobile-reg-page input:-moz-placeholder {
+	color: rgba(63, 32, 7, .25);
+    font-style: italic;
+}
+
+#exgmobile-reg-page input.placeholder {
+    color: rgba(63, 32, 7, .25);
+    font-style: italic;
+}
+
+#exgmobile-reg-page input.button {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0;
+    display: block;
+    height: 39px;
+    margin: 10px auto;
+    padding: 0;
+    width: 160px;
+}
+
+#exgmobile-reg-page input.button:hover,
+#exgmobile-reg-page input.button:focus {
+    background-position: 0 -39px;
+}
+
+#exgmobile-reg-page input.button:active {
+    background-position: 0 -78px;
+}
+
+#exgmobile-reg-page input.button[disabled] {
+    background-position: 0 -117px;
+}
+
+#exgmobile-reg-page div.error-container {
+    height: 64px;
+    margin-top: 10px;
+}
+
+#exgmobile-reg-page div.submit-loading {
+    background: url(../img/reg/loader_small.gif) no-repeat 50% 50%;
+}
+
+#exgmobile-reg-page label.error {
+    background-color: #DF9D7B;
+    box-shadow: 0 0 6px #000000;
+    color: #000000;
+    display: none;
+    padding: 8px;
+}
+
+#exgmobile-reg-page label.valid{
+    display: none !important;
+}
+
+#exgmobile-reg-page label.status {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    width: 24px;
+}
+
+#exgmobile-reg-page .race-2 label.status {
+    left: -24px;
+}
+
+#exgmobile-reg-page .race-3 label.status {
+    right: -24px;
+}
+
+#exgmobile-reg-page label.status-error {
+    background-image: url(../img/reg/icon_reject.png);
+}
+
+#exgmobile-reg-page label.status-valid {
+    background-image: url(../img/reg/icon_accept.png);
+}
+
+#exgmobile-reg-page label.status-pending {
+    background-image: url(../img/reg/loader_small.gif);
+}
+
+#exgmobile-reg-page form {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 746px;
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+}
+#exgmobile-reg-page.as form, #exgmobile-reg-page.van form{
+    background: none;
+}
+
+#exgmobile-reg-page fieldset.reg-step {
+    border: 0;
+    display: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#exgmobile-reg-page fieldset.race-3 {
+    height: 600px;
+    left: 242px;
+    position: absolute;
+    top: 77px;
+    width: 378px;
+}
+
+#exgmobile-reg-page fieldset.race-2 {
+    height: 600px;
+    left: 377px;
+    position: absolute;
+    top: 77px;
+    width: 378px;
+}
+
+#exgmobile-reg-page fieldset.race-2 div.container {
+    padding: 70px 40px 0 100px;
+}
+
+#exgmobile-reg-page fieldset.race-3 div.container {
+    padding: 70px 90px 0 50px;
+}
+
+#exgmobile-reg-page input.gender {
+    display: none;
+}
+
+#exgmobile-reg-page-step-gender label {
+    cursor: pointer;
+    position: absolute;
+}
+
+#exgmobile-reg-page .gender-21,
+#exgmobile-reg-page .gender-22,
+#exgmobile-reg-page .gender-31,
+#exgmobile-reg-page .gender-32{
+    position:absolute;
+    z-index:10;
+}
+
+#exgmobile-reg-page-gender-af-img{
+	background-image: url(../img/reg/as_woman_hi.png);
+    background-repeat: no-repeat;
+    background-position: -9999px -9999px;
+    left: 14px;
+    top: 83px;
+}
+
+#exgmobile-reg-page .gender-22{
+    background: url(../img/reg/as_woman_flip.png) no-repeat 0 0;
+    left: 224px;
+    top: 93px;
+}
+
+#exgmobile-reg-page-gender-af-img, #exgmobile-reg-page .gender-22{
+    height: 534px;
+    width: 249px;
+}
+
+#exgmobile-reg-page-gender-am-img{
+    background-image: url(../img/reg/as_man_hi.png);
+    background-repeat: no-repeat;
+    background-position: -9999px -9999px;
+    left: 231px;
+    top: 72px;
+}
+
+#exgmobile-reg-page .gender-21{
+    background: url(../img/reg/as_man_flip.png) no-repeat 0 0;
+    left: 211px;
+    top: 75px;
+}
+
+#exgmobile-reg-page-gender-am-img, #exgmobile-reg-page .gender-21 {
+    height: 564px;
+    width: 276px;
+}
+
+#exgmobile-reg-page-gender-vm-img{
+    background-image: url(../img/reg/van_man_hi.png);
+    background-repeat: no-repeat;
+    background-position: -9999px -9999px;    
+    left: 502px;
+    top: 71px;
+}
+
+#exgmobile-reg-page .gender-31{
+    background: url(../img/reg/van_man_flip.png) no-repeat 0 0;
+    left: 537px;
+    top: 70px;
+}
+
+#exgmobile-reg-page-gender-vm-img, #exgmobile-reg-page .gender-31 {
+    height: 570px;
+    width: 238px;
+}
+
+#exgmobile-reg-page-gender-vf-img{
+    background-image: url(../img/reg/van_woman_hi.png);
+    background-repeat: no-repeat;
+    background-position: -9999px -9999px;    
+    left: 719px;
+    top: 95px;
+}
+
+#exgmobile-reg-page .gender-32{
+    background: url(../img/reg/van_woman_flip.png) no-repeat 0 0;
+    left: 513px;
+    top: 101px;
+}
+
+#exgmobile-reg-page-gender-vf-img, #exgmobile-reg-page .gender-32 {
+    height: 526px;
+    width: 272px;
+}
+
+#exgmobile-reg-page-gender-af-img:hover,
+#exgmobile-reg-page-gender-am-img:hover,
+#exgmobile-reg-page-gender-vm-img:hover, 
+#exgmobile-reg-page-gender-vf-img:hover {
+    background-position: 0 0;
+}
+
+#exgmobile-reg-page label.gender input.button {
+    margin: 0;
+    position: absolute;
+}
+
+#exgmobile-reg-page-gender-af-img input.button {
+    left: 29px;
+    top: 556px;
+}
+
+#exgmobile-reg-page-gender-am-img input.button {
+    left: 58px;
+    top: 567px;
+}
+
+#exgmobile-reg-page-gender-vm-img input.button {
+    left: 35px;
+    top: 568px;
+}
+
+#exgmobile-reg-page-gender-vf-img input.button {
+    left: 58px;
+    top: 544px;
+}
+
+#exgmobile-reg-page-gender-f-img input.button {
+    margin-top: 17px;
+}
+
+#exgmobile-reg-page label.gender:hover input.button {
+    background-position: 0 -39px;
+}
+
+#exgmobile-reg-page label.gender input.button:active {
+    background-position: 0 -78px;
+}
+
+#exgmobile-reg-page div.field {
+    position: relative;
+}
+
+#exgmobile-reg-page div.input {
+    background-color: rgba(0, 0, 0, .45);
+    border-radius: 2px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, .15);
+    height: 34px;
+    padding: 2px;
+}
+
+#exgmobile-reg-page div.input-border {
+    border: 1px solid #E99356;
+    padding: 2px;
+}
+
+#exgmobile-reg-page div.input input {
+    background-color: #F0D9A7;
+    border: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 15px;
+    height: 28px;
+    line-height: 18px;
+    padding: 5px 6px;
+    width: 100%;
+}
+
+#exgmobile-reg-page div.input input:hover,
+#exgmobile-reg-page div.input input:focus {
+    background-color: #FDF0BC;
+}
+
+#exgmobile-reg-page-eula {
+    background: url(../img/reg/18_black.png) no-repeat 0 50%;
+    bottom: 0;
+    color: #806B3D;
+    font-weight: bold;
+    left: 87px;
+    line-height: 64px;
+    margin: 0;
+    padding-left: 64px;
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#exgmobile-reg-page-eula a {
+    color: #15506E;
+}

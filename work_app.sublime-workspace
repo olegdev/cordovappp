@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"function"
+			],
+			[
+				"back",
+				"backBtn"
+			],
+			[
+				"page",
+				"pageTpl"
+			],
+			[
+				"tool",
+				"toolbarView"
+			],
+			[
+				"ex",
+				"exgmobile-page-content"
+			],
+			[
+				"ope",
+				"openPage"
+			],
+			[
+				"win",
+				"windowView"
+			],
+			[
+				"render",
+				"renderTo"
+			],
+			[
+				"lan",
+				"lang"
+			],
+			[
 				"par",
 				"part"
 			],
@@ -36,98 +72,98 @@
 	"buffers":
 	[
 		{
-			"file": "www/index.html",
+			"file": "www/ThePlan.txt",
 			"settings":
 			{
-				"buffer_size": 3289,
+				"buffer_size": 189,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/mobile/index.js",
+			"file": "/Users/mac/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 2880,
+				"buffer_size": 13677,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/mobile/exgodsmobile.js",
+			"file": "www/js/app/views/index_page/index_page.tpl.js",
 			"settings":
 			{
-				"buffer_size": 5188,
+				"buffer_size": 684,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/css/mobile/reset.css",
+			"file": "www/js/app/views/index_page/index_page.js",
 			"settings":
 			{
-				"buffer_size": 841,
+				"buffer_size": 1250,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/mobile/exgodsmobile_accounts.js",
+			"file": "www/index2.html",
 			"settings":
 			{
-				"buffer_size": 3540,
+				"buffer_size": 472,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/css/mobile/index.css",
+			"file": "www/js/app/views/reg_page/reg_page.js",
 			"settings":
 			{
-				"buffer_size": 246,
+				"buffer_size": 13317,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/mobile/bind_account.js",
+			"file": "www/js/app/views/reg_page/reg_page.tpl.js",
 			"settings":
 			{
-				"buffer_size": 1239,
+				"buffer_size": 3077,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/bind_account.html",
+			"file": "www/css/app.css",
 			"settings":
 			{
-				"buffer_size": 2434,
+				"buffer_size": 8419,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/mobile/preloader.js",
+			"file": "www/js/app/translates/ru.js",
 			"settings":
 			{
-				"buffer_size": 4063,
+				"buffer_size": 635,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/css/mobile/preloader.css",
+			"file": "www/js/mobile/reg.js",
 			"settings":
 			{
-				"buffer_size": 665,
+				"buffer_size": 75106,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/js/exgods2-all.js",
+			"file": "www/js/main.js",
 			"settings":
 			{
-				"buffer_size": 1960769,
+				"buffer_size": 832,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "www/game.html",
+			"file": "www/js/vendor/jquery-validation/dist/jquery.validate.js",
 			"settings":
 			{
-				"buffer_size": 1259,
+				"buffer_size": 46264,
 				"line_ending": "Unix"
 			}
 		}
@@ -156,12 +192,70 @@
 	},
 	"file_history":
 	[
-		"/Users/mac/oleg/WorkApp/www/css/preloader.css",
-		"/Users/mac/oleg/WorkApp/www/game.html",
-		"/Users/mac/oleg/WorkApp/www/js/preloader.js",
+		"/Users/mac/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/mac/oleg/WorkApp/www/reg.html",
-		"/Users/mac/oleg/WorkApp/www/js/preload_img.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/window/window.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/add_account_page/add_account_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/add_account_page/add_account_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/toolbar/toolbar.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/toolbar/toolbar.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/lang_select/lang_select.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/lang_select/lang_select.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/pages.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/accounts.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/index.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/window/window.js",
+		"/Users/mac/oleg/WorkApp/www/css/app.css",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates/ru.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates/en.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/app.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/config.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/tbar/tbar.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/tbar/tbar.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bind_account_page/bind_account_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game_page/game_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg_page/reg_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index_page/index_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/main.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/addacc/addacc.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/addacc/addacc.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/index2.html",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bindacc/bindacc.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game/game.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bindacc/bindacc.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg/reg.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game/game.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg/reg.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.tpl",
+		"/Users/mac/oleg/WorkApp/www/test.html",
+		"/Users/mac/oleg/WorkApp/www/index.html",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_storage.js",
 		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_accounts.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/storage.js",
+		"/Users/mac/oleg/WorkApp/www/js/bower.json",
+		"/Users/mac/oleg/WorkApp/www/js/mdl.js",
+		"/Users/mac/oleg/WorkApp/www/js/.bowerrc",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/translates/en.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/translates/ru.js",
+		"/Users/mac/oleg/WorkApp/www/game.html",
+		"/Users/mac/oleg/WorkApp/www/js/exgods2-all.js",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/preloader.css",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/preloader.js",
+		"/Users/mac/oleg/WorkApp/www/bind_account.html",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/bind_account.js",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/index.css",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/reset.css",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_translates.js",
+		"/Users/mac/oleg/WorkApp/www/strings/ru.strings",
+		"/Users/mac/oleg/WorkApp/www/translates/ru",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/reg.css",
+		"/Users/mac/oleg/WorkApp/www/css/preloader.css",
+		"/Users/mac/oleg/WorkApp/www/js/preloader.js",
+		"/Users/mac/oleg/WorkApp/www/js/preload_img.js",
 		"/Users/mac/oleg/CordovaApp2/www/game.html",
 		"/Users/mac/oleg/CordovaApp2/www/css/preloader.css"
 	],
@@ -171,9 +265,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/mac/oleg/WorkApp/www",
+			"/Users/mac/oleg/WorkApp/www/js"
 		]
 	},
 	"find_state":
@@ -181,6 +277,85 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ExGodsMobile",
+			"ExGodsMobile.accounts",
+			"exgodsm",
+			"setGenderClass",
+			"gender-butt",
+			"for=",
+			"#reg-form",
+			"#wrapper",
+			"flip-img",
+			"flip",
+			"getFieldset",
+			"setGenderClass",
+			"getFieldset",
+			"md5",
+			"placeholder",
+			"md5",
+			"t('",
+			"#wrapper",
+			", ",
+			"translates",
+			"/reg/",
+			"bg_all.jpg",
+			"bg_all",
+			"#gender-",
+			"ender",
+			"../../",
+			"flipp",
+			"social",
+			"#",
+			"page-reg",
+			"id=\"",
+			"popup",
+			"lass=\"",
+			"password",
+			"add_account_page",
+			"_.bind(me.back, me)",
+			"pageManager",
+			"toolbar",
+			"history",
+			"backHandler",
+			"tbar",
+			"addacc",
+			"bindacc",
+			"game",
+			"index",
+			"reg",
+			"addacc",
+			"class",
+			"game",
+			"windowView",
+			"reg",
+			"index",
+			"alert('show game');",
+			"pages",
+			"index",
+			"accounts.",
+			"app.bootGame();",
+			"ExGodsMobile",
+			"ExGodsMobile.getDevice()",
+			"Device",
+			"device",
+			"getFromStorage",
+			"ExGodsMobileAccounts",
+			"Привязать",
+			"getLang",
+			"m = ",
+			"host_url",
+			"image_url",
+			"host_url",
+			"debug",
+			"ExGodsMobile",
+			".saveInStorage()",
+			"saveInStorage",
+			"this.saveInStorage()",
+			"this.saveInStorage();",
+			"saveInStorage",
+			"ExGodsMobileTranslates",
+			"	\n",
+			"ExGodsMobileAccounts",
 			"HOST_URL",
 			"host_u",
 			"cross",
@@ -214,6 +389,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ExGodsMobile.Accounts",
 			"\\u"
 		],
 		"reverse": false,
@@ -230,18 +406,126 @@
 			[
 				{
 					"buffer": 0,
-					"file": "www/index.html",
+					"file": "www/ThePlan.txt",
 					"settings":
 					{
-						"buffer_size": 3289,
+						"buffer_size": 189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								997,
-								997
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/mac/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 13677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13033,
+								13033
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4437.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/js/app/views/index_page/index_page.tpl.js",
+					"settings":
+					{
+						"buffer_size": 684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								682,
+								682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "www/js/app/views/index_page/index_page.js",
+					"settings":
+					{
+						"buffer_size": 1250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1001,
+								1001
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 119.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "www/index2.html",
+					"settings":
+					{
+						"buffer_size": 472,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
 							]
 						],
 						"settings":
@@ -250,52 +534,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 433.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "www/js/mobile/index.js",
+					"buffer": 5,
+					"file": "www/js/app/views/reg_page/reg_page.js",
 					"settings":
 					{
-						"buffer_size": 2880,
+						"buffer_size": 13317,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2281,
-								2281
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 897.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "www/js/mobile/exgodsmobile.js",
-					"settings":
-					{
-						"buffer_size": 5188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1428,
-								1428
+								11597,
+								11597
 							]
 						],
 						"settings":
@@ -303,110 +560,30 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 294.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "www/css/mobile/reset.css",
-					"settings":
-					{
-						"buffer_size": 841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								769,
-								769
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 23.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "www/js/mobile/exgodsmobile_accounts.js",
-					"settings":
-					{
-						"buffer_size": 3540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2588,
-								2588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1308.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "www/css/mobile/index.css",
-					"settings":
-					{
-						"buffer_size": 246,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								246,
-								246
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5431.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "www/js/mobile/bind_account.js",
+					"file": "www/js/app/views/reg_page/reg_page.tpl.js",
 					"settings":
 					{
-						"buffer_size": 1239,
+						"buffer_size": 3077,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								100
+								315,
+								315
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -416,45 +593,44 @@
 				},
 				{
 					"buffer": 7,
-					"file": "www/bind_account.html",
+					"file": "www/css/app.css",
 					"settings":
 					{
-						"buffer_size": 2434,
+						"buffer_size": 8419,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2415,
-								1895
+								4329,
+								4329
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 371.0,
+						"translation.y": 2513.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "www/js/mobile/preloader.js",
+					"file": "www/js/app/translates/ru.js",
 					"settings":
 					{
-						"buffer_size": 4063,
+						"buffer_size": 635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								26
+								353,
+								353
 							]
 						],
 						"settings":
@@ -470,23 +646,51 @@
 				},
 				{
 					"buffer": 9,
-					"file": "www/css/mobile/preloader.css",
+					"file": "www/js/mobile/reg.js",
 					"settings":
 					{
-						"buffer_size": 665,
+						"buffer_size": 75106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								213
+								74417,
+								74417
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3723.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "www/js/main.js",
+					"settings":
+					{
+						"buffer_size": 832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								305,
+								305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -496,56 +700,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "www/js/exgods2-all.js",
+					"buffer": 11,
+					"file": "www/js/vendor/jquery-validation/dist/jquery.validate.js",
 					"settings":
 					{
-						"buffer_size": 1960769,
+						"buffer_size": 46264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177028,
-								176934
+								43261,
+								43261
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 85694.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "www/game.html",
-					"settings":
-					{
-						"buffer_size": 1259,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								544,
-								544
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 11.0,
+						"translation.y": 21277.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -613,6 +789,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 233.0,
 	"status_bar_visible": true
 }
