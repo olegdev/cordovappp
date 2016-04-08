@@ -1,14 +1,25 @@
-define(['config', 'pages'], function(config, pages) {
+define(['logger', 'config', 'pages', 'accounts', 'translates'], function(logger, config, pages, accounts, translates) {
 
-return {
+// App namespace
+window.ExgMobile = {
 
 	init: function(device) {
+
+        /****/ logger.log('App init');
+
 		this.device = device;
-		pages.openPage('index_page');
+        accounts.init(function() {
+            translates.init(function() {
+                pages.openPage('index_page');
+            });
+        });
 	},
 
 	request: function(url, params, callback) {
 		var me = this;
+
+        /***/ logger.log('Request ' + url, params);
+
 		callback = callback || Ext.emptyFn;
 		params = params || {};
 		$.ajax({
@@ -20,23 +31,18 @@ return {
                 withCredentials: true,
             },
             success: function(resp) {
+
+                /***/ logger.log('Response ' + url, resp);
+                
                 callback(resp);
             },            
             error: function(resp) {
-            	if (resp.status == 0) {
-            		me.errorHandler("You have no internet connection");	
-            	} else {
-            		me.errorHandler("Connection error", resp);
-            	}
+               /***/ logger.error("Connection error", resp);
             }
         });
 	},
-
-	errorHandler: function(msg, data) {
-		if (config.debug) {
-			alert(msg + ' ' + (data ? JSON.stringify(data || {}) : ''));
-		}
-	},
 }
+
+return window.ExgMobile;
 
 });

@@ -1,13 +1,14 @@
 /***** Add account page ****/
 
 define([
+	'logger',
 	'jquery', 
 	'pages',
 	'accounts', 
 	'translates',
 	'views/window/window',
 	'views/add_account_page/add_account_page.tpl'],
-function($, pages, accounts, translates, windowView, tpl) {
+function(logger, $, pages, accounts, translates, windowView, tpl) {
 
 	return {
 
@@ -23,7 +24,7 @@ function($, pages, accounts, translates, windowView, tpl) {
 		render: function(renderTo) {
 			$(renderTo).html(tpl.apply());
 
-			$(renderTo).find('button[data-action="add-email"]').click(function() {
+			$(renderTo).find('button[data-action="add-email"]').on('click', function() {
 				windowView.render({
 					title: translates.t("Добавить"),
 					content: [
@@ -32,14 +33,37 @@ function($, pages, accounts, translates, windowView, tpl) {
 					].join(''),
 					applyBtnText: translates.t("Добавить"),
 					handler: function(el) {
-						accounts.check('email', {
-							login: el.find('input[name="email"]').val(),
-							pass: el.find('input[name="epass"]').val()
-						}, function(account) {
-							if (account) {
-								pages.openPage('index_page');
+						var account = accounts.factory("email");
+						account.credentials.login = el.find('input[name="email"]').val();
+						account.credentials.pass = el.find('input[name="epass"]').val();
+						account.check(function(err, check) {
+							if (!err) {
+								if (check) {
+									accounts.add(account);
+									pages.openPage('index_page');
+								} else {
+									/***/ logger.log("Account is unknown. Check your credentials.");
+								}
+							} else {
+								/***/ logger.error("Cannot add email account cause", err);
 							}
 						});
+					}
+				});
+			});
+
+			$(renderTo).find('button[data-action="add-fb"]').on('click', function() {
+				var account = accounts.factory("fb");
+				account.check(function(err, check) {
+					if (!err) {
+						if (check) {
+							accounts.add(account);
+							pages.openPage("index_page");
+						} else {
+							/***/ logger.log("Account is unknown. Check your credentials.");
+						}
+					} else {
+						/***/ logger.error("Cannot add fb account cause", err);
 					}
 				});
 			});

@@ -1,6 +1,9 @@
-x 0. Storage for mobile usage
-x 1. Translates, lang selector
-2. Show reg (translates, loginBy acc, check device account)
-3. Show bind acc
-4. Show game page
-5. Social integration
+1. Social integration (FB, VK)
+2. Debug requests
+3. Game page scripts
+
+// -----------------------
+
+5 apr Requirejs Arh for all pages
+6 apr Requirejs and translations
+7 apr Facebook integration

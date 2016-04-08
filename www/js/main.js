@@ -9,19 +9,29 @@ requirejs.config({
 		'underscore': '../vendor/underscore/underscore',
 		'text': '../vendor/text/text',
 		'json': '../vendor/requirejs-plugins/src/json',
-	}
+	},
+	"shim": {
+        "jquery-md5": ["jquery"],
+        "jquery-placeholder": ["jquery"],
+        "jquery-validation": ["jquery"],
+        "jquery-form": ["jquery"],
+    }
 });
 
-require(['config', 'app', 'translates'], function(config, app, translates) {
+require(['config', 'app', 'views/logview/logview'], function(config, app, logview) {
 	var innerDeviceReady = function() {
-		translates.init(function() {
-			app.init(device);
+		window.cookies.clear(function() {
+			app.init(device);			
 		});
+
+		if (config.debug) {
+			logview.render('#exgmobile-logview');
+		}
 	};
 
 	document.addEventListener('deviceready', innerDeviceReady, false);
 
 	// debug
-	window.device = {uuid: 1, platform: 'ios'};
+	window.device = {uuid: 2, platform: 'ios'};
 	innerDeviceReady();
 });

@@ -21,7 +21,7 @@ define(['jquery', 'views/lang_select/lang_select', 'views/toolbar/toolbar.tpl'],
 
 			/****** Dom listeners *****/
 
-			el.find('button[data-action="back"]').click(function() {
+			el.find('button[data-action="back"]').on('click', function() {
 				pageManager.back();
 			});
 		}

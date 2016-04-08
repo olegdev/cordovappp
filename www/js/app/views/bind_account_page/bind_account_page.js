@@ -1,13 +1,14 @@
 /***** Bind account page ****/
 
 define([
+	'logger',
 	'jquery',
 	'pages',
 	'accounts',
 	'translates',
 	'views/window/window',
 	'views/bind_account_page/bind_account_page.tpl',
-], function($, pages, accounts, translates, windowView, tpl) {
+], function(logger, $, pages, accounts, translates, windowView, tpl) {
 
 	return {
 
@@ -23,7 +24,7 @@ define([
 		render: function(renderTo) {
 			$(renderTo).html(tpl.apply());
 
-			$(renderTo).find('button[data-action="add-email"]').click(function() {
+			$(renderTo).find('button[data-action="add-email"]').on('click', function() {
 				var target = accounts.get('device');
 				windowView.render({
 					title: translates.t("Привязать"),
@@ -33,12 +34,15 @@ define([
 					].join(''),
 					applyBtnText: translates.t("Привязать"),
 					handler: function(el) {
-						accounts.bind(target, 'email', {
-							login: el.find('input[name="email"]').val(),
-							pass: el.find('input[name="epass"]').val()
-						}, function(account) {
-							if (account) {
+						var account = accounts.factory("email");
+						account.credentials.login = el.find('input[name="email"]').val();
+						account.credentials.pass = el.find('input[name="epass"]').val();
+						account.bind(target, function(err) {
+							if (!err) {
+								accounts.replace(target, account);
 								pages.openPage('index_page');
+							} else {
+								logger.error("Cannot bind account cause", err);
 							}
 						});
 					}

@@ -133,7 +133,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			/*** Dom listeners **/
 
 			$('#exgmobile-reg input[placeholder]').placeholder();
-			$('#exgmobile-reg .eula-link').click(function(e) {
+			$('#exgmobile-reg .eula-link').on('click', function(e) {
 				e.preventDefault();
 				pages.openPage('eula_page');
 			});
@@ -265,7 +265,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				}
 			}
 			
-		  var deviceCredentials = accounts.getDeviceAccountCredentials();
+		  var account = accounts.factory("device");
 		  var userData = {};
 
 			var formOptions = {
@@ -273,11 +273,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				
 		    url: config.host_url + '/reg.pl',
 
-		    data: {
-		      payment: app.device.platform.toLowerCase(),
-		      login: deviceCredentials.login,
-		      pass: deviceCredentials.pass,
-		    },
+		    data: account.credentials,
 
 			beforeSubmit: function(formData) {
 		      formData.forEach(function(item) {
@@ -294,8 +290,10 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 					$('input.submit:visible').prop('disabled', false);
 
 					if (!json.error) {
-					   accounts.loginBy(accounts.add("device", deviceCredentials, userData), function(account) {
-					   		if (account) {
+						account.data = userData;
+						accounts.add(account);
+						account.login(function(err) {
+							if (!err) {
 					   			pages.openPage('game_page');
 					   		}
 					   });

@@ -12,17 +12,17 @@ define(['jquery', 'views/window/window.tpl'], function($, tpl) {
 		 */
 		render: function(config) {
 			var el = $(tpl.apply(config));
-			$(document.body).append(el);
+			$('#exgmobile-viewport').append(el);
 
 			/*** Dom listeners **/
 
-			el.find('button[data-action="apply"]').click(function() {
+			el.find('button[data-action="apply"]').on('click', function() {
 				if (config.handler) {
 					config.handler(el);
 				}
 			});
 
-			el.find('button[data-action="cancel"]').click(function() {
+			el.find('button[data-action="cancel"]').on('click', function() {
 				el.remove();
 			});
 

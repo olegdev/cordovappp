@@ -1,4 +1,4 @@
-define(['config', 'storage'], function(config, storage) {
+define(['logger', 'config', 'storage'], function(logger, config, storage) {
 
 	var Translates = {
 
@@ -8,6 +8,9 @@ define(['config', 'storage'], function(config, storage) {
 
 		init: function(callback) {
 			var me = this;
+
+			/****/ logger.log('Translates init');
+
 			this.lang = storage.getItem('lang');
 			if (!this.lang) {
 				if (navigator.globalization) {
@@ -30,7 +33,6 @@ define(['config', 'storage'], function(config, storage) {
 		},
 
 		setLang: function(lang, callback) {
-			alert('set lang ' + lang);
 			this.lang = lang;
 			storage.setItem('lang', this.lang);
 			this.loadTranslates(callback);
@@ -38,9 +40,10 @@ define(['config', 'storage'], function(config, storage) {
 
 		loadTranslates: function(callback) {
 			var me = this;
-			alert('load translates');
+
+			/***/ logger.log('Load translates for "' + this.lang + '"');
+
 			require(['translates/' + this.lang], function(translates) {
-				alert('finish loading');
 				me.translates = translates;
 				if (callback) {
 					callback();

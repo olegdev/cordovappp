@@ -1,55 +1,81 @@
-define(['jquery', 'jquery-md5', 'app', 'storage'], function($, md5, app, storage) {
+define([
+	'logger',
+	'underscore',
+	'storage',
+	'accounts/device',
+	'accounts/email',
+	'accounts/fb'
+], function(logger, _, storage, DeviceAccount, EmailAccount, FBAccount) {
 
 	var Accounts = function() {
-		this.list = this.getFromStorage();
+		this.list = [];
 	}
 
-	// вернёт данные device-аккаунта для этого устройства
-	Accounts.prototype.getDeviceAccountCredentials = function(type, data) {
-		var salt = '!13%45v^349$0u1:345t1;34';
-		return {
-			login: app.device.uuid,
-			pass: $.md5(app.device.uuid + salt),
-		}
-	}
-
-	// запрашивает у сервера аккаунт, привязанный к этому устройству
-	Accounts.prototype.check = function(type, credentials, callback) {
+	Accounts.prototype.init = function(callback) {
 		var me = this,
-			cmd;
-		if (type == 'device') {
-			cmd = '/reg.pl?cmd=mobile_check';
-		} else if (type == 'email') {
-			cmd = '/reg.pl?cmd=mobile_mail_check';
+			account;
+
+		/****/ logger.log('Account init');
+
+		me.list = storage.getItem('accounts', []);
+		if (!me.list.length) {
+			account = me.factory('device');
+			account.check(function(err, check) {
+				if (!err) {
+					if (check) {
+						me.add(account);
+						callback();
+					} else {
+						callback();
+					}
+				} else {
+					/***/ logger.error('Error while checking device account ' + err);
+				}
+			});
+		} else {
+			me.list = _.map(me.list, function(data) {
+				return me.factory(data.type, data);
+			});
+			callback();
 		}
-		app.request(cmd, credentials, function(resp) {
-			if (resp && resp.user) {
-				callback(me.add(type, credentials, resp.user));
-			} else {
-				callback();
-			}
-		});
+	}
+
+	Accounts.prototype.factory = function(type, data) {
+		var me = this;
+
+		data = data || {};
+
+		if (type == 'device') {
+			return new DeviceAccount(data);
+		} else if (type == 'email') {
+			return new EmailAccount(data);
+		} else if (type == 'fb') {
+			return new FBAccount(data);
+		}
 	}
 
 	// добавляет аккаунт в список
-	Accounts.prototype.add = function(type, credentials, data) {
-		var account = {
-			type: type,
-			credentials: credentials,
-			data: data
-		};
-		if (type == 'device') {
-			// удаляю предыдущий device-аккаунт
-			for(var i = 0; i < this.list.length; i++) {
-				if (this.list[i].type == 'device') {
-					this.list.splice(i, 1);
-					break;
-				}
-			}
-		}
+	Accounts.prototype.add = function(account) {
 		this.list.push(account);
-		this.saveInStorage();
-		return account;
+		storage.setItem('accounts', this.list);
+	}
+
+	// удаляет аккаунт из спискa
+	Accounts.prototype.remove = function(account) {
+		var index = this.list.indexOf(account);
+		if (index != -1) {
+			this.list.splice(index,1);
+			storage.setItem('accounts', this.list);
+		}
+	}
+
+	// замена аккаунта
+	Accounts.prototype.replace = function(account1, account2) {
+		var index = this.list.indexOf(account1);
+		if (index != -1) {
+			this.list[index] = account2;
+			storage.setItem('accounts', this.list);
+		}
 	}
 
 	// выдать аккаунт по типу
@@ -59,70 +85,6 @@ define(['jquery', 'jquery-md5', 'app', 'storage'], function($, md5, app, storage
 				return this.list[i];
 			}
 		}
-	}
-
-	Accounts.prototype.bind = function(target, bindType, newCredentials, callback) {
-		var me = this;
-
-		callback = callback || function() {};
-
-		if (bindType == 'email') {
-			app.request('/reg.pl?cmd=mobile_mail_bind', {
-				login: target.credentials.login,
-				pass: target.credentials.pass,
-				email: newCredentials.email,
-				epass: newCredentials.epass,
-			}, function(resp) {
-				if (resp && !resp.error) {
-					target.type = bindType;
-					target.credentials = newCredentials;
-					me.saveInStorage();
-					callback();						
-				} else {
-					app.errorHandler("Cannot bind account to email", resp);
-				}
-			});
-		}
-	}
-
-	// залогинется аккаунтом account
-	Accounts.prototype.loginBy = function(account, callback) {
-		var me = this;
-		if (account.type == 'device') {
-			app.request('/reg.pl?cmd=mobile_enter', {
-				login: account.credentials.login,
-				pass: account.credentials.pass,
-				payment: app.device.platform.toLowerCase(),
-			}, function(resp) {
-				if (resp && !resp.error) {
-					callback();
-				} else {
-					app.errorHandler("Cannot login by account cause error ", resp.error);
-				}
-			});
-		} else if (account.type == 'email') {
-			app.request('/reg.pl?cmd=mobile_mail_enter', {
-				login: account.credentials.login,
-				pass: account.credentials.pass,
-				payment: app.device.platform.toLowerCase(),
-			}, function(resp) {
-				if (resp && !resp.error) {
-					callback();
-				} else {
-					app.errorHandler("Cannot login by account cause error ", resp.error);
-				}
-			});
-		}
-	}
-
-	// сохраняет список в localStorage
-	Accounts.prototype.saveInStorage = function() {
-		storage.setItem('accounts', this.list);
-	}
-
-	// достает список из localStorage
-	Accounts.prototype.getFromStorage = function() {
-		return storage.getItem('accounts', []);
 	}
 
 	return new Accounts();

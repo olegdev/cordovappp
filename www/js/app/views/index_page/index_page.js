@@ -26,12 +26,14 @@ define([
 			/*** Dom listeners **/
 
 			$(renderTo).find('.exgmobile-accounts').delegate('button', 'click', function() {
-				accounts.loginBy(accounts.list[parseInt(this.getAttribute('data-index'))], function() {
-					pages.openPage('game_page');
+				accounts.list[parseInt(this.getAttribute('data-index'))].login(function(err) {
+					if (!err) {
+						pages.openPage('game_page');
+					}
 				});
 			});
 
-			$(renderTo).find('button[data-action="new"]').click(function() {
+			$(renderTo).find('button[data-action="new"]').on('click', function() {
 				var deviceAccount = accounts.get('device');
 				if (deviceAccount) {
 					windowView.render({
@@ -47,7 +49,7 @@ define([
 				}
 			});
 
-			$(renderTo).find('button[data-action="add"]').click(function() {
+			$(renderTo).find('button[data-action="add"]').on('click', function() {
 				pages.openPage('add_account_page');
 			});
 

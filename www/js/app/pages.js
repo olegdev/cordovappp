@@ -1,11 +1,14 @@
 /*** Pages manager **/
 
-define(['underscore', 'views/toolbar/toolbar'], function(_, toolbarView){
+define(['logger', 'underscore', 'views/toolbar/toolbar'], function(logger, _, toolbarView){
 
 	var Pages = {
 		historyNav: [],
 
 		openPage: function(pageName) {
+
+			/****/ logger.log('Open page "' + pageName + '"');
+
 			var me = this;
 			require(['views/' + pageName + '/' + pageName], function(page) {
 				var pageTpl = [
@@ -16,7 +19,7 @@ define(['underscore', 'views/toolbar/toolbar'], function(_, toolbarView){
 					'</div>',
 				].join('');
 
-				$(document.body).html(pageTpl);
+				$('#exgmobile-viewport').html(pageTpl);
 
 				if (page.tbar) {
 					toolbarView.render($('#exgmobile-page-tbar'), page.tbar, me);

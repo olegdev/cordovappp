@@ -7,6 +7,9 @@ define(function() {
 		getItem: function(key, defaults) {
 			var value = window.localStorage.getItem(key);
 			return value ? JSON.parse(value) : defaults;
+		},
+		clear: function() {
+			localStorage.clear();
 		}
 	}
 

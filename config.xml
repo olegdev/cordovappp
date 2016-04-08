@@ -24,9 +24,13 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <preference name="BackupWebStorage" value="local" />
     <preference name="xwalkVersion" value="16+" />
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />
     <preference name="xwalkMultipleApk" value="true" />
-
+    <plugin name="cordova-plugin-facebook4" spec="~1.7.0">
+        <variable name="APP_ID" value="639696299517864" />
+        <variable name="APP_NAME" value="Time to be a Hero" />
+    </plugin>
 </widget>
