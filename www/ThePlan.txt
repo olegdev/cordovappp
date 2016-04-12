@@ -1,9 +1,51 @@
 1. Social integration (FB, VK)
-2. Debug requests
+x 2. Debug requests
 3. Game page scripts
 
-// -----------------------
+// ----------------------- dates list ----
 
 5 apr Requirejs Arh for all pages
 6 apr Requirejs and translations
 7 apr Facebook integration
+8 apr Facebook integration
+11 apr * work with 11 a.m.
+12 apr 
+
+
+
+// ----------------------- Social integration ---------
+1. VK
+	check - done
+	bind - done
+	enter - error
+		http://t3-pleniv.karnage.ru//reg.pl?cmd=mobile_social_enter&type=vk&sn_id=25927668&sn_token=c950f1dcc408f88541f28bd7f1dc6bca643c6720b82f5095e36b3fb380feef3289d9c70f69f5812c5c208&payment=ios
+
+		https://api.vk.com/method/users.get?access_token=c950f1dcc408f88541f28bd7f1dc6bca643c6720b82f5095e36b3fb380feef3289d9c70f69f5812c5c208
+
+2. OK
+	check - done
+	enter - done
+	bind - error
+		http://t3-pleniv.karnage.ru/reg.pl?cmd=mobile_social_bind&login=2EED5D83-018D-460E-ACDA-7ED2FB096664&pass=d45cd5bfd27724b0d9739ebc6f1b7a79&type=ok&sn_id=579420351774&sn_token=9bae1c44a7.4d690af9595b243d275183eefbbcaef4e124eb5ee4f9f40d
+
+		Response - 502
+
+	* OK redirect page
+
+3. MM
+	check - done
+	enter - done
+	bind - error
+		http://t3-pleniv.karnage.ru//reg.pl?cmd=mobile_social_bind&login=2EED5D83-018D-460E-ACDA-7ED2FB096664&pass=d45cd5bfd27724b0d9739ebc6f1b7a79&type=mm&sn_id=1552335819417073824&sn_token=a06622dfc8d1a306bb78d4d2fc631ae2
+
+4. FB
+	check - done
+	bind - error
+		http://t3-pleniv.karnage.ru//reg.pl?cmd=mobile_social_bind&login=2EED5D83-018D-460E-ACDA-7ED2FB096664&pass=d45cd5bfd27724b0d9739ebc6f1b7a79&type=fb&sn_id=1370664196293232&sn_token=CAAJFzOayZA6gBANGZBjM5mZA6oP8kZAH9w2P9DWWwkWdQc1ZChm7dSOgs2IFDXenZC97w3xxetSpM8I8qkttSWtuXjr44peAQH7111byULRT3CupSHw38eaFcX7oP2cK8I8oaJmo1XbZAkYSpl4gRwp7FgiztCS1aFWUemahfj4hD1yUZAm7Tu6M9HEZCsD9UGda0m9NuvwwckgZDZD
+
+		Response - 502
+
+	enter - error
+		http://t3-pleniv.karnage.ru//reg.pl?cmd=mobile_social_enter&type=fb&sn_id=1370664196293232&sn_token=CAAJFzOayZA6gBAIrGRTPJPpDrdDzlZCyl3ZA0Pz8oTyraOiKqlJVl5eDnaH6g5sMaE9GUeMWXpdJZBMQ6wXHUmOdnZAund752CPUb57iM66NIKKXgzZCJ3dre76jm1cIkcDg3iz4zAk49muUFl1koJazRWXj8qfm1IltVEc405QQ6CD5MzHJyXYmA9R4V9lZCW9AkRXVJ0I7wZDZD&payment=ios
+
+		Response /reg.pl?cmd=mobile_social_enter {"rand":0.64632202106635,"error":6}

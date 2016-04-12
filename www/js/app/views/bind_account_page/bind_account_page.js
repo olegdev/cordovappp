@@ -3,12 +3,12 @@
 define([
 	'logger',
 	'jquery',
-	'pages',
+	'ui',
 	'accounts',
 	'translates',
 	'views/window/window',
 	'views/bind_account_page/bind_account_page.tpl',
-], function(logger, $, pages, accounts, translates, windowView, tpl) {
+], function(logger, $, ui, accounts, translates, windowView, tpl) {
 
 	return {
 
@@ -24,7 +24,7 @@ define([
 		render: function(renderTo) {
 			$(renderTo).html(tpl.apply());
 
-			$(renderTo).find('button[data-action="add-email"]').on('click', function() {
+			$(renderTo).find('button[data-action="bind-email"]').on('click', function() {
 				var target = accounts.get('device');
 				windowView.render({
 					title: translates.t("Привязать"),
@@ -40,10 +40,32 @@ define([
 						account.bind(target, function(err) {
 							if (!err) {
 								accounts.replace(target, account);
-								pages.openPage('index_page');
+								ui.openPage('index_page');
 							} else {
-								logger.error("Cannot bind account cause", err);
+								ui.showMsg(err);
 							}
+						});
+					}
+				});
+			});
+
+			$(renderTo).find('button[data-action="bind-social"]').on('click', function() {
+				var target = accounts.get('device');
+				var account = accounts.factory($(this).attr('data-type'));
+				account.auth(function() {
+					if (!accounts.has(account)) {
+						account.bind(target, function(err) {
+							if (!err) {
+								accounts.replace(target, account);
+								ui.openPage('index_page');
+							} else {
+								ui.showMsg(err);
+							}
+						});
+					} else {
+						ui.showMsg({
+							type: "info",
+							text: "Account already exists"
 						});
 					}
 				});

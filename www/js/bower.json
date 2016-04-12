@@ -26,6 +26,8 @@
     "requirejs-plugins": "^1.0.3",
     "jquery-placeholder": "^2.3.1",
     "jquery-validation": "^1.15.0",
-    "jquery-form": "^3.46.0"
+    "jquery-form": "^3.46.0",
+    "js-url": "^2.3.0",
+    "openfb": "^0.5.0"
   }
 }

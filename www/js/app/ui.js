@@ -1,8 +1,13 @@
-/*** Pages manager **/
+/*** UI manager **/
 
-define(['logger', 'underscore', 'views/toolbar/toolbar'], function(logger, _, toolbarView){
+define([
+	'logger',
+	'underscore',
+	'views/toolbar/toolbar',
+	'views/window/window'
+], function(logger, _, toolbarView, windowView){
 
-	var Pages = {
+	var ui = {
 		historyNav: [],
 
 		openPage: function(pageName) {
@@ -49,8 +54,16 @@ define(['logger', 'underscore', 'views/toolbar/toolbar'], function(logger, _, to
 			}
 		},
 
+		showMsg: function(msg) {
+			windowView.render({
+				title: 'Error',
+				content: msg.text,
+				applyBtnText: 'Ok',
+			});
+		},
+
 	};
 
-	return Pages;
+	return ui;
 
 });

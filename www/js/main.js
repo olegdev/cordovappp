@@ -9,20 +9,26 @@ requirejs.config({
 		'underscore': '../vendor/underscore/underscore',
 		'text': '../vendor/text/text',
 		'json': '../vendor/requirejs-plugins/src/json',
+		'js-url': '../vendor/js-url/url.min',
+		'openFB': '../vendor/openfb/openfb',
 	},
 	"shim": {
         "jquery-md5": ["jquery"],
         "jquery-placeholder": ["jquery"],
         "jquery-validation": ["jquery"],
         "jquery-form": ["jquery"],
+        "js-url": ["jquery"],
+        "fb": ["app"],
+        "openFB": {
+        	exports: "openFB"
+        }
     }
 });
 
 require(['config', 'app', 'views/logview/logview'], function(config, app, logview) {
 	var innerDeviceReady = function() {
-		window.cookies.clear(function() {
-			app.init(device);			
-		});
+
+		app.init(device);			
 
 		if (config.debug) {
 			logview.render('#exgmobile-logview');
@@ -32,6 +38,6 @@ require(['config', 'app', 'views/logview/logview'], function(config, app, logvie
 	document.addEventListener('deviceready', innerDeviceReady, false);
 
 	// debug
-	window.device = {uuid: 2, platform: 'ios'};
-	innerDeviceReady();
+	// window.device = {uuid: 2, platform: 'ios'};
+	// innerDeviceReady();
 });

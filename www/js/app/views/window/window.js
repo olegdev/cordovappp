@@ -19,6 +19,8 @@ define(['jquery', 'views/window/window.tpl'], function($, tpl) {
 			el.find('button[data-action="apply"]').on('click', function() {
 				if (config.handler) {
 					config.handler(el);
+				} else {
+					el.remove();
 				}
 			});
 

@@ -3,12 +3,12 @@
 define([
 	'logger',
 	'jquery', 
-	'pages',
+	'ui',
 	'accounts', 
 	'translates',
 	'views/window/window',
 	'views/add_account_page/add_account_page.tpl'],
-function(logger, $, pages, accounts, translates, windowView, tpl) {
+function(logger, $, ui, accounts, translates, windowView, tpl) {
 
 	return {
 
@@ -36,34 +36,35 @@ function(logger, $, pages, accounts, translates, windowView, tpl) {
 						var account = accounts.factory("email");
 						account.credentials.login = el.find('input[name="email"]').val();
 						account.credentials.pass = el.find('input[name="epass"]').val();
-						account.check(function(err, check) {
+						account.check(function(err) {
 							if (!err) {
-								if (check) {
-									accounts.add(account);
-									pages.openPage('index_page');
-								} else {
-									/***/ logger.log("Account is unknown. Check your credentials.");
-								}
+								accounts.add(account);
+								ui.openPage('index_page');
 							} else {
-								/***/ logger.error("Cannot add email account cause", err);
+								ui.showMsg(err);
 							}
 						});
 					}
 				});
 			});
 
-			$(renderTo).find('button[data-action="add-fb"]').on('click', function() {
-				var account = accounts.factory("fb");
-				account.check(function(err, check) {
-					if (!err) {
-						if (check) {
-							accounts.add(account);
-							pages.openPage("index_page");
-						} else {
-							/***/ logger.log("Account is unknown. Check your credentials.");
-						}
+			$(renderTo).find('button[data-action="add-social"]').on('click', function() {
+				var account = accounts.factory($(this).attr('data-type'));
+				account.auth(function() {
+					if (!accounts.has(account)) {
+						account.check(function(err) {
+							if (!err) {
+								accounts.add(account);
+								ui.openPage("index_page");
+							} else {
+								ui.showMsg(err);
+							}
+						});
 					} else {
-						/***/ logger.error("Cannot add fb account cause", err);
+						ui.showMsg({
+							type: "info",
+							text: "Account already exists"
+						});
 					}
 				});
 			});

@@ -1,19 +1,24 @@
-/**** FB account class **/
+/**** VK account class **/
 
-define(['logger', 'config', 'errors', 'openFB'], function(logger, config, errors, openFB) {
+define(['logger', 'config', 'underscore', 'errors'], function(logger, config, _, errors) {
 
-	openFB.init({
-		appId: config.fb_app_id,
-		oauthRedirectURL: config.host_url + '/oauth_response.html',
-		cordovaOAuthRedirectURL: config.host_url + '/oauth_response.html',
+	if (typeof VkSdk != 'undefined') {
+		VkSdk.init(config.vk_app_id);
+	}
+
+	var newAccessTokenCallback = null;
+	document.addEventListener('vkSdk.newToken', function(e) {
+		if (newAccessTokenCallback) {
+			newAccessTokenCallback(e.detail);
+		}
 	});
 
 	var Account = function(data) {
 		
-		this.type = 'fb';
+		this.type = 'vk';
 
 		this.credentials = data.credentials || {
-			type: 'fb',
+			type: 'vk',
 			sn_id: '',
 			sn_token: '',
 			payment: ExgMobile.device.platform.toLowerCase(),
@@ -22,52 +27,39 @@ define(['logger', 'config', 'errors', 'openFB'], function(logger, config, errors
 		this.data = data.data || {};
 	}
 
-	Account.prototype.auth = function(callback) {
-		var me = this;
-
-		me.getAccessToken(function(data) {
-			/***/ logger.log('Access token ', data);
-			openFB.api({
-	            path: '/me',
-	            success: function(resp) {
-					me.credentials.sn_id = resp.id;
-					me.credentials.sn_token = data.accessToken;
-					callback();
-	            },
-	            error: function() {
-	            	logger.error('FB api request error', arguments);
-	            }
-	       	});
-		});
-	}
-
 	Account.prototype.getAccessToken = function(callback) {
 		var me = this;
 
-		/***/ logger.log('Request access token');
+		/***/ logger.log('Request VK account data. Call logout/login');
 
-		openFB.login(
-            function(response) {
-                if(response.status === 'connected') {
-                	callback(response.authResponse);
-                } else {
-                	logger.error(response.error);
-                }
-            },
-            {scope: config.fb_app_permissions.join(',')}
-        );
+		VkSdk.logout(function() {
+        	VkSdk.initiateLogin(config.vk_app_permissions);
+        }, function(err) {
+        	logger.error(err);
+        });
+
+		newAccessTokenCallback = callback;
+	}
+
+	Account.prototype.auth = function(callback) {
+		var me = this;
+		me.getAccessToken(function(data) {
+			me.credentials.sn_id = data.userId;
+			me.credentials.sn_token = data.accessToken;
+			callback();
+		})
 	}
 
 	Account.prototype.check = function(callback) {
 		var me = this;
-		ExgMobile.request('/reg.pl?cmd=mobile_social_check', me.credentials, function(resp) {
+		ExgMobile.request('/reg.pl?cmd=mobile_social_check', this.credentials, function(resp) {
 			if (resp && resp.user) {
 				me.data = resp.user;
 				callback(null);
 			} else {
 				callback(errors.factory({
 					type: 'auth',
-					response: resp
+					response: resp,
 				}));
 			}
 		});
@@ -75,19 +67,19 @@ define(['logger', 'config', 'errors', 'openFB'], function(logger, config, errors
 
 	Account.prototype.login = function(callback, repeated) {
 		var me = this;
-		ExgMobile.request('/reg.pl?cmd=mobile_social_enter', me.credentials, function(resp) {
+		ExgMobile.request('/reg.pl?cmd=mobile_social_enter', this.credentials, function(resp) {
 			if (resp && !resp.error) {
 				callback(null);
 			} else {
 				if (resp.error == 6 && !repeated) {
 					me.getAccessToken(function(data) {
-						if (data.userID == me.credentials.sn_id) {
+						if (data.userId == me.credentials.sn_id) {
 							me.credentials.sn_token = data.accessToken;
 							me.login(callback, true);
 						} else {
 							callback(errors.factory({
 								type: 'text',
-								text: 'Нужно залогиниться в фб нужным аккаунтом',
+								text: 'Нужно залогиниться в VK нужным аккаунтом',
 							}));
 						}
 					});
@@ -112,11 +104,11 @@ define(['logger', 'config', 'errors', 'openFB'], function(logger, config, errors
 		}, function(resp) {
 			if (resp && !resp.error) {
 				me.data = account.data;
-				callback(null);
+				callback(null);			
 			} else {
 				callback(errors.factory({
 					type: 'auth',
-					response: resp
+					response: resp,
 				}));
 			}
 		});

@@ -5,10 +5,10 @@ define([
 	'app',
 	'accounts',
 	'translates',
-	'pages',
+	'ui',
 	'views/window/window',
 	'views/index_page/index_page.tpl'
-], function($, app, accounts, translates, pages, windowView, tpl) {
+], function($, app, accounts, translates, ui, windowView, tpl) {
 
 	return {
 
@@ -28,7 +28,9 @@ define([
 			$(renderTo).find('.exgmobile-accounts').delegate('button', 'click', function() {
 				accounts.list[parseInt(this.getAttribute('data-index'))].login(function(err) {
 					if (!err) {
-						pages.openPage('game_page');
+						ui.openPage('game_page');
+					} else {
+						ui.showMsg(err);
 					}
 				});
 			});
@@ -41,16 +43,16 @@ define([
 						content: translates.t("Необходимо привязать аккаунт, прежде чем создать новый"),
 						applyBtnText: translates.t("Привязать"),
 						handler: function() {
-							pages.openPage('bind_account_page');
+							ui.openPage('bind_account_page');
 						}
 					});
 				} else {
-					pages.openPage('reg_page');
+					ui.openPage('reg_page');
 				}
 			});
 
 			$(renderTo).find('button[data-action="add"]').on('click', function() {
-				pages.openPage('add_account_page');
+				ui.openPage('add_account_page');
 			});
 
 		}

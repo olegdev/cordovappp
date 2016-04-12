@@ -4,8 +4,11 @@ define([
 	'storage',
 	'accounts/device',
 	'accounts/email',
-	'accounts/fb'
-], function(logger, _, storage, DeviceAccount, EmailAccount, FBAccount) {
+	'accounts/fb',
+	'accounts/vk',
+	'accounts/ok',
+	'accounts/mm',
+], function(logger, _, storage, DeviceAccount, EmailAccount, FBAccount, VKAccount, OKAccount, MMAccount) {
 
 	var Accounts = function() {
 		this.list = [];
@@ -51,6 +54,14 @@ define([
 			return new EmailAccount(data);
 		} else if (type == 'fb') {
 			return new FBAccount(data);
+		} else if (type == 'vk') {
+			return new VKAccount(data);
+		} else if (type == 'ok') {
+			return new OKAccount(data);
+		} else if (type == 'mm') {
+			return new MMAccount(data);
+		} else {
+			/****/ logger.error('Cannot create account', type, data);
 		}
 	}
 
@@ -83,6 +94,15 @@ define([
 		for(var i = 0; i < this.list.length; i++) {
 			if (this.list[i].type == type) {
 				return this.list[i];
+			}
+		}
+	}
+
+	// проверяет, есть ли подобный аккаунт в списке 
+	Accounts.prototype.has = function(account) {
+		for(var i = 0; i < this.list.length; i++) {
+			if (this.list[i].isEqual(account)) {
+				return true;
 			}
 		}
 	}

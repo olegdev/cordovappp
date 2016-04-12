@@ -1,4 +1,11 @@
-define(['logger', 'config', 'pages', 'accounts', 'translates'], function(logger, config, pages, accounts, translates) {
+define([
+    'logger',
+    'config',
+    'ui',
+    'accounts',
+    'translates',
+    'underscore',
+], function(logger, config, ui, accounts, translates, _) {
 
 // App namespace
 window.ExgMobile = {
@@ -10,15 +17,23 @@ window.ExgMobile = {
 		this.device = device;
         accounts.init(function() {
             translates.init(function() {
-                pages.openPage('index_page');
+                ui.openPage('index_page');
             });
         });
 	},
 
 	request: function(url, params, callback) {
-		var me = this;
+		var me = this,
 
-        /***/ logger.log('Request ' + url, params);
+            urlAsString = function(url, params) {
+                var str = config.host_url + url;
+                _.each(params, function(key, value) {
+                    str += '&' + value + '=' + key;
+                });
+                return str;
+            };
+
+        /***/ logger.log('Request: ' + urlAsString(url, params));
 
 		callback = callback || Ext.emptyFn;
 		params = params || {};

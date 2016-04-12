@@ -9,9 +9,9 @@ define([
 	'app',
 	'translates',
 	'accounts',
-	'pages',
+	'ui',
 	'views/reg_page/reg_page.tpl'],
-function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accounts, pages, tpl) {	
+function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accounts, ui, tpl) {	
 
 	return {
 
@@ -135,7 +135,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			$('#exgmobile-reg input[placeholder]').placeholder();
 			$('#exgmobile-reg .eula-link').on('click', function(e) {
 				e.preventDefault();
-				pages.openPage('eula_page');
+				ui.openPage('eula_page');
 			});
 
 
@@ -294,7 +294,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 						accounts.add(account);
 						account.login(function(err) {
 							if (!err) {
-					   			pages.openPage('game_page');
+					   			ui.openPage('game_page');
 					   		}
 					   });
 					} else {

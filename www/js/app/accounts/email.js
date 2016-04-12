@@ -1,6 +1,6 @@
 /**** Email account class **/
 
-define(['logger'], function(logger) {
+define(['logger', 'errors'], function(logger, errors) {
 
 	var Account = function(data) {
 		
@@ -20,9 +20,12 @@ define(['logger'], function(logger) {
 		ExgMobile.request('/reg.pl?cmd=mobile_mail_check', this.credentials, function(resp) {
 			if (resp && resp.user) {
 				me.data = resp.user;
-				callback(null, true);
+				callback(null);
 			} else {
-				callback(null, false);
+				callback(errors.factory({
+					type: 'auth',
+					response: resp,
+				}));
 			}
 		});
 	}
@@ -32,7 +35,10 @@ define(['logger'], function(logger) {
 			if (resp && !resp.error) {
 				callback(null);
 			} else {
-				callback(logger.error("Cannot login by account cause error ", resp.error));
+				callback(errors.factory({
+					type: 'auth',
+					response: resp,
+				}));
 			}
 		});
 	}
@@ -49,9 +55,18 @@ define(['logger'], function(logger) {
 				me.data = account.data;
 				callback(null);			
 			} else {
-				callback(logger.error("Cannot bind account to email", resp));
+				callback(errors.factory({
+					type: 'auth',
+					response: resp,
+				}));
 			}
 		});
+	}
+
+	Account.prototype.isEqual = function(account) {
+		return  account.type == this.type &&
+				account.credentials.login == this.credentials.login &&
+				account.credentials.pass == this.credentials.pass;
 	}
 
 	return Account;

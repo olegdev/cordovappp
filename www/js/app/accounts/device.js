@@ -37,5 +37,11 @@ define(['logger', 'jquery', 'jquery-md5'], function(logger, $, md5) {
 		});
 	}
 
+	Account.prototype.isEqual = function(account) {
+		return  account.type == this.type &&
+				account.credentials.login == this.credentials.login &&
+				account.credentials.pass == this.credentials.pass;
+	}
+
 	return Account;
 });
