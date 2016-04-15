@@ -36,4 +36,5 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
     <plugin name="cordova-plugin-wkwebview-engine" spec="~1.0.2" />
     <plugin name="com.akveo.cordova-vk" spec="~1.0.1" />
+    <engine name="ios" spec="~4.1.1" />
 </widget>
