@@ -4,8 +4,8 @@
     <description>
         The Game
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="omikhailov@2reallife.com" href="http://timetobehero.com">
+        Oleg Mikhailov @2reallife team
     </author>
     <preference name="Orientation" value="landscape" />
     <content src="index.html" />
@@ -29,8 +29,11 @@
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />
     <preference name="xwalkMultipleApk" value="true" />
-    <plugin name="cordova-plugin-facebook4" spec="~1.7.0">
-        <variable name="APP_ID" value="639696299517864" />
-        <variable name="APP_NAME" value="Time to be a Hero" />
-    </plugin>
+    <plugin name="cordova-plugin-device" spec="~1.1.1" />
+    <plugin name="cordova-plugin-globalization" spec="~1.0.3" />
+    <plugin name="cordova-plugin-console" spec="~1.0.2" />
+    <plugin name="cordova-plugin-file" spec="~4.1.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="~1.0.2" />
+    <plugin name="com.akveo.cordova-vk" spec="~1.0.1" />
 </widget>

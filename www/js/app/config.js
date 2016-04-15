@@ -24,6 +24,7 @@ define(function() {
 		"mm_app_id": 668473,
 		"mm_app_pkey": "8e0ef9b2ccc5ae77b4662a7c9fec5fbf",
 		"mm_app_permissions": [],
+
 		
 	}
 });

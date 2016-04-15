@@ -1,8 +1,3 @@
-~1. Social integration (FB, VK)
-x 2. Debug requests
-3. Game page scripts
-
-// ----------------------- dates list ----
 
 5 apr Requirejs Arh for all pages
 6 apr Requirejs and translations
@@ -12,9 +7,10 @@ x 2. Debug requests
 12 apr Social integration
 13 apr cdvfile protocol (* work with 11 a.m.)
 14 apr CDVFile patch
-
 15 apr 
 
-1. Обработка css на этапе запуска, сохранение css в правильном месте
+~1. Обработка css на этапе запуска, сохранение css в правильном месте
 2. Поддержка мобильной версии игры в js
 3. Запуск приложения
+4. Замена file плагина
+

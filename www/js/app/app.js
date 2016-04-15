@@ -5,7 +5,9 @@ define([
     'accounts',
     'translates',
     'underscore',
-], function(logger, config, ui, accounts, translates, _) {
+    'storage',
+    'resources',
+], function(logger, config, ui, accounts, translates, _, storage, resources) {
 
 // App namespace
 window.ExgMobile = {
@@ -15,10 +17,13 @@ window.ExgMobile = {
         /****/ logger.log('App init');
 
 		this.device = device;
-        accounts.init(function() {
-            translates.init(function() {
-                ui.openPage('index_page');
-            });
+        resources.init(function() {
+            accounts.init(function() {
+                translates.init(function() {
+                    // storage.setItem('initialized', true);
+                    ui.openPage('index_page');
+                });
+            }); 
         });
 	},
 
