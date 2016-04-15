@@ -1,6 +1,8 @@
 define(function() {
 	return {
 		
+		"version": 1,
+
 		"debug": true,
 		
 		"defaultLang": "ru",

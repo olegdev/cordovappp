@@ -28,7 +28,7 @@ define(['logger',
 			authorizeUrl =  "https://connect.ok.ru/oauth/authorize?client_id=" + config.ok_app_id + 
 							"&scope=" + config.ok_app_permissions.join(';') +
 							"&response_type=token"+
-							"&redirect_uri=http://api.ok.ru/blank.html"+
+							"&redirect_uri="+ config.host_url +"oauth_response.html"+
 							"&layout=w",
 
 			browserRef;
@@ -37,10 +37,10 @@ define(['logger',
 
 		/***/ logger.log('Access token Request');
 
-    	browserRef = window.open(authorizeUrl, '_blank', 'location=no,clearcache=no');
+    	browserRef = window.open(authorizeUrl, '_blank', 'location=no,clearcache=yes');
 
 		browserRef.addEventListener('loadstart', function(e) {
-			if ($.url('protocol', e.url) == 'http' && /blank\.html/.test(e.url)) {
+			if (e.url && e.url.indexOf(config.host_url) === 0) {
 				var hash = $.url('hash', e.url);
 				var parts = hash.split('&');
 				var data = {},

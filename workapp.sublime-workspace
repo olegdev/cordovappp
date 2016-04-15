@@ -1,0 +1,729 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"use",
+				"userID"
+			],
+			[
+				"access",
+				"accessToken"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"auth",
+				"authResponse"
+			],
+			[
+				"url",
+				"urlAsString"
+			],
+			[
+				"new",
+				"newAccessTokenCallback"
+			],
+			[
+				"sess",
+				"session_secret_key"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"sn_",
+				"sn_token"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"user",
+				"userInfoUrl"
+			],
+			[
+				"ok_",
+				"ok_app_secret"
+			],
+			[
+				"brow",
+				"browserRef"
+			],
+			[
+				"b",
+				"browserRef"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"aut",
+				"authorizeUrl"
+			],
+			[
+				"mm_app",
+				"mm_app_id"
+			],
+			[
+				"mail",
+				"mailru"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"us",
+				"userID"
+			],
+			[
+				"au",
+				"authResponse"
+			],
+			[
+				"acco",
+				"accounts"
+			],
+			[
+				"inn",
+				"innerCheckAccount"
+			],
+			[
+				"get",
+				"getAuthData"
+			],
+			[
+				"fa",
+				"facebookConnectPlugin"
+			],
+			[
+				"accoun",
+				"accounts"
+			],
+			[
+				"de",
+				"deviceAccount"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"page",
+				"pageName"
+			],
+			[
+				"list",
+				"listEl"
+			],
+			[
+				"requ",
+				"requestCredentials"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"def",
+				"defaultLang"
+			],
+			[
+				"ex",
+				"exgmobile-reg"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"back",
+				"backBtn"
+			],
+			[
+				"tool",
+				"toolbarView"
+			],
+			[
+				"ope",
+				"openPage"
+			],
+			[
+				"win",
+				"windowView"
+			],
+			[
+				"render",
+				"renderTo"
+			],
+			[
+				"lan",
+				"lang"
+			],
+			[
+				"par",
+				"part"
+			],
+			[
+				"innerLoad",
+				"innerLoadConfig"
+			],
+			[
+				"inner",
+				"innerLoadScripts"
+			],
+			[
+				"pre",
+				"pre_bg"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"error",
+				"errorHandler"
+			],
+			[
+				"err",
+				"errorHandler"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "www/ThePlan.txt",
+			"settings":
+			{
+				"buffer_size": 2172,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/main.js",
+			"settings":
+			{
+				"buffer_size": 1236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/js/app/config.js",
+			"settings":
+			{
+				"buffer_size": 600,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/vk.js",
+		"/Users/mac/oleg/workapp2/www/js/app/config.js",
+		"/Users/mac/oleg/workapp2/www/js/vendor/openfb/openfb.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/mm.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/ok.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/fb.js",
+		"/Users/mac/oleg/workapp2/www/js/app/app.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/add_account_page/add_account_page.tpl.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/add_account_page/add_account_page.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/bind_account_page/bind_account_page.tpl.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/bind_account_page/bind_account_page.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/:reg.pl?cmd=mobile_social_bind&login=2&pass\":\"10f9",
+		"/Users/mac/oleg/workapp2/www/js/app/:reg.pl?cmd=mobile_social_check&type=ok\",\"sn_id=57",
+		"/Users/mac/oleg/workapp2/config.xml",
+		"/Users/mac/oleg/workapp2/www/js/app/errors.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/window/window.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/window/window.tpl.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts.js",
+		"/Users/mac/oleg/workapp2/www/js/vendor/js-url/url.min.js",
+		"/Users/mac/oleg/workapp2/www/js/app/errors/auth.js",
+		"/Users/mac/oleg/workapp2/www/js/app/errors/text",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/email.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/index_page/index_page.js",
+		"/Users/mac/oleg/workapp2/www/js/app/pages.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/reg_page/reg_page.js",
+		"/Users/mac/oleg/workapp2/www/js/app/accounts/device.js",
+		"/Users/mac/oleg/test/www/index.html",
+		"/Users/mac/oleg/test/config.xml",
+		"/Users/mac/oleg/workapp2/www/js/app/views/lang_select/lang_select.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/logview/logview.js",
+		"/Users/mac/oleg/workapp2/www/js/app/storage.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/logview/logview.tpl.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/game_page/game_page.js",
+		"/Users/mac/oleg/workapp2/www/css/app.css",
+		"/Users/mac/oleg/workapp2/www/js/app/translates.js",
+		"/Users/mac/oleg/workapp2/www/js/app/logger.js",
+		"/Users/mac/oleg/workapp2/www/index.html",
+		"/Users/mac/oleg/workapp2/www/js/app/fb.js",
+		"/Users/mac/oleg/workapp2/plugins/cordova-plugin-facebook4/package.json",
+		"/Users/mac/oleg/workapp2/plugins/cordova-plugin-facebook4/plugin.xml",
+		"/Users/mac/oleg/workapp2/plugins/cordova-plugin-facebook4/www/facebook-native.js",
+		"/Users/mac/oleg/workapp2/www/js/vendor/jquery-md5/jquery.md5.js",
+		"/Users/mac/oleg/workapp2/www/js/vendor/jquery/dist/jquery.js",
+		"/Users/mac/oleg/workapp2/www/js/app/views/toolbar/toolbar.js",
+		"/Users/mac/oleg/workapp2/www/js/main.js",
+		"/Users/mac/oleg/WorkApp/config.xml",
+		"/Users/mac/oleg/WorkApp/www/index.html",
+		"/Users/mac/oleg/test/www/js/index.js",
+		"/Users/mac/oleg/WorkApp/www/css/app.css",
+		"/Users/mac/oleg/WorkApp/www/js/app/config.js",
+		"/Users/mac/oleg/WorkApp/www/js/main.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index_page/index_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index_page/index_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg_page/reg_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/eula_page/eula_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/eula_page/eula_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg_page/reg_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bind_account_page/bind_account_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bind_account_page/bind_account_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game_page/game_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates/ru.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/translates/en.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/index.js",
+		"/Users/mac/oleg/WorkApp/www/img/preloader.png",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/reg.js",
+		"/Users/mac/oleg/WorkApp/www/js/vendor/jquery-validation/dist/jquery.validate.js",
+		"/Users/mac/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/mac/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/mac/oleg/WorkApp/www/reg.html",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/window/window.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/add_account_page/add_account_page.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/add_account_page/add_account_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/toolbar/toolbar.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/toolbar/toolbar.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/lang_select/lang_select.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/lang_select/lang_select.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/pages.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/accounts.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/window/window.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/app.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/tbar/tbar.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/tbar/tbar.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game_page/game_page.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/addacc/addacc.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/addacc/addacc.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/index2.html",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bindacc/bindacc.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game/game.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/bindacc/bindacc.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg/reg.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/game/game.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/reg/reg.tpl.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/views/index/index.tpl",
+		"/Users/mac/oleg/WorkApp/www/test.html",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_storage.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_accounts.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile.js",
+		"/Users/mac/oleg/WorkApp/www/js/app/storage.js",
+		"/Users/mac/oleg/WorkApp/www/js/bower.json",
+		"/Users/mac/oleg/WorkApp/www/js/mdl.js",
+		"/Users/mac/oleg/WorkApp/www/js/.bowerrc",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/translates/en.js",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/translates/ru.js",
+		"/Users/mac/oleg/WorkApp/www/game.html",
+		"/Users/mac/oleg/WorkApp/www/js/exgods2-all.js",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/preloader.css",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/preloader.js",
+		"/Users/mac/oleg/WorkApp/www/bind_account.html",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/bind_account.js",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/index.css",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/reset.css",
+		"/Users/mac/oleg/WorkApp/www/js/mobile/exgodsmobile_translates.js",
+		"/Users/mac/oleg/WorkApp/www/strings/ru.strings",
+		"/Users/mac/oleg/WorkApp/www/translates/ru",
+		"/Users/mac/oleg/WorkApp/www/css/mobile/reg.css",
+		"/Users/mac/oleg/WorkApp/www/css/preloader.css",
+		"/Users/mac/oleg/WorkApp/www/js/preloader.js",
+		"/Users/mac/oleg/WorkApp/www/js/preload_img.js",
+		"/Users/mac/oleg/CordovaApp2/www/game.html",
+		"/Users/mac/oleg/CordovaApp2/www/css/preloader.css"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/mac/oleg/workapp2/www/js/app",
+			"/Users/mac/oleg/workapp2/www/js",
+			"/Users/mac/oleg/workapp2/www/js/app",
+			"/Users/mac/oleg/WorkApp/www",
+			"/Users/mac/oleg/WorkApp/www/js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"data",
+			"mailr",
+			"success",
+			"newAccessTokenCallback",
+			"addEventListener",
+			"getAccessToken",
+			"\":\"",
+			",\"",
+			"sn_token",
+			"credentials",
+			"authInfo",
+			"credentials",
+			"\",\"",
+			"\":\"",
+			"pkey",
+			"ok_app_secret",
+			"add-",
+			"bind-",
+			"vk",
+			"\",\"",
+			"\":\"",
+			"API requ",
+			"credentials",
+			"access_token",
+			"session_secret_key",
+			"method",
+			"ok_app_id",
+			"ok_app_secret",
+			"data",
+			"method",
+			"hex_md5",
+			", ",
+			"mailru",
+			"accessToken",
+			"browserRef",
+			"onNewToken",
+			"\",\"",
+			"\":\"",
+			"url",
+			"hash",
+			"<allow-navigation>",
+			"inAppBrowser",
+			"getAccessToken",
+			"onLoginListenerId",
+			"ok_permissions",
+			"per",
+			"		\n",
+			"vk_permissions",
+			"fb_permissions",
+			"permiss",
+			"mm_permissions",
+			"mailru",
+			"shim",
+			"facebook",
+			"OKAccount",
+			"ok",
+			"vk",
+			"ok_permissions",
+			"vk",
+			"VkSdk",
+			"e.detail",
+			"authResponse",
+			"accessToken",
+			"response.",
+			"repeated",
+			"request",
+			"factory",
+			"log",
+			"pages",
+			"Facebook",
+			", ",
+			"details",
+			"server",
+			"response",
+			"ui",
+			"toolbar",
+			"error",
+			"err",
+			"showError",
+			"ExgMobile",
+			"message",
+			"err",
+			"isEqual",
+			"onTokenListener",
+			"requestAuth",
+			"credentials.type",
+			" console.log",
+			"vk_permissions",
+			"bind",
+			"error",
+			"if (!err",
+			"function(error",
+			"if (!err) {",
+			"err",
+			"		facebookConnectPlugin.getLoginStatus(function(response) {\n\n			/***/ logger.log('FB login status', response);\n\n			if (response.status == 'connected') {\n				innerLoginRequest(response.authResponse);\n			} else {\n				\n				/***/ logger.log('User is disconnected. Call fb login');\n\n				facebookConnectPlugin.login(config.fb_permissions, function(response) {\n					innerLoginRequest(response.authResponse);\n				}, function(error) {\n					callback(logger.error(error));\n				});\n			}\n\n		});",
+			"		facebookConnectPlugin.getLoginStatus(function(response) {\n\n			/***/ logger.log('FB login status', response);\n\n			if (response.status == 'connected') {\n				innerCheckAccount(response.authResponse);\n			} else {\n				\n				/***/ logger.log('User is disconnected. Call fb login');\n\n				facebookConnectPlugin.login(config.fb_permissions, function(response) {\n					innerCheckAccount(response.authResponse);\n				}, function(error) {\n					callback(logger.error(error));\n				});\n			}\n\n		});",
+			"innerCheckAccount",
+			"logout",
+			"innerLoginRequest",
+			"innerCheckAccount",
+			"init",
+			"expand",
+			"callback",
+			"sn_type",
+			".token",
+			"token",
+			"userId",
+			"loginby",
+			"newCredentials",
+			"target",
+			", ",
+			"device",
+			"collapse",
+			"account",
+			"onMessage",
+			"span",
+			"li",
+			"openPage",
+			"arguments",
+			"apply",
+			"call",
+			"logview",
+			"data",
+			"[].slice.call(arguments)",
+			"data",
+			"expand",
+			"toolbar",
+			"log"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"ui",
+			"www/img/pre_bg.jpg",
+			"ExGodsMobile.Accounts",
+			"\\u"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "www/ThePlan.txt",
+					"settings":
+					{
+						"buffer_size": 2172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/js/main.js",
+					"settings":
+					{
+						"buffer_size": 1236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1149,
+								949
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "www/js/app/config.js",
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"confjs",
+				"js/app/config.js"
+			],
+			[
+				"conf",
+				"js/app/config.js"
+			],
+			[
+				"config",
+				"js/app/config.js"
+			],
+			[
+				"confg",
+				"js/app/config.js"
+			],
+			[
+				"reg_",
+				"js/app/views/reg_page/reg_page.js"
+			],
+			[
+				"regjs",
+				"js/app/views/reg_page/reg_page.js"
+			],
+			[
+				"regpa",
+				"js/app/views/reg_page/reg_page.js"
+			],
+			[
+				"tran",
+				"js/app/translates.js"
+			],
+			[
+				"indecss",
+				"css/mobile/index.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true
+}
