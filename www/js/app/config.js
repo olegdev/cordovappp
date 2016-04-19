@@ -8,7 +8,7 @@ define(function() {
 		"defaultLang": "ru",
 		"langs": ["ru", "en"],
 		
-		"host_url":  "http://t3-pleniv.karnage.ru/",
+		"host_url":  "http://t3-oleg.karnage.ru/",
 		"image_url": "http://s20.timetobehero.ru/",
 		
 		"fb_app_id": "639696299517864",
@@ -24,7 +24,6 @@ define(function() {
 		"mm_app_id": 668473,
 		"mm_app_pkey": "8e0ef9b2ccc5ae77b4662a7c9fec5fbf",
 		"mm_app_permissions": [],
-
 		
 	}
 });

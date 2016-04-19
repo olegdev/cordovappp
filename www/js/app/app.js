@@ -12,6 +12,10 @@ define([
 // App namespace
 window.ExgMobile = {
 
+    config: config,
+
+    ui: ui,
+
 	init: function(device) {
 
         /****/ logger.log('App init');
@@ -21,7 +25,7 @@ window.ExgMobile = {
             accounts.init(function() {
                 translates.init(function() {
                     // storage.setItem('initialized', true);
-                    ui.openPage('index_page');
+                    ui.openPage('index');
                 });
             }); 
         });

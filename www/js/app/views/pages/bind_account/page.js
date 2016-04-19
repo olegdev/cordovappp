@@ -3,14 +3,14 @@
 define([
 	'logger',
 	'jquery',
-	'ui',
 	'accounts',
 	'translates',
+	'views/page/page',
 	'views/window/window',
-	'views/bind_account_page/bind_account_page.tpl',
-], function(logger, $, ui, accounts, translates, windowView, tpl) {
+	'views/pages/bind_account/page.tpl',
+], function(logger, $, accounts, translates, PageView, windowView, tpl) {
 
-	return {
+	return new PageView({
 
 		tbar: {
 			backBtn: true,
@@ -21,10 +21,10 @@ define([
 			langSelector: true,
 		},
 
-		render: function(renderTo) {
-			$(renderTo).html(tpl.apply());
+		tpl: tpl,
 
-			$(renderTo).find('button[data-action="bind-email"]').on('click', function() {
+		afterRender: function() {
+			this.$rootEl.find('button[data-action="bind-email"]').on('click', function() {
 				var target = accounts.get('device');
 				windowView.render({
 					title: translates.t("Привязать"),
@@ -40,16 +40,16 @@ define([
 						account.bind(target, function(err) {
 							if (!err) {
 								accounts.replace(target, account);
-								ui.openPage('index_page');
+								ExgMobile.ui.openPage('index');
 							} else {
-								ui.showMsg(err);
+								ExgMobile.ui.showMsg(err);
 							}
 						});
 					}
 				});
 			});
 
-			$(renderTo).find('button[data-action="bind-social"]').on('click', function() {
+			this.$rootEl.find('button[data-action="bind-social"]').on('click', function() {
 				var target = accounts.get('device');
 				var account = accounts.factory($(this).attr('data-type'));
 				account.auth(function() {
@@ -57,13 +57,13 @@ define([
 						account.bind(target, function(err) {
 							if (!err) {
 								accounts.replace(target, account);
-								ui.openPage('index_page');
+								ExgMobile.ui.openPage('index');
 							} else {
-								ui.showMsg(err);
+								ExgMobile.ui.showMsg(err);
 							}
 						});
 					} else {
-						ui.showMsg({
+						ExgMobile.ui.showMsg({
 							type: "info",
 							text: "Account already exists"
 						});
@@ -71,6 +71,7 @@ define([
 				});
 			});
 		}
-	}
+
+	});
 
 });

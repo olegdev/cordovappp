@@ -10,19 +10,19 @@ define(['jquery', 'views/lang_select/lang_select', 'views/toolbar/toolbar.tpl'],
 		 * - backBtn (true/false)
 		 * - langSelector (true/false)
 		 */
-		render: function(renderTo, data, pageManager) {
+		render: function(renderTo, data) {
 			var el;
 			$(renderTo).html(tpl.apply(data));
 			el = $(renderTo).find('.exgmobile-toolbar');
 
 			if (data.langSelector) {
-				langSelectView.render(el, pageManager);
+				langSelectView.render(el);
 			}
 
 			/****** Dom listeners *****/
 
 			el.find('button[data-action="back"]').on('click', function() {
-				pageManager.back();
+				ExgMobile.ui.back();
 			});
 		}
 	}

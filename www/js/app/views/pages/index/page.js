@@ -5,13 +5,13 @@ define([
 	'app',
 	'accounts',
 	'translates',
-	'ui',
+	'views/page/page',
 	'views/window/window',
-	'views/index_page/index_page.tpl'
-], function($, app, accounts, translates, ui, windowView, tpl) {
+	'views/pages/index/page.tpl',
+], function($, app, accounts, translates, PageView, windowView, tpl) {
 
-	return {
-
+	return new PageView({
+		
 		tbar: {
 			title: 'Главная страница',
 		},
@@ -20,22 +20,21 @@ define([
 			langSelector: true,
 		},
 
-		render: function(renderTo) {
-			$(renderTo).html(tpl.apply());
+		tpl: tpl, 
 
-			/*** Dom listeners **/
+		afterRender: function() {
 
-			$(renderTo).find('.exgmobile-accounts').delegate('button', 'click', function() {
+			this.$rootEl.find('.exgmobile-accounts').delegate('button', 'click', function() {
 				accounts.list[parseInt(this.getAttribute('data-index'))].login(function(err) {
 					if (!err) {
-						ui.openPage('game_page');
+						ExgMobile.ui.showGame();
 					} else {
-						ui.showMsg(err);
+						ExgMobile.ui.showMsg(err);
 					}
 				});
 			});
 
-			$(renderTo).find('button[data-action="new"]').on('click', function() {
+			this.$rootEl.find('button[data-action="new"]').on('click', function() {
 				var deviceAccount = accounts.get('device');
 				if (deviceAccount) {
 					windowView.render({
@@ -43,19 +42,18 @@ define([
 						content: translates.t("Необходимо привязать аккаунт, прежде чем создать новый"),
 						applyBtnText: translates.t("Привязать"),
 						handler: function() {
-							ui.openPage('bind_account_page');
+							ExgMobile.ui.openPage('bind_account');
 						}
 					});
 				} else {
-					ui.openPage('reg_page');
+					ExgMobile.ui.openPage('reg');
 				}
 			});
 
-			$(renderTo).find('button[data-action="add"]').on('click', function() {
-				ui.openPage('add_account_page');
+			this.$rootEl.find('button[data-action="add"]').on('click', function() {
+				ExgMobile.ui.openPage('add_account');
 			});
-
 		}
-	}
+	});
 
 });

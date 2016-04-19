@@ -4,7 +4,7 @@ define(['jquery', 'translates', 'views/lang_select/lang_select.tpl'], function($
 
 	return {
 
-		render: function(renderTo, pageManager) {
+		render: function(renderTo) {
 			var el;
 			$(renderTo).html(tpl.apply());
 			el = $(renderTo).find('.exgmobile-lang-select');
@@ -13,7 +13,7 @@ define(['jquery', 'translates', 'views/lang_select/lang_select.tpl'], function($
 
 			el.on('change', function() {
 				translates.setLang(el.val(), function() {
-					pageManager.reloadPage();
+					ExgMobile.ui.reloadPage();
 				});
 			});
 		}

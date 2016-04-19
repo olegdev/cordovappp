@@ -6,12 +6,13 @@ define([
 	'ui',
 	'accounts', 
 	'translates',
+	'views/page/page',
 	'views/window/window',
-	'views/add_account_page/add_account_page.tpl'],
-function(logger, $, ui, accounts, translates, windowView, tpl) {
+	'views/pages/add_account/page.tpl'],
+function(logger, $, ui, accounts, translates, PageView, windowView, tpl) {
 
-	return {
-
+	return new PageView({
+		
 		tbar: {
 			backBtn: true,
 			title: 'Добавить аккаунт',
@@ -21,10 +22,11 @@ function(logger, $, ui, accounts, translates, windowView, tpl) {
 			langSelector: true,
 		},
 
-		render: function(renderTo) {
-			$(renderTo).html(tpl.apply());
+		tpl: tpl,
 
-			$(renderTo).find('button[data-action="add-email"]').on('click', function() {
+		afterRender: function() {
+
+			this.$rootEl.find('button[data-action="add-email"]').on('click', function() {
 				windowView.render({
 					title: translates.t("Добавить"),
 					content: [
@@ -39,7 +41,7 @@ function(logger, $, ui, accounts, translates, windowView, tpl) {
 						account.check(function(err) {
 							if (!err) {
 								accounts.add(account);
-								ui.openPage('index_page');
+								ui.openPage('index');
 							} else {
 								ui.showMsg(err);
 							}
@@ -48,14 +50,14 @@ function(logger, $, ui, accounts, translates, windowView, tpl) {
 				});
 			});
 
-			$(renderTo).find('button[data-action="add-social"]').on('click', function() {
+			this.$rootEl.find('button[data-action="add-social"]').on('click', function() {
 				var account = accounts.factory($(this).attr('data-type'));
 				account.auth(function() {
 					if (!accounts.has(account)) {
 						account.check(function(err) {
 							if (!err) {
 								accounts.add(account);
-								ui.openPage("index_page");
+								ui.openPage("index");
 							} else {
 								ui.showMsg(err);
 							}
@@ -69,6 +71,6 @@ function(logger, $, ui, accounts, translates, windowView, tpl) {
 				});
 			});
 		}
-	}
+	});
 
 });

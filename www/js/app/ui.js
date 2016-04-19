@@ -4,8 +4,9 @@ define([
 	'logger',
 	'underscore',
 	'views/toolbar/toolbar',
-	'views/window/window'
-], function(logger, _, toolbarView, windowView){
+	'views/window/window',
+	'views/game/game',
+], function(logger, _, toolbarView, windowView, gameView){
 
 	var ui = {
 		historyNav: [],
@@ -15,30 +16,10 @@ define([
 			/****/ logger.log('Open page "' + pageName + '"');
 
 			var me = this;
-			require(['views/' + pageName + '/' + pageName], function(page) {
-				var pageTpl = [
-					'<div id="exgmobile-page">',
-						'<div id="exgmobile-page-tbar"></div>',
-						'<div id="exgmobile-page-content"></div>',
-						'<div id="exgmobile-page-bbar"></div>',
-					'</div>',
-				].join('');
-
-				$('#exgmobile-viewport').html(pageTpl);
-
-				if (page.tbar) {
-					toolbarView.render($('#exgmobile-page-tbar'), page.tbar, me);
-				}
-
-				page.render($('#exgmobile-page-content'));
-
-				if (page.bbar) {
-					toolbarView.render($('#exgmobile-page-bbar'), page.bbar, me);
-				}
-
+			require(['views/pages/' + pageName + '/page'], function(page) {
+				page.render($('#exgmobile-viewport'));
+				me.historyNav.push(pageName);
 			});
-
-			this.historyNav.push(pageName);
 		},
 
 		reloadPage: function() {
@@ -62,6 +43,10 @@ define([
 			});
 		},
 
+		showGame: function() {
+			$('html').css({ backgroundColor: '#000' });
+			gameView.render(document.body);
+		},
 	};
 
 	return ui;

@@ -55,7 +55,7 @@ define(['logger', 'config', 'storage'], function(logger, config, storage) {
 				entry.file(function(file) {
 					var reader = new FileReader();
 			        reader.onloadend = function(e) {
-			        	var text = this.result.replace(/http\w?\:\/\/[\.\w]+/g, "cdvfile://localhost/bundle/www/resources/img");
+			        	var text = this.result; //.replace(/http\w?\:\/\/[\.\w]+/g, "cdvfile://localhost/bundle/www/resources/img");
 			        	entry.createWriter(function(fileWriter) {
 					        fileWriter.write(text);
 					    	innerProcessFiles(index, fileEntries, callback);  

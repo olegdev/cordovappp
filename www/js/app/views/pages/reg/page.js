@@ -9,11 +9,13 @@ define([
 	'app',
 	'translates',
 	'accounts',
-	'ui',
-	'views/reg_page/reg_page.tpl'],
-function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accounts, ui, tpl) {	
+	'views/page/page',
+	'views/pages/reg/page.tpl'],
+function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accounts, PageView, tpl) {	
 
-	return {
+	return new PageView({
+
+		tpl: tpl,
 
 		tbar: {
 			backBtn: true,
@@ -23,7 +25,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			langSelector: true,
 		},
 
-		render: function(renderTo) {
+		beforeRender: function() {
 
 			// define dynamic styles with translatable images
 			var style = document.createElement('style');
@@ -126,18 +128,15 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 				return "pending";
 			}
 
-			/**** Render the page ***/
-
-			$(renderTo).html(tpl.apply());
-
-			/*** Dom listeners **/
+		},
+		
+		afterRender: function() {
 
 			$('#exgmobile-reg input[placeholder]').placeholder();
 			$('#exgmobile-reg .eula-link').on('click', function(e) {
 				e.preventDefault();
-				ui.openPage('eula_page');
+				ExgMobile.ui.openPage('eula');
 			});
-
 
 			var regForm = $('#exgmobile-reg form'),
 				gender,
@@ -294,7 +293,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 						accounts.add(account);
 						account.login(function(err) {
 							if (!err) {
-					   			ui.openPage('game_page');
+					   			ExgMobile.ui.showGame();
 					   		}
 					   });
 					} else {
@@ -379,6 +378,6 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			}
 
 		}
-	}
+	});
 
 });

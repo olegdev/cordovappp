@@ -11,8 +11,10 @@ requirejs.config({
 		'json': '../vendor/requirejs-plugins/src/json',
 		'js-url': '../vendor/js-url/url.min',
 		'openFB': '../vendor/openfb/openfb',
+		'svgjs': '../vendor/svg.js/dist/svg.min',
 	},
 	"shim": {
+		"jquery": ["svgjs"],
         "jquery-md5": ["jquery"],
         "jquery-placeholder": ["jquery"],
         "jquery-validation": ["jquery"],
@@ -38,6 +40,6 @@ require(['config', 'app', 'views/logview/logview'], function(config, app, logvie
 	document.addEventListener('deviceready', innerDeviceReady, false);
 
 	// debug
-	// window.device = {uuid: 2, platform: 'ios'};
-	// innerDeviceReady();
+	window.device = {uuid: 3, platform: 'ios'};
+	innerDeviceReady();
 });

@@ -1,13 +1,13 @@
 define(['underscore', 'translates'], function(_, translates) {
 	var tpl = _.template([
 
-		'GAME',
+		'<div id="viewport-wrapper"></div>',
 
 	].join(''));
 
 	return {
-		apply: function(data) {
-			return tpl(_.extend(data || {}, {translates: translates}))
+		apply: function() {
+			return tpl();
 		}
 	}
 });

@@ -7,10 +7,19 @@
 12 apr Social integration
 13 apr cdvfile protocol (* work with 11 a.m.)
 14 apr CDVFile patch
-15 apr 
+15 apr Обработка css
+16 apr Запуск приложения
+17 apr 
 
 x1. Обработка css на этапе запуска, сохранение css в правильном месте
-2. Поддержка мобильной версии игры в js
+x2. Поддержка мобильной версии игры в js (host_url, image_url)
 3. Запуск приложения
-4. Замена file плагина
+	
+	x Поправить ошибки в js
+		x addCounter method in MainMenuBtn,
+		x SVG not found
+	Проверить работу с картинками
+	Поправить верстку в сафари
+	Сбилдить версию игры с wkwebview
 
+4. Замена file плагина
