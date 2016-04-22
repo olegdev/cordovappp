@@ -21,14 +21,14 @@ window.ExgMobile = {
         /****/ logger.log('App init');
 
 		this.device = device;
-        resources.init(function() {
+        // resources.init(function() {
             accounts.init(function() {
                 translates.init(function() {
                     // storage.setItem('initialized', true);
                     ui.openPage('index');
                 });
             }); 
-        });
+        // });
 	},
 
 	request: function(url, params, callback) {

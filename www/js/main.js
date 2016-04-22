@@ -40,6 +40,6 @@ require(['config', 'app', 'views/logview/logview'], function(config, app, logvie
 	document.addEventListener('deviceready', innerDeviceReady, false);
 
 	// debug
-	window.device = {uuid: 3, platform: 'ios'};
-	innerDeviceReady();
+	// window.device = {uuid: 3, platform: 'ios'};
+	// innerDeviceReady();
 });

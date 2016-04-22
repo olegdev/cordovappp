@@ -18927,6 +18927,8 @@ Ext.define('ExGods.view.chat.ContactList', {
     ],
     title: '',
     cls: 'chat-contact-list',
+    ignore_focus: true,
+    // чтобы экст не скроллил боди
     /**
      * @cfg {Ext.data.Store} store Хранилище списка контактов
      */
@@ -18991,6 +18993,8 @@ Ext.define('ExGods.view.chat.MessageList', {
     extend: ExGodsCore.view.chat.MessageList,
     alias: 'widget.chatmessagelist',
     cls: 'chat-messages',
+    ignore_focus: true,
+    // чтобы экст не скроллил боди
     /**
      * @property {String} storageId
      * Уникальная строка по которой идет поиск "старых" сообщений вкладки чата
@@ -19326,6 +19330,8 @@ Ext.define('ExGods.view.chat.InputField', {
         type: 'hbox',
         align: 'stretch'
     },
+    ignore_focus: true,
+    // чтобы экст не скроллил боди
     initComponent: function() {
         var me = this;
         me.message = me.emptyMessage();
@@ -21092,24 +21098,6 @@ Ext.define('ExGods.view.Viewport', {
         });
         // иначе не работает расчет высоты лейаутом
         me.items = [
-            {
-                xtype: 'component',
-                style: {
-                    display: 'none'
-                },
-                id: 'payment_window',
-                cls: 'modal-window',
-                html: [
-                    '<div class="window">',
-                    '<div class="modal_head">',
-                    '<img src="' + IMAGE_URL + 'bank/logo.png">',
-                    '<a class="close" onclick="closePaymentWindow();"></a>',
-                    '</div>',
-                    '<div layout="row" layout-align="center" class="modal-price" id="modal_price"></div>',
-                    '<div id="payment_window_iframe" class="payment-window-iframe"></div>',
-                    '</div>'
-                ]
-            },
             {
                 // Верхняя часть
                 xtype: 'container',
@@ -29981,13 +29969,19 @@ Ext.define('ExGods.controller.Bank', {
         'bank.TabPanel',
         'ConfirmationDialog'
     ],
+    refs: [
+        {
+            ref: 'bankMenuBtn',
+            selector: '#mainmenu-bank-button'
+        }
+    ],
     init: function(app) {
         var me = this;
         me.control({
             '#user-finance': {
                 iconclick: me.toggleBankServices,
-                adddefaultcurrency: me.addDefaultCurrencyClick,
-                addrealcurrency: me.addRealCurrencyClick
+                adddefaultcurrency: me.toggleBankServices,
+                addrealcurrency: me.toggleBankServices
             },
             'textbutton[action="bank-buy"]': {
                 click: me.onBuyClickBtn
@@ -30017,9 +30011,11 @@ Ext.define('ExGods.controller.Bank', {
     /**
      * Показывает/скрывает вкладки банка
      */
-    toggleBankServices: function(config) {
-        Ext.get(Ext.query('#mainmenu-bank-button')[0]).dom.click();
-        this.tab_id = config.tab_id;
+    toggleBankServices: function(tabId) {
+        var me = this,
+            bankMenuBtn = me.getBankMenuBtn();
+        me.initialTabId = typeof tabId == 'number' ? tabId : 0;
+        bankMenuBtn.fireEvent('click', bankMenuBtn);
     },
     onBuyClickBtn: function(btn) {
         var me = this,
@@ -30070,12 +30066,6 @@ Ext.define('ExGods.controller.Bank', {
             me.app.getSocialController().gift(values);
         }
     },
-    addDefaultCurrencyClick: function() {
-        Ext.get(Ext.query('#mainmenu-bank-button')[0]).dom.click();
-    },
-    addRealCurrencyClick: function() {
-        Ext.get(Ext.query('#mainmenu-bank-button')[0]).dom.click();
-    },
     confirmExchange: function(money) {
         var me = this,
             user = me.getUser();
@@ -30097,19 +30087,16 @@ Ext.define('ExGods.controller.Bank', {
      * @private
      */
     onSocialNetAssign: function() {
-        this.toggleBankServices({
-            tab_id: 1
-        });
+        this.toggleBankServices(1);
     },
-    //.down('banktabpanel').setActiveTab(1);
-    initBankComponent: function(config) {
+    initBankComponent: function(config, componentId) {
         var me = this,
             cmp, wnd;
         me.service = config.service;
         cmp = {
             xtype: 'banktabpanel',
             service: me.service,
-            activeTab: me.tab_id,
+            activeTab: me.initialTabId,
             items: [
                 {
                     xtype: 'bankreplenishment',
@@ -30126,9 +30113,9 @@ Ext.define('ExGods.controller.Bank', {
                 }
             ]
         };
-        delete me.tab_id;
+        delete me.initialTabId;
         wnd = Ext.widget('window2', {
-            id: 'BANK',
+            id: componentId,
             autoShow: false,
             items: [
                 cmp
@@ -30353,7 +30340,7 @@ Ext.define('ExGods.controller.Bank2', {
             });
         }
     },
-    initBank2Component: function(config) {
+    initBank2Component: function(config, componentId) {
         var me = this,
             cmp, wnd;
         me.service = config.service;
@@ -30379,18 +30366,49 @@ Ext.define('ExGods.controller.Bank2', {
         };
         delete me.tab_id;
         wnd = Ext.widget('window2', {
-            id: 'BANK',
+            id: componentId,
             autoShow: false,
             items: [
                 cmp
-            ]
+            ],
+            listeners: {
+                close: function() {
+                    var el = document.getElementById('payment_window');
+                    if (el)  {
+                        el.remove();
+                    }
+                    
+                }
+            }
         });
         ExGods.app.block();
         ExGods.Resources.load(wnd, function() {
             ExGods.app.unblock();
             wnd.show();
+            me.appendWindowComponent();
         });
         return wnd;
+    },
+    appendWindowComponent: function() {
+        if (document.getElementById('payment_window'))  {
+            return;
+        }
+        
+        var el = document.createElement('div');
+        el.style.display = 'none';
+        el.id = 'payment_window';
+        el.className = 'modal-window';
+        el.innerHTML = [
+            '<div class="window">',
+            '<div class="modal_head">',
+            '<img src="' + IMAGE_URL + 'bank/logo.png">',
+            '<a class="close" onclick="closePaymentWindow();"></a>',
+            '</div>',
+            '<div layout="row" layout-align="center" class="modal-price" id="modal_price"></div>',
+            '<div id="payment_window_iframe" class="payment-window-iframe"></div>',
+            '</div>'
+        ].join('');
+        document.body.appendChild(el);
     }
 });
 
@@ -37936,7 +37954,7 @@ Ext.define('ExGods.controller.Communication', {
         me.newNotices = Ext.create('ExGods.store.Notices', {
             proxy: {
                 type: 'ajax',
-                url: '/game.pl?cmd=messages_get_list_new',
+                url: HOST_URL + '/game.pl?cmd=messages_get_list_new',
                 limitParam: false,
                 pageParam: false,
                 startParam: false,
@@ -37960,7 +37978,7 @@ Ext.define('ExGods.controller.Communication', {
         me.archiveNotices = Ext.create('ExGods.store.Notices', {
             proxy: {
                 type: 'ajax',
-                url: '/game.pl?cmd=messages_get_list_rest',
+                url: HOST_URL + '/game.pl?cmd=messages_get_list_rest',
                 limitParam: false,
                 pageParam: false,
                 startParam: false,
@@ -56588,19 +56606,18 @@ Ext.define('ExGods.controller.social.KG', {
      *
      * @param {Number} Сумма покупки
      */
-    buy: function(preset) {
-        // var me = this;
-        // FB.ui({
-        //  method: 'pay',
-        //  action: 'purchaseitem',
-        //  product: location.protocol + '//' + location.host + '/fba-pay.pl?cmd=get_info_preset&preset_id=' + preset.entry + '&r=' + Math.random(),
-        //  quantity: 1
-        // },
-        // function(data) {
-        //  //
-        // });
-        debugger;
-    },
+    buy: function(preset) {},
+    // var me = this;
+    // FB.ui({
+    //  method: 'pay',
+    //  action: 'purchaseitem',
+    //  product: location.protocol + '//' + location.host + '/fba-pay.pl?cmd=get_info_preset&preset_id=' + preset.entry + '&r=' + Math.random(),
+    //  quantity: 1
+    // },
+    // function(data) {
+    //  //
+    // });
+    //debugger
     /**
      * Функция постинга в социальные сети
      *
@@ -65387,9 +65404,9 @@ Ext.define('ExGods.view.user.Finance', {
                 IMAGE_URL + 'user/crystall_add.png',
                 IMAGE_URL + 'user-finance-icon.jpg',
                 IMAGE_URL + 'user-finance-add.jpg',
-                IMAGE_URL + 'panel_user.jpg',
-                IMAGE_URL + 'panel_user_combo.jpg',
-                IMAGE_URL + 'panel_finances.jpg'
+                IMAGE_URL + 'panel_user.png',
+                IMAGE_URL + 'panel_user_combo.png',
+                IMAGE_URL + 'panel_finances.png'
             ].concat(arr_images)
         };
     }

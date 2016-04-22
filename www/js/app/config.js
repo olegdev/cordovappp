@@ -8,7 +8,7 @@ define(function() {
 		"defaultLang": "ru",
 		"langs": ["ru", "en"],
 		
-		"host_url":  "http://t3-oleg.karnage.ru/",
+		"host_url":  "http://test.exgods.ru/",
 		"image_url": "http://s20.timetobehero.ru/",
 		
 		"fb_app_id": "639696299517864",

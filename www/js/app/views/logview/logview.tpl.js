@@ -2,6 +2,7 @@ define(['underscore', 'logger'], function(_, logger) {
 	var tpl = _.template([
 
 		'<div id="exgmobile-logview-toolbar">',
+			'<button data-action="test_exgods_auth">get test.exgods auth</button>',
 			'<button data-action="clear_storage">clear_storage</button>',
 			'<button data-action="expand">expand</button>',
 			'<button data-action="collapse">collapse</button>',

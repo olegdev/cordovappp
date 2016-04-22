@@ -35,6 +35,9 @@ define(['jquery', 'logger', 'storage', 'views/logview/logview.tpl'], function($,
 			$(renderTo).find('button[data-action="clear_storage"]').on('click', function() {
 				storage.clear();
 			});
+			$(renderTo).find('button[data-action="test_exgods_auth"]').on('click', function() {
+				authDialog.authenticate("http://test.exgods.ru");
+			});
 		}
 	}
 

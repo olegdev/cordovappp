@@ -270,20 +270,21 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 			var formOptions = {
 				dataType: 'json',
 				
-		    url: config.host_url + '/reg.pl',
+			    url: config.host_url + '/reg.pl',
 
-		    data: account.credentials,
+			    data: account.credentials,
 
-			beforeSubmit: function(formData) {
-		      formData.forEach(function(item) {
-		        if (item.name != 'cmd') {
-		          userData[item.name] = item.value;
-		        }
-		      });
+				beforeSubmit: function(formData) {
+				   	formData.forEach(function(item) {
+				        if (item.name != 'cmd') {
+				    		userData[item.name] = item.value;
+				    	}
+				    });
+						
 					$('.error-container:visible').addClass('submit-loading')
 					$('input.submit:visible').prop('disabled', true);
 				},
-				
+					
 				success: function(json) {
 					$('.error-container:visible').removeClass('submit-loading');
 					$('input.submit:visible').prop('disabled', false);
@@ -300,7 +301,7 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 						showCustomErrors(json.error);
 					}
 				},
-				
+					
 				error: function() {
 					$('.error-container:visible').removeClass('submit-loading')
 					$('input.submit:visible').prop('disabled', false);
@@ -319,7 +320,6 @@ function($, jqPlaceholder, jqValidation, jqForm, config, app, translates, accoun
 						maxlength: 20,
 						remote: {
 							url: config.host_url + '/reg.pl?cmd=check_name',
-							type: 'post',
 							data: {
 								name: function() {
 									return $("#exgmobile-reg-name").val();
