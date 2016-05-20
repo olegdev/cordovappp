@@ -17,7 +17,9 @@ define([
 	Page.prototype.tbar = null;
 	Page.prototype.bbar = null;
 
-	Page.prototype.render = function(renderTo) {
+	Page.prototype.render = function(renderTo, options) {
+
+		this.options = options || {};
 
 		this.beforeRender();
 

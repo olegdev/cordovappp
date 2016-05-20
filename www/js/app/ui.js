@@ -11,13 +11,13 @@ define([
 	var ui = {
 		historyNav: [],
 
-		openPage: function(pageName) {
+		openPage: function(pageName, options) {
 
 			/****/ logger.log('Open page "' + pageName + '"');
 
 			var me = this;
 			require(['views/pages/' + pageName + '/page'], function(page) {
-				page.render($('#exgmobile-viewport'));
+				page.render($('#exgmobile-viewport'), options);
 				me.historyNav.push(pageName);
 			});
 		},

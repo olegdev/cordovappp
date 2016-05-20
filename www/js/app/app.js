@@ -21,14 +21,13 @@ window.ExgMobile = {
         /****/ logger.log('App init');
 
 		this.device = device;
-        // resources.init(function() {
+        resources.init(function() {
             accounts.init(function() {
                 translates.init(function() {
-                    // storage.setItem('initialized', true);
                     ui.openPage('index');
                 });
             }); 
-        // });
+        });
 	},
 
 	request: function(url, params, callback) {
@@ -44,7 +43,7 @@ window.ExgMobile = {
 
         /***/ logger.log('Request: ' + urlAsString(url, params));
 
-		callback = callback || Ext.emptyFn;
+		callback = callback || function() {};
 		params = params || {};
 		$.ajax({
             url: config.host_url + url,

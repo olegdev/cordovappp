@@ -7,8 +7,10 @@ define([
 ], function($, PageView, tpl) {
 	return new PageView({
 		tpl: tpl,
-		tbar: {
-			backBtn: true,
+		render: function(renderTo, options) {
+			this.tplData = {
+				message: options ? options.message : ""
+			}
 		},
 	});
 });

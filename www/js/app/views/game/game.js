@@ -1,10 +1,12 @@
 /***** Game view ****/
 
 define([
+	'logger',
 	'jquery',
 	'config',
+	'resources',
 	'views/game/game.tpl'
-], function($, config, tpl) {
+], function(logger, $, config, resources, tpl) {
 
 	return {
 		render: function(renderTo) {
@@ -44,28 +46,40 @@ define([
 		},
 
 		loadCss: function() {
-			var cssFiles = [
-				'cdvfile://localhost/bundle/www/resources/css/preloader.css',
-				'cdvfile://localhost/bundle/www/resources/css/ext-theme-classic-all-5_1_1.css',
-				'cdvfile://localhost/bundle/www/resources/css/exgods2-all.css',
-			];
+			var installedCssFiles = resources.getInstalledCssFiles(function(installedCssFiles) {
+				// рабочий файл в конец
+				installedCssFiles.sort(function(a,b) {
+					if (a.indexOf('exgods2-all') != -1) {
+						return 1;
+					} else if (b.indexOf('exgods2-all') != -1) {
+						return -1;
+					} else {
+						return 0;
+					}
+				});
 
-			cssFiles.forEach(function(fileName) {
-				$("head").append("<link rel='stylesheet' type='text/css' href='"+ fileName +"' />");
+				installedCssFiles.forEach(function(fileName) {
+					$("head").append("<link rel='stylesheet' type='text/css' href='cdvfile://localhost/bundle/www/"+ fileName +"' />");
+				});
 			});
-
 		},
 
 		loadScripts: function() {
-			var jsFiles = [
-				'cdvfile://localhost/bundle/www/resources/js/html2canvas.js',
-				'cdvfile://localhost/bundle/www/resources/js/html2canvas.svg.js',
-				'cdvfile://localhost/bundle/www/resources/js/ext-all.js',
-				'cdvfile://localhost/bundle/www/resources/js/exgods2-all.js',
-			];
+			var installedJsFiles = resources.getInstalledJsFiles(function(installedJsFiles) {
+				// рабочий файл в конец
+				installedJsFiles.sort(function(a,b) {
+					if (a.indexOf('exgods2-all') != -1) {
+						return 1;
+					} else if (b.indexOf('exgods2-all') != -1) {
+						return -1;
+					} else {
+						return 0;
+					}
+				});
 
-			jsFiles.forEach(function(fileName) {
-				$.getScript(fileName);
+				installedJsFiles.forEach(function(fileName) {
+					$.getScript("cdvfile://localhost/bundle/www/" + fileName);
+				});
 			});
 		},
 	}
