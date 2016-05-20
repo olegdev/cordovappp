@@ -18,9 +18,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-
     <allow-navigation href="http://*/*" />
-    
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -29,6 +27,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="BackupWebStorage" value="local" />
+    <preference name="DisallowOverscroll" value="true" />
     <preference name="xwalkVersion" value="16+" />
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />
@@ -40,4 +39,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~1.3.0" />
     <plugin name="com.akveo.cordova-vk" spec="~1.0.1" />
     <engine name="ios" spec="~4.1.1" />
+    <plugin name="cordova-plugin-file-transfer" spec="~1.5.1" />
+    <plugin name="cordova-plugin-zip" spec="~3.1.0" />
+    <plugin name="com.msopentech.authdialog" spec="https://github.com/MSOpenTech/cordova-plugin-auth-dialog.git" />
 </widget>
