@@ -1,8 +1,8 @@
 define(function() {
 	return {
 		
-		"version": 1,
-
+		"version": 6,
+		"payment": "ios",
 		"debug": true,
 		
 		"defaultLang": "ru",
@@ -10,6 +10,7 @@ define(function() {
 		
 		"host_url":  "http://test.exgods.ru/",
 		"image_url": "http://s20.timetobehero.ru/",
+		"patch_url": "http://t3-oleg.karnage.ru/j/patch/",
 		
 		"fb_app_id": "639696299517864",
 		"fb_app_permissions": ["public_profile", "email"],

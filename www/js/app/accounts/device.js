@@ -1,6 +1,6 @@
 /**** Device account class **/
 
-define(['logger', 'jquery', 'jquery-md5'], function(logger, $, md5) {
+define(['logger', 'jquery', 'jquery-md5', 'config'], function(logger, $, md5, config) {
 
 	var Account = function(data) {
 		
@@ -9,7 +9,7 @@ define(['logger', 'jquery', 'jquery-md5'], function(logger, $, md5) {
 		this.credentials = {
 			login: ExgMobile.device.uuid,
 			pass: $.md5(ExgMobile.device.uuid + '!13%45v^349$0u1:345t1;34'),
-			payment: ExgMobile.device.platform.toLowerCase(),
+			payment: config.payment,
 		}
 		
 		this.data = data.data || {};

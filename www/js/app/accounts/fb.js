@@ -16,7 +16,7 @@ define(['logger', 'config', 'errors', 'openFB'], function(logger, config, errors
 			type: 'fb',
 			sn_id: '',
 			sn_token: '',
-			payment: ExgMobile.device.platform.toLowerCase(),
+			payment: config.payment,
 		}
 		
 		this.data = data.data || {};

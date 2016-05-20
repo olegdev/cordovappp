@@ -16,7 +16,7 @@ define(['logger',
 			type: 'ok',
 			sn_id: '',
 			sn_token: '',
-			payment: ExgMobile.device.platform.toLowerCase(),
+			payment: config.payment,
 		}
 		
 		this.data = data.data || {};

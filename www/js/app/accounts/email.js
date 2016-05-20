@@ -1,6 +1,6 @@
 /**** Email account class **/
 
-define(['logger', 'errors'], function(logger, errors) {
+define(['logger', 'errors', 'config'], function(logger, errors, config) {
 
 	var Account = function(data) {
 		
@@ -9,7 +9,7 @@ define(['logger', 'errors'], function(logger, errors) {
 		this.credentials = data.credentials || {
 			login: '',
 			pass: '',
-			payment: ExgMobile.device.platform.toLowerCase(),
+			payment: config.payment,
 		}
 		
 		this.data = data.data || {};

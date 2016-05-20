@@ -21,7 +21,7 @@ define(['logger', 'config', 'underscore', 'errors'], function(logger, config, _,
 			type: 'vk',
 			sn_id: '',
 			sn_token: '',
-			payment: ExgMobile.device.platform.toLowerCase(),
+			payment: config.payment,
 		}
 		
 		this.data = data.data || {};
