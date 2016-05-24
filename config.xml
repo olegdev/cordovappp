@@ -42,4 +42,5 @@
     <plugin name="cordova-plugin-file-transfer" spec="~1.5.1" />
     <plugin name="cordova-plugin-zip" spec="~3.1.0" />
     <plugin name="com.msopentech.authdialog" spec="https://github.com/MSOpenTech/cordova-plugin-auth-dialog.git" />
+    <plugin name="cordova-plugin-apprate" spec="~1.1.7" />
 </widget>

@@ -25,6 +25,7 @@ window.ExgMobile = {
             accounts.init(function() {
                 translates.init(function() {
                     ui.openPage('index');
+                    AppRate.promptForRating(false); // app rate dialog (https://github.com/pushandplay/cordova-plugin-apprate)
                 });
             }); 
         });
