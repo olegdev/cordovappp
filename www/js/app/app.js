@@ -7,7 +7,9 @@ define([
     'underscore',
     'storage',
     'resources',
-], function(logger, config, ui, accounts, translates, _, storage, resources) {
+    'notifications',
+    'apprate',
+], function(logger, config, ui, accounts, translates, _, storage, resources, notifications, apprate) {
 
 // App namespace
 window.ExgMobile = {
@@ -24,8 +26,9 @@ window.ExgMobile = {
         resources.init(function() {
             accounts.init(function() {
                 translates.init(function() {
+                    notifications.init();
+                    apprate.init();
                     ui.openPage('index');
-                    AppRate.promptForRating(false); // app rate dialog (https://github.com/pushandplay/cordova-plugin-apprate)
                 });
             }); 
         });
